@@ -1,0 +1,244 @@
+\section{SG\_\-Stardust Class Reference}
+\label{class_s_g___stardust}\index{SG_Stardust@{SG\_\-Stardust}}
+The cloud of dusts and particles, which is around the star. (Accrete).  
+
+
+{\tt \#include $<$SG\_\-Stardust.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf SG\_\-Stardust} ({\bf SG\_\-Star} $\ast$star, int max\_\-planet=10)
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+{\bf $\sim$SG\_\-Stardust} ()\label{class_s_g___stardust_a1}
+
+\begin{CompactList}\small\item\em Destructor. \item\end{CompactList}\item 
+long double {\bf get\-Dust\-Density\-Coeff} ()\label{class_s_g___stardust_a2}
+
+\begin{CompactList}\small\item\em This function returns the coefficient of density of the dust in the cloud. \item\end{CompactList}\item 
+void {\bf set\-Dust\-Density\-Ratio} (long double ratio=1)
+\begin{CompactList}\small\item\em This function changes the coefficient of density of the dust inthe cloud. \item\end{CompactList}\item 
+void {\bf generate\-Planets} ()\label{class_s_g___stardust_a4}
+
+\begin{CompactList}\small\item\em This function accrete the stellardust into several planets. \item\end{CompactList}\item 
+{\bf SG\_\-Planet} $\ast$ {\bf get\-Planet} (int index)
+\begin{CompactList}\small\item\em This function returns a planet (sorted by orbit radius). \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+bool {\bf is\-Dust\-Available} (long double inside\_\-range, long double outside\_\-range)
+\begin{CompactList}\small\item\em This function indicates if there is still some stellar dust in the specified orbital range. \item\end{CompactList}\item 
+long double {\bf get\-Inner\-Effect\-Limit} (proto\-Planet $\ast$protoplanet)
+\begin{CompactList}\small\item\em This function returns the inner orbit affected by this proto planet. \item\end{CompactList}\item 
+long double {\bf get\-Outer\-Effect\-Limit} (proto\-Planet $\ast$protoplanet)
+\begin{CompactList}\small\item\em This function returns the outer orbit affected by this proto planet. \item\end{CompactList}\item 
+long double {\bf get\-Critical\-Mass} (proto\-Planet $\ast$protoplanet)
+\begin{CompactList}\small\item\em This function returns the mass at which a planet at this orbit will begin to accrete gas and dust. \item\end{CompactList}\item 
+void {\bf accrete\-Dust} (proto\-Planet $\ast$protoplanet)
+\begin{CompactList}\small\item\em This function accrete the dust located on the protoplanet orbital path. \item\end{CompactList}\item 
+void {\bf update\-Dust\-Lanes} (proto\-Planet $\ast$protoplanet)
+\begin{CompactList}\small\item\em This function updates the dustbands surrounding the star. \item\end{CompactList}\item 
+void {\bf coalesce\-Protoplanets} (proto\-Planet $\ast$protoplanet)\label{class_s_g___stardust_b6}
+
+\begin{CompactList}\small\item\em This function aggregates the protoplanet with the other bodies from the close orbits, and eventually create a planet. \item\end{CompactList}\item 
+void {\bf collect\-Dust} (proto\-Planet $\ast$protoplanet, dust\_\-band $\ast$dustband)
+\begin{CompactList}\small\item\em This function collects Dust from all the existing dustbands, starting at the given dustband. \item\end{CompactList}\item 
+void {\bf sort\-Planet\-Table} ()\label{class_s_g___stardust_b8}
+
+\begin{CompactList}\small\item\em This function sorts the array of planets, following the increasing orbit radius. \item\end{CompactList}\item 
+void {\bf swap\-Planet} (int index1, int index2)\label{class_s_g___stardust_b9}
+
+\begin{CompactList}\small\item\em This function swaps two planets in the planet array. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+bool {\bf m\-Dust\_\-left}\label{class_s_g___stardust_p0}
+
+\begin{CompactList}\small\item\em TRUE if there is still dust in the cloud. \item\end{CompactList}\item 
+long double {\bf m\-Dust\_\-inner\_\-limit}\label{class_s_g___stardust_p1}
+
+\begin{CompactList}\small\item\em Inner limit of the stardust cloud. \item\end{CompactList}\item 
+long double {\bf m\-Dust\_\-outer\_\-limit}\label{class_s_g___stardust_p2}
+
+\begin{CompactList}\small\item\em Outer limit of the stardust cloud. \item\end{CompactList}\item 
+long double {\bf m\-Planet\_\-inner\_\-bound}\label{class_s_g___stardust_p3}
+
+\begin{CompactList}\small\item\em Inner limit of the planet formation area. \item\end{CompactList}\item 
+long double {\bf m\-Planet\_\-outer\_\-bound}\label{class_s_g___stardust_p4}
+
+\begin{CompactList}\small\item\em Outer limit of the planet formation area. \item\end{CompactList}\item 
+long double {\bf m\-Dust\-Density}\label{class_s_g___stardust_p5}
+
+\begin{CompactList}\small\item\em Stellardust density in the cloud. \item\end{CompactList}\item 
+long double {\bf m\-Dust\-Density\-Coeff}\label{class_s_g___stardust_p6}
+
+\begin{CompactList}\small\item\em Density multiplcator factor. \item\end{CompactList}\item 
+long double {\bf m\-Cloud\-Eccentricity}\label{class_s_g___stardust_p7}
+
+\begin{CompactList}\small\item\em Stardust cloud eccentricity. \item\end{CompactList}\item 
+dust\_\-band $\ast$ {\bf m\-Dust\_\-head}\label{class_s_g___stardust_p8}
+
+\begin{CompactList}\small\item\em List of dustlanes. \item\end{CompactList}\item 
+{\bf SG\_\-Star} $\ast$ {\bf m\-Sun}\label{class_s_g___stardust_p9}
+
+\begin{CompactList}\small\item\em The main star of this system. \item\end{CompactList}\item 
+int {\bf m\-Max\-Planet}\label{class_s_g___stardust_p10}
+
+\begin{CompactList}\small\item\em The max number of planet in this system. \item\end{CompactList}\item 
+{\bf SG\_\-Planet} $\ast$$\ast$ {\bf m\-Planet\-List}\label{class_s_g___stardust_p11}
+
+\begin{CompactList}\small\item\em An Array of planet pointers. \item\end{CompactList}\item 
+int {\bf m\-Planet\-Index}\label{class_s_g___stardust_p12}
+
+\begin{CompactList}\small\item\em Index for the planet array. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+The cloud of dusts and particles, which is around the star. (Accrete). 
+
+The dust and particles which are surrounding the star at its origine, will accrete to form planets (and moons). This cloud of dust is first composed by one Dust\-Lane, which is quicky sliced by the planets into several dustlanes.
+
+The schematic shows a star with its stellar-dust cloud. Inside the cloud, there is an area where the planets can appear ({\em inner\/} to {\em outer planet bound\/}). A proto-planet is also represented, with its effect area, ie the area where dust will accrete (by gravitation law) to the proto-planet and make it grow.  {\bf Bibliography:} Dole, Stephen H. \char`\"{}Formation of Planetary Systems by Aggregation: a Computer Simulation\char`\"{} October 1969, Rand Corporation Paper P-4226. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{SG_Stardust@{SG\_\-Stardust}!SG_Stardust@{SG\_\-Stardust}}
+\index{SG_Stardust@{SG\_\-Stardust}!SG_Stardust@{SG\_\-Stardust}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}SG\_\-Stardust::SG\_\-Stardust ({\bf SG\_\-Star} $\ast$ {\em star}, int {\em max\_\-planet} = {\tt 10})}\label{class_s_g___stardust_a0}
+
+
+Constructor. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em star}]A reference to the star of the system. \item[{\em max\_\-planet}]the max number of planet authorized for this system (default=10). /$\ast$ ------------------------------------------------------------------------- \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\index{SG_Stardust@{SG\_\-Stardust}!accreteDust@{accreteDust}}
+\index{accreteDust@{accreteDust}!SG_Stardust@{SG\_\-Stardust}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void SG\_\-Stardust::accrete\-Dust (proto\-Planet $\ast$ {\em protoplanet})\hspace{0.3cm}{\tt  [protected]}}\label{class_s_g___stardust_b4}
+
+
+This function accrete the dust located on the protoplanet orbital path. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em protoplanet}]The protoplanet. \end{description}
+\end{Desc}
+\index{SG_Stardust@{SG\_\-Stardust}!collectDust@{collectDust}}
+\index{collectDust@{collectDust}!SG_Stardust@{SG\_\-Stardust}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void SG\_\-Stardust::collect\-Dust (proto\-Planet $\ast$ {\em protoplanet}, dust\_\-band $\ast$ {\em dustband})\hspace{0.3cm}{\tt  [protected]}}\label{class_s_g___stardust_b7}
+
+
+This function collects Dust from all the existing dustbands, starting at the given dustband. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em protoplanet}]The protoplanet that passes thru the dustbands, and grows. \item[{\em dustband}]The first dustband of the list. \end{description}
+\end{Desc}
+\index{SG_Stardust@{SG\_\-Stardust}!getCriticalMass@{getCriticalMass}}
+\index{getCriticalMass@{getCriticalMass}!SG_Stardust@{SG\_\-Stardust}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long double SG\_\-Stardust::get\-Critical\-Mass (proto\-Planet $\ast$ {\em protoplanet})\hspace{0.3cm}{\tt  [protected]}}\label{class_s_g___stardust_b3}
+
+
+This function returns the mass at which a planet at this orbit will begin to accrete gas and dust. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em protoplanet}]The protoplanet (orbit and eccentricity) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The critical mass of the protoplanet (unit = solar masses). \end{Desc}
+\index{SG_Stardust@{SG\_\-Stardust}!getInnerEffectLimit@{getInnerEffectLimit}}
+\index{getInnerEffectLimit@{getInnerEffectLimit}!SG_Stardust@{SG\_\-Stardust}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long double SG\_\-Stardust::get\-Inner\-Effect\-Limit (proto\-Planet $\ast$ {\em protoplanet})\hspace{0.3cm}{\tt  [protected]}}\label{class_s_g___stardust_b1}
+
+
+This function returns the inner orbit affected by this proto planet. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em protoplanet}]The protoplanet. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The inner effect orbit for this protoplanet (unit = AU). \end{Desc}
+\index{SG_Stardust@{SG\_\-Stardust}!getOuterEffectLimit@{getOuterEffectLimit}}
+\index{getOuterEffectLimit@{getOuterEffectLimit}!SG_Stardust@{SG\_\-Stardust}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long double SG\_\-Stardust::get\-Outer\-Effect\-Limit (proto\-Planet $\ast$ {\em protoplanet})\hspace{0.3cm}{\tt  [protected]}}\label{class_s_g___stardust_b2}
+
+
+This function returns the outer orbit affected by this proto planet. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em protoplanet}]The protoplanet. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The outer effect orbit for this protoplanet (unit = AU). \end{Desc}
+\index{SG_Stardust@{SG\_\-Stardust}!getPlanet@{getPlanet}}
+\index{getPlanet@{getPlanet}!SG_Stardust@{SG\_\-Stardust}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf SG\_\-Planet} $\ast$ SG\_\-Stardust::get\-Planet (int {\em index})}\label{class_s_g___stardust_a5}
+
+
+This function returns a planet (sorted by orbit radius). 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em index}]The index of the planet in the Planet Array (0..N). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The planet, or NULL if there is no planet with this index. \end{Desc}
+\index{SG_Stardust@{SG\_\-Stardust}!isDustAvailable@{isDustAvailable}}
+\index{isDustAvailable@{isDustAvailable}!SG_Stardust@{SG\_\-Stardust}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool SG\_\-Stardust::is\-Dust\-Available (long double {\em inside\_\-range}, long double {\em outside\_\-range})\hspace{0.3cm}{\tt  [protected]}}\label{class_s_g___stardust_b0}
+
+
+This function indicates if there is still some stellar dust in the specified orbital range. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em inside\_\-range}]The inner orbit of the area (unit=UA) \item[{\em outside\_\-range}]The outer orbit of the area (unit=UA) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]TRUE if there is still some dust in this area. \end{Desc}
+\index{SG_Stardust@{SG\_\-Stardust}!setDustDensityRatio@{setDustDensityRatio}}
+\index{setDustDensityRatio@{setDustDensityRatio}!SG_Stardust@{SG\_\-Stardust}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void SG\_\-Stardust::set\-Dust\-Density\-Ratio (long double {\em ratio} = {\tt 1})}\label{class_s_g___stardust_a3}
+
+
+This function changes the coefficient of density of the dust inthe cloud. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ratio}]The coefficient of density of dust is multiplied by this ratio. \end{description}
+\end{Desc}
+\index{SG_Stardust@{SG\_\-Stardust}!updateDustLanes@{updateDustLanes}}
+\index{updateDustLanes@{updateDustLanes}!SG_Stardust@{SG\_\-Stardust}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void SG\_\-Stardust::update\-Dust\-Lanes (proto\-Planet $\ast$ {\em protoplanet})\hspace{0.3cm}{\tt  [protected]}}\label{class_s_g___stardust_b5}
+
+
+This function updates the dustbands surrounding the star. 
+
+When a protoplanet passes thru the stellar dust, it creates a new band and takes dust and gas from it. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em protoplanet}]The protoplanet. The protoplanet has a band limited by its inner\-Effect and outer\-Effect, called the \char`\"{}protoplanet'band\char`\"{}. \end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+E:/sphinx/LFE/lib\_\-stargen/SG\_\-Stardust.h\item 
+E:/sphinx/LFE/lib\_\-stargen/SG\_\-Stardust.cpp\end{CompactItemize}

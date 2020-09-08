@@ -1,0 +1,113 @@
+\section{SG\_\-Solar\-System Class Reference}
+\label{class_s_g___solar_system}\index{SG_SolarSystem@{SG\_\-SolarSystem}}
+A Solar System (contains a primary star, several planets, and a dust cloud).  
+
+
+{\tt \#include $<$SG\_\-Solar\-System.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf SG\_\-Solar\-System} (long seed)\label{class_s_g___solar_system_a0}
+
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+{\bf $\sim$SG\_\-Solar\-System} ()\label{class_s_g___solar_system_a1}
+
+\begin{CompactList}\small\item\em Destructeur. \item\end{CompactList}\item 
+void {\bf set\-Seed} (long seed)\label{class_s_g___solar_system_a2}
+
+\begin{CompactList}\small\item\em Specify the Seed for the random numbers used for this generation. \item\end{CompactList}\item 
+void {\bf generate\-System} (SG\_\-String filename)
+\begin{CompactList}\small\item\em This function generate a planetary system around the primary star. \item\end{CompactList}\item 
+void {\bf generate\-Solar\-System} (SG\_\-String filename)
+\begin{CompactList}\small\item\em This function generate the planets of our solar System around the given star. \item\end{CompactList}\item 
+void {\bf set\-Star\-Mass} (long mass=1)
+\begin{CompactList}\small\item\em Set some data about the primary star: Mass. \item\end{CompactList}\item 
+void {\bf set\-Star\-Luminosity} (long luminosity=1)
+\begin{CompactList}\small\item\em Set some data about the primary star: Luminosity. \item\end{CompactList}\item 
+{\bf SG\_\-Star} $\ast$ {\bf get\-Star} ()\label{class_s_g___solar_system_a7}
+
+\begin{CompactList}\small\item\em This function return a pointer on the primary star of the solar system. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void {\bf calculate\-Planets} ()\label{class_s_g___solar_system_b0}
+
+\begin{CompactList}\small\item\em Generation of all planets of the system. \item\end{CompactList}\item 
+void {\bf write\-Planets} ()\label{class_s_g___solar_system_b1}
+
+\begin{CompactList}\small\item\em Write all planets of the system in a file. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+long {\bf m\-Seed}\label{class_s_g___solar_system_p0}
+
+\begin{CompactList}\small\item\em Seed pour les \'{e}l\'{e}ments al\'{e}atoires. \item\end{CompactList}\item 
+{\bf SG\_\-Star} $\ast$ {\bf m\-Sun}\label{class_s_g___solar_system_p1}
+
+\begin{CompactList}\small\item\em The central star of eh planetary system. \item\end{CompactList}\item 
+{\bf SG\_\-Stardust} $\ast$ {\bf m\-Stardust}\label{class_s_g___solar_system_p2}
+
+\begin{CompactList}\small\item\em The stardust cloud sourrounding the star. \item\end{CompactList}\item 
+SG\_\-String {\bf m\-Filename}\label{class_s_g___solar_system_p3}
+
+\begin{CompactList}\small\item\em The name of the file to generate. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A Solar System (contains a primary star, several planets, and a dust cloud). 
+
+Librairie de g\'{e}n\'{e}ration d'un syst\`{e}me plan\'{e}taire r\'{e}aliste \`{a} partir d'informations sur l'\'{e}toile primaire (cad centrale) du syst\`{e}me. 
+
+
+
+\subsection{Member Function Documentation}
+\index{SG_SolarSystem@{SG\_\-Solar\-System}!generateSolarSystem@{generateSolarSystem}}
+\index{generateSolarSystem@{generateSolarSystem}!SG_SolarSystem@{SG\_\-Solar\-System}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void SG\_\-Solar\-System::generate\-Solar\-System (SG\_\-String {\em filename})}\label{class_s_g___solar_system_a4}
+
+
+This function generate the planets of our solar System around the given star. 
+
+Creation of the 10 planets of the Sol-System \index{SG_SolarSystem@{SG\_\-Solar\-System}!generateSystem@{generateSystem}}
+\index{generateSystem@{generateSystem}!SG_SolarSystem@{SG\_\-Solar\-System}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void SG\_\-Solar\-System::generate\-System (SG\_\-String {\em filename})}\label{class_s_g___solar_system_a3}
+
+
+This function generate a planetary system around the primary star. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em filename}]The name of the file to generate (\char`\"{}.xml\char`\"{} or \char`\"{}.txt\char`\"{}) \end{description}
+\end{Desc}
+\index{SG_SolarSystem@{SG\_\-Solar\-System}!setStarLuminosity@{setStarLuminosity}}
+\index{setStarLuminosity@{setStarLuminosity}!SG_SolarSystem@{SG\_\-Solar\-System}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void SG\_\-Solar\-System::set\-Star\-Luminosity (long {\em luminosity} = {\tt 1})}\label{class_s_g___solar_system_a6}
+
+
+Set some data about the primary star: Luminosity. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em luminosity}]The luminosity of the star (unit = Solar Luminosity). The value RANDOM can also be used. If the data is not defined, the default value is the Sun luminosity (=1) \end{description}
+\end{Desc}
+\index{SG_SolarSystem@{SG\_\-Solar\-System}!setStarMass@{setStarMass}}
+\index{setStarMass@{setStarMass}!SG_SolarSystem@{SG\_\-Solar\-System}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void SG\_\-Solar\-System::set\-Star\-Mass (long {\em mass} = {\tt 1})}\label{class_s_g___solar_system_a5}
+
+
+Set some data about the primary star: Mass. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mass}]the mass of the star (unit = Solar Mass). The value RANDOM can also be used. If the data is not defined, the defalut value is the Sun mass (=1) \end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+E:/sphinx/LFE/lib\_\-stargen/SG\_\-Solar\-System.h\item 
+E:/sphinx/LFE/lib\_\-stargen/SG\_\-Solar\-System.cpp\end{CompactItemize}

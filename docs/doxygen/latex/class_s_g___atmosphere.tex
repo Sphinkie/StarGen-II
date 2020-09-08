@@ -1,0 +1,237 @@
+\section{SG\_\-Atmosphere Class Reference}
+\label{class_s_g___atmosphere}\index{SG_Atmosphere@{SG\_\-Atmosphere}}
+A planet's Atmosphere.  
+
+
+{\tt \#include $<$SG\_\-Atmosphere.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf SG\_\-Atmosphere} (void $\ast$my\-Planet)
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+{\bf $\sim$SG\_\-Atmosphere} ()\label{class_s_g___atmosphere_a1}
+
+\begin{CompactList}\small\item\em Destructor. \item\end{CompactList}\item 
+int {\bf calculate\-Atmosphere} ()
+\begin{CompactList}\small\item\em This function determines the precise composition of the atmosphere, and the proportion of the different gases in it. \item\end{CompactList}\item 
+int {\bf get\-Breathability} ()
+\begin{CompactList}\small\item\em This function determines if the atmosphere can be breathed or not. \item\end{CompactList}\item 
+SG\_\-String {\bf get\-Toxic\-Gas\-List} ()
+\begin{CompactList}\small\item\em This function returns the list of the toxic gas of the atmosphere. \item\end{CompactList}\item 
+SG\_\-String {\bf get\-Gas\-Name} (int rank, int state\-Mask=ALL)
+\begin{CompactList}\small\item\em This function returns the full name of a gas from the atmosphere. \item\end{CompactList}\item 
+SG\_\-String {\bf get\-Gas\-Symbol} (int rank, int state\-Mask=ALL)
+\begin{CompactList}\small\item\em This function returns the chemical symbol of a gas from the atmosphere. \item\end{CompactList}\item 
+{\bf SG\_\-Gas} $\ast$ {\bf get\-Gas} (int rank, int state\-Mask=ALL)
+\begin{CompactList}\small\item\em This function returns a gas in the atmosphere. \item\end{CompactList}\item 
+long double {\bf get\-Gas\-Ratio} (int rank)
+\begin{CompactList}\small\item\em This function returns the percentage of a gas in the atmosphere. \item\end{CompactList}\item 
+int {\bf get\-Gas\-State} (int rank)
+\begin{CompactList}\small\item\em This function returns the state of a gas from the atmosphere. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+int {\bf estimate\-Composition} ()
+\begin{CompactList}\small\item\em This function calculate a first approximation of the atmosphere composition. \item\end{CompactList}\item 
+void {\bf sort\-Gas\-Table} ()\label{class_s_g___atmosphere_b2}
+
+\begin{CompactList}\small\item\em This function sorts the array of gas, following the decreasing percentage. \item\end{CompactList}\item 
+void {\bf swap\-Gas} (int index1, int index2)\label{class_s_g___atmosphere_b3}
+
+\begin{CompactList}\small\item\em This function swap two gases in the gas array. \item\end{CompactList}\item 
+long double {\bf get\-Gas\-Amount} ({\bf SG\_\-Gas} $\ast$gaz)
+\begin{CompactList}\small\item\em Calculate the amount of a given gas in the atmosphere. \item\end{CompactList}\item 
+long double {\bf get\-Gas\-Pressure} ({\bf SG\_\-Gas} $\ast$gaz)
+\begin{CompactList}\small\item\em This function determines the proportion of a given gas in this atmosphere. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+void $\ast$ {\bf m\-Planet}\label{class_s_g___atmosphere_p0}
+
+\begin{CompactList}\small\item\em The planet which this atmosphere belongs. \item\end{CompactList}\item 
+long double {\bf m\-Total\-Amount}\label{class_s_g___atmosphere_p1}
+
+\begin{CompactList}\small\item\em Total amount of gases in the atmosphere. \item\end{CompactList}\item 
+long double {\bf m\-Total\-IPP}\label{class_s_g___atmosphere_p2}
+
+\begin{CompactList}\small\item\em Total pressure for the gases heavier than Nitrogen. \item\end{CompactList}\item 
+int {\bf m\-Gases}\label{class_s_g___atmosphere_p3}
+
+\begin{CompactList}\small\item\em The number of gases in the atmosphere. \item\end{CompactList}\item 
+{\bf SG\_\-Gas} $\ast$ {\bf m\-Gas\-List} [MAX\_\-GAZ]\label{class_s_g___atmosphere_p4}
+
+\begin{CompactList}\small\item\em The list of the gas of the atmosphere. \item\end{CompactList}\item 
+SG\_\-String {\bf m\-Poisoned\-By}\label{class_s_g___atmosphere_p5}
+
+\begin{CompactList}\small\item\em List of the toxic gas of the atmosphere. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A planet's Atmosphere. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{SG_Atmosphere@{SG\_\-Atmosphere}!SG_Atmosphere@{SG\_\-Atmosphere}}
+\index{SG_Atmosphere@{SG\_\-Atmosphere}!SG_Atmosphere@{SG\_\-Atmosphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}SG\_\-Atmosphere::SG\_\-Atmosphere (void $\ast$ {\em my\-Planet})}\label{class_s_g___atmosphere_a0}
+
+
+Constructor. 
+
+All the gas that can be present in at atmosphere are declared here. CAUTION: do not exceed MAX\_\-GAZ (or you should increase this constant).
+
+At-Nb Symbol At-Weight Melt Boil Density Abound-S Rea Max-IPP
+
+Metals (here or not ?) - TODO
+
+Complex gas : after reaction - TODO 
+
+\subsection{Member Function Documentation}
+\index{SG_Atmosphere@{SG\_\-Atmosphere}!calculateAtmosphere@{calculateAtmosphere}}
+\index{calculateAtmosphere@{calculateAtmosphere}!SG_Atmosphere@{SG\_\-Atmosphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int SG\_\-Atmosphere::calculate\-Atmosphere ()}\label{class_s_g___atmosphere_a2}
+
+
+This function determines the precise composition of the atmosphere, and the proportion of the different gases in it. 
+
+Note: The function estimate\-Atmosphere() should be called once before. \index{SG_Atmosphere@{SG\_\-Atmosphere}!estimateComposition@{estimateComposition}}
+\index{estimateComposition@{estimateComposition}!SG_Atmosphere@{SG\_\-Atmosphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int SG\_\-Atmosphere::estimate\-Composition ()\hspace{0.3cm}{\tt  [protected]}}\label{class_s_g___atmosphere_b0}
+
+
+This function calculate a first approximation of the atmosphere composition. 
+
+this function also updates the total quantity of gases in the atmosphere. \begin{Desc}
+\item[Returns:]The number of gases present in the atmosphere. \end{Desc}
+\begin{Desc}
+\item[See also:]{\bf calculate\-Atmosphere}{\rm (p.\,\pageref{class_s_g___atmosphere_a2})} \end{Desc}
+\index{SG_Atmosphere@{SG\_\-Atmosphere}!getBreathability@{getBreathability}}
+\index{getBreathability@{getBreathability}!SG_Atmosphere@{SG\_\-Atmosphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int SG\_\-Atmosphere::get\-Breathability ()}\label{class_s_g___atmosphere_a3}
+
+
+This function determines if the atmosphere can be breathed or not. 
+
+This function uses figures on the maximum inspired partial pressures of Oxygen, other atmospheric and traces gases. From pages 15,16,18 of Dole's \char`\"{}Habitable Planets for Man\char`\"{}. \begin{Desc}
+\item[Returns:]The value returned is one of the value defined in the .h file (NONE, BREATHABLE, UNBREATHABLE, STINKING, POISONOUS) \end{Desc}
+\index{SG_Atmosphere@{SG\_\-Atmosphere}!getGas@{getGas}}
+\index{getGas@{getGas}!SG_Atmosphere@{SG\_\-Atmosphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf SG\_\-Gas} $\ast$ SG\_\-Atmosphere::get\-Gas (int {\em rank}, int {\em state\-Mask} = {\tt ALL})}\label{class_s_g___atmosphere_a7}
+
+
+This function returns a gas in the atmosphere. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em rank}]The rank of the gas in the atmosphere (0= the gas with the highest ratio) \item[{\em state\-Mask}]The gas can be filtered according to its status (GAS, LIQUID, SOLID or ALL) It is also possible to use expressions, ie: SOLID$|$LIQUID. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]This gas (or NULL if not found). \end{Desc}
+\index{SG_Atmosphere@{SG\_\-Atmosphere}!getGasAmount@{getGasAmount}}
+\index{getGasAmount@{getGasAmount}!SG_Atmosphere@{SG\_\-Atmosphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long double SG\_\-Atmosphere::get\-Gas\-Amount ({\bf SG\_\-Gas} $\ast$ {\em gaz})\hspace{0.3cm}{\tt  [protected]}}\label{class_s_g___atmosphere_b4}
+
+
+Calculate the amount of a given gas in the atmosphere. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em gaz}]The gas to analyse. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The amount of this gas in the atmosphere. \end{Desc}
+\begin{Desc}
+\item[See also:]{\bf get\-Gas\-Pressure}{\rm (p.\,\pageref{class_s_g___atmosphere_b5})} \end{Desc}
+\index{SG_Atmosphere@{SG\_\-Atmosphere}!getGasName@{getGasName}}
+\index{getGasName@{getGasName}!SG_Atmosphere@{SG\_\-Atmosphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}SG\_\-String SG\_\-Atmosphere::get\-Gas\-Name (int {\em rank}, int {\em state\-Mask} = {\tt ALL})}\label{class_s_g___atmosphere_a5}
+
+
+This function returns the full name of a gas from the atmosphere. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em rank}]The rank of the gas in the atmosphere (0= the gas with the highest ratio) \item[{\em state\-Mask}]The gas can be filtered according to its status (GAS, LIQUID, SOLID or ALL) It is also possible to use expressions, ie: SOLID$|$LIQUID. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The full name of the gas. (or a blank string if there is no gas at this index). \end{Desc}
+\index{SG_Atmosphere@{SG\_\-Atmosphere}!getGasPressure@{getGasPressure}}
+\index{getGasPressure@{getGasPressure}!SG_Atmosphere@{SG\_\-Atmosphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long double SG\_\-Atmosphere::get\-Gas\-Pressure ({\bf SG\_\-Gas} $\ast$ {\em gaz})\hspace{0.3cm}{\tt  [protected]}}\label{class_s_g___atmosphere_b5}
+
+
+This function determines the proportion of a given gas in this atmosphere. 
+
+Note: The function {\bf get\-Gas\-Amount()}{\rm (p.\,\pageref{class_s_g___atmosphere_b4})} should be called once before. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em gaz}]The gas to evaluate. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The pressure due to this gas in the atmosphere (Unit = m\-B) \end{Desc}
+\begin{Desc}
+\item[See also:]{\bf get\-Gas\-Amount}{\rm (p.\,\pageref{class_s_g___atmosphere_b4})} \end{Desc}
+\index{SG_Atmosphere@{SG\_\-Atmosphere}!getGasRatio@{getGasRatio}}
+\index{getGasRatio@{getGasRatio}!SG_Atmosphere@{SG\_\-Atmosphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long double SG\_\-Atmosphere::get\-Gas\-Ratio (int {\em rank})}\label{class_s_g___atmosphere_a8}
+
+
+This function returns the percentage of a gas in the atmosphere. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em rank}]The rank of the gas in the atmosphere (0= the gas with the highest ratio) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The percentage of this gas in the atmosphere [0..1]. \end{Desc}
+\index{SG_Atmosphere@{SG\_\-Atmosphere}!getGasState@{getGasState}}
+\index{getGasState@{getGasState}!SG_Atmosphere@{SG\_\-Atmosphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int SG\_\-Atmosphere::get\-Gas\-State (int {\em rank})}\label{class_s_g___atmosphere_a9}
+
+
+This function returns the state of a gas from the atmosphere. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em rank}]The rank of the gas in the atmosphere (0= the gas with the highest ratio) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The state of the gas. Returned values are: GAS, LIQUID, SOLID (or 0 if there is no gas at this index). \end{Desc}
+\index{SG_Atmosphere@{SG\_\-Atmosphere}!getGasSymbol@{getGasSymbol}}
+\index{getGasSymbol@{getGasSymbol}!SG_Atmosphere@{SG\_\-Atmosphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}SG\_\-String SG\_\-Atmosphere::get\-Gas\-Symbol (int {\em rank}, int {\em state\-Mask} = {\tt ALL})}\label{class_s_g___atmosphere_a6}
+
+
+This function returns the chemical symbol of a gas from the atmosphere. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em rank}]The rank of the gas in the atmosphere (0= the gas with the highest ratio) \item[{\em state\-Mask}]The gas can be filtered according to its status (GAS, LIQUID, SOLID or ALL) It is also possible to use expressions, ie: SOLID$|$LIQUID. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The symbol of the gas. (or a blank string if there is no gas at this index). \end{Desc}
+\index{SG_Atmosphere@{SG\_\-Atmosphere}!getToxicGasList@{getToxicGasList}}
+\index{getToxicGasList@{getToxicGasList}!SG_Atmosphere@{SG\_\-Atmosphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}SG\_\-String SG\_\-Atmosphere::get\-Toxic\-Gas\-List ()}\label{class_s_g___atmosphere_a4}
+
+
+This function returns the list of the toxic gas of the atmosphere. 
+
+\begin{Desc}
+\item[Returns:]The return value is empty if the atmosphere is not poisonous. \end{Desc}
+\begin{Desc}
+\item[See also:]{\bf get\-Breathability}{\rm (p.\,\pageref{class_s_g___atmosphere_a3})} \end{Desc}
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+E:/sphinx/LFE/lib\_\-stargen/SG\_\-Atmosphere.h\item 
+E:/sphinx/LFE/lib\_\-stargen/SG\_\-Atmosphere.cpp\end{CompactItemize}

@@ -1,0 +1,482 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="accreteDust"><param name="Name" value="accreteDust"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html#b4"><param name="Name" value="SG_Stardust"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="addDustMass"><param name="Name" value="addDustMass"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#a10"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="addGasMass"><param name="Name" value="addGasMass"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#a11"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateAlbedo"><param name="Name" value="calculateAlbedo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b26"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateAtmosphere"><param name="Name" value="calculateAtmosphere"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#a2"><param name="Name" value="SG_Atmosphere"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateBoilingPoint"><param name="Name" value="calculateBoilingPoint"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b19"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateCloudFraction"><param name="Name" value="calculateCloudFraction"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b21"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateDayLength"><param name="Name" value="calculateDayLength"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b9"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateDensity"><param name="Name" value="calculateDensity"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b4"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateEcosphere"><param name="Name" value="calculateEcosphere"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#b1"><param name="Name" value="SG_Star"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateEscapeVelocity"><param name="Name" value="calculateEscapeVelocity"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b30"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateExoTemperature"><param name="Name" value="calculateExoTemperature"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b6"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateFaceLocking"><param name="Name" value="calculateFaceLocking"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b10"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateGasPlanet"><param name="Name" value="calculateGasPlanet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b0"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateGlobalClimate"><param name="Name" value="calculateGlobalClimate"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b15"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateGreehouseRiseTemp"><param name="Name" value="calculateGreehouseRiseTemp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b25"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateGreenhouseEffect"><param name="Name" value="calculateGreenhouseEffect"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b23"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateHydroFraction"><param name="Name" value="calculateHydroFraction"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b20"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateIceFraction"><param name="Name" value="calculateIceFraction"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b22"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateInclination"><param name="Name" value="calculateInclination"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b7"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateLife"><param name="Name" value="calculateLife"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#b2"><param name="Name" value="SG_Star"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateLuminosity"><param name="Name" value="calculateLuminosity"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#b0"><param name="Name" value="SG_Star"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateMetal"><param name="Name" value="calculateMetal"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b14"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateMinimalMoleculeWeight"><param name="Name" value="calculateMinimalMoleculeWeight"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b28"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateOpacity"><param name="Name" value="calculateOpacity"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b24"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateOrbitPeriod"><param name="Name" value="calculateOrbitPeriod"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b3"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculatePlanet"><param name="Name" value="calculatePlanet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#a2"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateRadius"><param name="Name" value="calculateRadius"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b5"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateSurfaceClimate"><param name="Name" value="calculateSurfaceClimate"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b17"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateSurfaceGravity"><param name="Name" value="calculateSurfaceGravity"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b11"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateSurfacePressure"><param name="Name" value="calculateSurfacePressure"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b27"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateType"><param name="Name" value="calculateType"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b8"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="calculateVolatilGasRatio"><param name="Name" value="calculateVolatilGasRatio"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b33"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="collectDust"><param name="Name" value="collectDust"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html#b7"><param name="Name" value="SG_Stardust"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="estimateComposition"><param name="Name" value="estimateComposition"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#b0"><param name="Name" value="SG_Atmosphere"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="estimateDensity"><param name="Name" value="estimateDensity"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b2"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="estimateMinimalMoleculeWeight"><param name="Name" value="estimateMinimalMoleculeWeight"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b29"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="generateSolarSystem"><param name="Name" value="generateSolarSystem"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___solar_system.html#a4"><param name="Name" value="SG_SolarSystem"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="generateSystem"><param name="Name" value="generateSystem"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___solar_system.html#a3"><param name="Name" value="SG_SolarSystem"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getAbound"><param name="Name" value="getAbound"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a2"><param name="Name" value="SG_Gas"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getBodePlanetOrbit"><param name="Name" value="getBodePlanetOrbit"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a12"><param name="Name" value="SG_Star"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getBodyTemperature"><param name="Name" value="getBodyTemperature"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a9"><param name="Name" value="SG_Star"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getBoilingPoint"><param name="Name" value="getBoilingPoint"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a3"><param name="Name" value="SG_Gas"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getBreathability"><param name="Name" value="getBreathability"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#a3"><param name="Name" value="SG_Atmosphere"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getCriticalMass"><param name="Name" value="getCriticalMass"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html#b3"><param name="Name" value="SG_Stardust"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getEffectiveTemperature"><param name="Name" value="getEffectiveTemperature"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a10"><param name="Name" value="SG_Star"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getFarthestPlanetOrbit"><param name="Name" value="getFarthestPlanetOrbit"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a13"><param name="Name" value="SG_Star"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getFract"><param name="Name" value="getFract"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a10"><param name="Name" value="SG_Gas"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getGas"><param name="Name" value="getGas"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#a7"><param name="Name" value="SG_Atmosphere"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getGasAmount"><param name="Name" value="getGasAmount"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#b4"><param name="Name" value="SG_Atmosphere"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getGasColour"><param name="Name" value="getGasColour"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a24"><param name="Name" value="SG_Gas"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getGasLife"><param name="Name" value="getGasLife"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b32"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getGasName"><param name="Name" value="getGasName"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#a5"><param name="Name" value="SG_Atmosphere"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getGasPressure"><param name="Name" value="getGasPressure"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#b5"><param name="Name" value="SG_Atmosphere"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getGasRatio"><param name="Name" value="getGasRatio"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#a8"><param name="Name" value="SG_Atmosphere"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getGasState"><param name="Name" value="getGasState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#a9"><param name="Name" value="SG_Atmosphere"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getGasSymbol"><param name="Name" value="getGasSymbol"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#a6"><param name="Name" value="SG_Atmosphere"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getInnerEffectLimit"><param name="Name" value="getInnerEffectLimit"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html#b1"><param name="Name" value="SG_Stardust"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getInspiredPartialPressure"><param name="Name" value="getInspiredPartialPressure"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a18"><param name="Name" value="SG_Gas"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getKothariRadius"><param name="Name" value="getKothariRadius"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b12"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getMaxIPP"><param name="Name" value="getMaxIPP"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a17"><param name="Name" value="SG_Gas"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getMeltingPoint"><param name="Name" value="getMeltingPoint"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a4"><param name="Name" value="SG_Gas"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getNearestPlanetOrbit"><param name="Name" value="getNearestPlanetOrbit"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a11"><param name="Name" value="SG_Star"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getOrbitalZone"><param name="Name" value="getOrbitalZone"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b13"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getOuterEffectLimit"><param name="Name" value="getOuterEffectLimit"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html#b2"><param name="Name" value="SG_Stardust"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getPartialPercentage"><param name="Name" value="getPartialPercentage"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a22"><param name="Name" value="SG_Gas"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getPlanet"><param name="Name" value="getPlanet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html#a5"><param name="Name" value="SG_Stardust"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getPres2"><param name="Name" value="getPres2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#b0"><param name="Name" value="SG_Gas"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getPVRMS"><param name="Name" value="getPVRMS"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a9"><param name="Name" value="SG_Gas"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getReact"><param name="Name" value="getReact"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a8"><param name="Name" value="SG_Gas"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getRMSvelocity"><param name="Name" value="getRMSvelocity"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#b1"><param name="Name" value="SG_Gas"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b31"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getState"><param name="Name" value="getState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a7"><param name="Name" value="SG_Gas"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getStellarDustLimit"><param name="Name" value="getStellarDustLimit"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a14"><param name="Name" value="SG_Star"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="getToxicGasList"><param name="Name" value="getToxicGasList"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#a4"><param name="Name" value="SG_Atmosphere"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="isDustAvailable"><param name="Name" value="isDustAvailable"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html#b0"><param name="Name" value="SG_Stardust"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="setAge"><param name="Name" value="setAge"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a7"><param name="Name" value="SG_Star"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="setAxialTilt"><param name="Name" value="setAxialTilt"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#a8"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="setDustDensityRatio"><param name="Name" value="setDustDensityRatio"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html#a3"><param name="Name" value="SG_Stardust"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="setEcosphere"><param name="Name" value="setEcosphere"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a5"><param name="Name" value="SG_Star"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="setGasColour"><param name="Name" value="setGasColour"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a23"><param name="Name" value="SG_Gas"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="setGasGiant"><param name="Name" value="setGasGiant"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#a12"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="setLife"><param name="Name" value="setLife"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a6"><param name="Name" value="SG_Star"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="setLuminosity"><param name="Name" value="setLuminosity"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a4"><param name="Name" value="SG_Star"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="setMagnitude"><param name="Name" value="setMagnitude"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a8"><param name="Name" value="SG_Star"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="setMass"><param name="Name" value="setMass"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#a9"><param name="Name" value="SG_Planet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a3"><param name="Name" value="SG_Star"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="setPartialPercentage"><param name="Name" value="setPartialPercentage"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a21"><param name="Name" value="SG_Gas"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="setPlanetNumber"><param name="Name" value="setPlanetNumber"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#a13"><param name="Name" value="SG_Planet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="setStarLuminosity"><param name="Name" value="setStarLuminosity"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___solar_system.html#a6"><param name="Name" value="SG_SolarSystem"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="setStarMass"><param name="Name" value="setStarMass"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___solar_system.html#a5"><param name="Name" value="SG_SolarSystem"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html"><param name="Name" value="SG_Atmosphere"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#a2"><param name="Name" value="calculateAtmosphere"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#b0"><param name="Name" value="estimateComposition"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#a3"><param name="Name" value="getBreathability"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#a7"><param name="Name" value="getGas"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#b4"><param name="Name" value="getGasAmount"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#a5"><param name="Name" value="getGasName"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#b5"><param name="Name" value="getGasPressure"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#a8"><param name="Name" value="getGasRatio"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#a9"><param name="Name" value="getGasState"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#a6"><param name="Name" value="getGasSymbol"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#a4"><param name="Name" value="getToxicGasList"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___atmosphere.html#a0"><param name="Name" value="SG_Atmosphere"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html"><param name="Name" value="SG_Gas"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a2"><param name="Name" value="getAbound"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a3"><param name="Name" value="getBoilingPoint"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a10"><param name="Name" value="getFract"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a24"><param name="Name" value="getGasColour"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a18"><param name="Name" value="getInspiredPartialPressure"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a17"><param name="Name" value="getMaxIPP"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a4"><param name="Name" value="getMeltingPoint"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a22"><param name="Name" value="getPartialPercentage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#b0"><param name="Name" value="getPres2"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a9"><param name="Name" value="getPVRMS"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a8"><param name="Name" value="getReact"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#b1"><param name="Name" value="getRMSvelocity"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a7"><param name="Name" value="getState"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a23"><param name="Name" value="setGasColour"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a21"><param name="Name" value="setPartialPercentage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___gas.html#a0"><param name="Name" value="SG_Gas"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html"><param name="Name" value="SG_Planet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#a10"><param name="Name" value="addDustMass"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#a11"><param name="Name" value="addGasMass"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b26"><param name="Name" value="calculateAlbedo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b19"><param name="Name" value="calculateBoilingPoint"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b21"><param name="Name" value="calculateCloudFraction"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b9"><param name="Name" value="calculateDayLength"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b4"><param name="Name" value="calculateDensity"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b30"><param name="Name" value="calculateEscapeVelocity"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b6"><param name="Name" value="calculateExoTemperature"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b10"><param name="Name" value="calculateFaceLocking"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b0"><param name="Name" value="calculateGasPlanet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b15"><param name="Name" value="calculateGlobalClimate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b25"><param name="Name" value="calculateGreehouseRiseTemp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b23"><param name="Name" value="calculateGreenhouseEffect"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b20"><param name="Name" value="calculateHydroFraction"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b22"><param name="Name" value="calculateIceFraction"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b7"><param name="Name" value="calculateInclination"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b14"><param name="Name" value="calculateMetal"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b28"><param name="Name" value="calculateMinimalMoleculeWeight"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b24"><param name="Name" value="calculateOpacity"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b3"><param name="Name" value="calculateOrbitPeriod"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#a2"><param name="Name" value="calculatePlanet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b5"><param name="Name" value="calculateRadius"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b17"><param name="Name" value="calculateSurfaceClimate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b11"><param name="Name" value="calculateSurfaceGravity"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b27"><param name="Name" value="calculateSurfacePressure"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b8"><param name="Name" value="calculateType"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b33"><param name="Name" value="calculateVolatilGasRatio"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b2"><param name="Name" value="estimateDensity"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b29"><param name="Name" value="estimateMinimalMoleculeWeight"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b32"><param name="Name" value="getGasLife"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b12"><param name="Name" value="getKothariRadius"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b13"><param name="Name" value="getOrbitalZone"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#b31"><param name="Name" value="getRMSvelocity"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#a8"><param name="Name" value="setAxialTilt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#a12"><param name="Name" value="setGasGiant"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#a9"><param name="Name" value="setMass"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___planet.html#a13"><param name="Name" value="setPlanetNumber"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___solar_system.html"><param name="Name" value="SG_SolarSystem"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___solar_system.html#a4"><param name="Name" value="generateSolarSystem"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___solar_system.html#a3"><param name="Name" value="generateSystem"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___solar_system.html#a6"><param name="Name" value="setStarLuminosity"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___solar_system.html#a5"><param name="Name" value="setStarMass"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html"><param name="Name" value="SG_Star"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#b1"><param name="Name" value="calculateEcosphere"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#b2"><param name="Name" value="calculateLife"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#b0"><param name="Name" value="calculateLuminosity"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a12"><param name="Name" value="getBodePlanetOrbit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a9"><param name="Name" value="getBodyTemperature"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a10"><param name="Name" value="getEffectiveTemperature"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a13"><param name="Name" value="getFarthestPlanetOrbit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a11"><param name="Name" value="getNearestPlanetOrbit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a14"><param name="Name" value="getStellarDustLimit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a7"><param name="Name" value="setAge"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a5"><param name="Name" value="setEcosphere"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a6"><param name="Name" value="setLife"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a4"><param name="Name" value="setLuminosity"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a8"><param name="Name" value="setMagnitude"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a3"><param name="Name" value="setMass"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___star.html#a0"><param name="Name" value="SG_Star"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html"><param name="Name" value="SG_Stardust"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html#b4"><param name="Name" value="accreteDust"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html#b7"><param name="Name" value="collectDust"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html#b3"><param name="Name" value="getCriticalMass"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html#b1"><param name="Name" value="getInnerEffectLimit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html#b2"><param name="Name" value="getOuterEffectLimit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html#a5"><param name="Name" value="getPlanet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html#b0"><param name="Name" value="isDustAvailable"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html#a3"><param name="Name" value="setDustDensityRatio"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html#a0"><param name="Name" value="SG_Stardust"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html#b5"><param name="Name" value="updateDustLanes"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="updateDustLanes"><param name="Name" value="updateDustLanes"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_g___stardust.html#b5"><param name="Name" value="SG_Stardust"></OBJECT>
+</UL>
