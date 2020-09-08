@@ -12,7 +12,7 @@ HTML format can easily be added, but not present in this version.
 CELESTIA format is not present in this version.  
 Version 2 does not contain a executable: It is a library. Next version will contain an executable.  
 The String type used is not standard (sorry) so you may have problem to compile the library.  
-The solution is that you edit `SG_File.cpp` and remove the <i>#include "ogre.h"</i> and define the `CString` according to your libraries.
+The solution is that you edit `SG_File.cpp` and remove the `#include "ogre.h"` and define the `CString` according to your libraries.
 
 ----
 
