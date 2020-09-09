@@ -12,7 +12,7 @@
 /*----------------------------------------------------------------------*/
 /// Constructor
 /*----------------------------------------------------------------------*/
-SG_File::SG_File(SG_String filename, long seed)
+SG_File::SG_File(std::string filename, long seed)
 {
 using namespace std;
 
@@ -143,14 +143,14 @@ void SG_File::writePlanet(SG_Planet* planet)
 	addValue("rock",    !planet->mGas_planet);
 
 	subSection();
-	SG_String state_phrase[5] = {"", "solid", "liquid", "", "gas"};
+    std::string state_phrase[5] = {"", "solid", "liquid", "", "gas"};
 	for (int g=0; g<MAX_GAZ; g++)
 	{
 		SG_Gas* curr_gas = planet->mAtmosphere->getGas(g,SOLID);
 		if ((curr_gas) && (curr_gas->getWeight()>planet->mMolec_weight)) 
 		{
 			addSection("molecule");
-			SG_String symbol = planet->mAtmosphere->getGasSymbol(g);
+            std::string symbol = planet->mAtmosphere->getGasSymbol(g);
 			addValue("symbol", symbol, state_phrase[planet->mAtmosphere->getGasState(g)]);
 			closeSection();
 		}

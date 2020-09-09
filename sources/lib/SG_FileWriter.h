@@ -33,7 +33,7 @@ class SG_FileWriter
 {
 	public:
 
-		SG_FileWriter(SG_String filename, long seed, int format);
+        SG_FileWriter(std::string  filename, long seed, int format);
 		virtual ~SG_FileWriter();
 		void writeStarDescription(SG_Star* star);
 		void writePlanetDescription(SG_Planet* planet);

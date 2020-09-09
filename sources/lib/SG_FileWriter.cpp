@@ -12,7 +12,7 @@
 /*----------------------------------------------------------------------*/
 /// Constructor
 /*----------------------------------------------------------------------*/
-SG_FileWriter::SG_FileWriter(SG_String filename, long seed, int format)
+SG_FileWriter::SG_FileWriter(std::string filename, long seed, int format)
 {
 	mFormat = format;
 

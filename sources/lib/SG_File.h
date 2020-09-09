@@ -26,7 +26,7 @@ class SG_File
 {
 	public:
 
-		SG_File(SG_String filename, long seed);
+        SG_File(std::string  filename, long seed);
 		virtual ~SG_File();
 		void writeStarDescription(SG_Star* star);
 		void writePlanetDescription(SG_Planet* planet);
@@ -44,14 +44,14 @@ class SG_File
 		long        mSeed;
 
 		// This functions must be implemented in the derived classes
-		virtual void addValue     (SG_String name, bool value) =0;
-		virtual void addValue     (SG_String name, char* value,       SG_String comment="") =0;
-		virtual void addValue     (SG_String name, SG_String value,     SG_String comment="") =0;
-		virtual void addValue     (SG_String name, long double value, SG_String comment="") =0;
-		virtual void addIntValue  (SG_String name, long double value, SG_String comment="") =0;
-		virtual void addPercentage(SG_String name, long double value) =0;
-		virtual void addSection   (SG_String name) =0;
-		virtual void closeSection (SG_String name="") =0;
+        virtual void addValue     (std::string  name, bool value) =0;
+        virtual void addValue     (std::string  name, char* value,        std::string  comment="") =0;
+        virtual void addValue     (std::string  name, std::string  value, std::string  comment="") =0;
+        virtual void addValue     (std::string  name, long double value,  std::string  comment="") =0;
+        virtual void addIntValue  (std::string  name, long double value,  std::string  comment="") =0;
+        virtual void addPercentage(std::string  name, long double value) =0;
+        virtual void addSection   (std::string  name) =0;
+        virtual void closeSection (std::string  name="") =0;
 		virtual void subSection   () =0;
 		virtual void addLine      () =0;
 

@@ -299,7 +299,7 @@ It is also possible to use expressions, ie: SOLID|LIQUID.
 @return The full name of the gas. (or a blank string if there is no gas at this index).
 */
 /*--------------------------------------------------------------------------*/
-SG_String SG_Atmosphere::getGasName(int rank, int stateMask)
+std::string SG_Atmosphere::getGasName(int rank, int stateMask)
 {
 	SG_Gas* gas  = mGasList[rank];
 	if (!gas) return "";
@@ -321,7 +321,7 @@ It is also possible to use expressions, ie: SOLID|LIQUID.
 @return The symbol of the gas. (or a blank string if there is no gas at this index).
 */
 /*--------------------------------------------------------------------------*/
-SG_String SG_Atmosphere::getGasSymbol(int rank, int stateMask)
+std::string SG_Atmosphere::getGasSymbol(int rank, int stateMask)
 {
 	SG_Gas* gas  = mGasList[rank];
 	if (!gas) return "";

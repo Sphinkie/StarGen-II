@@ -7,7 +7,7 @@
 
 #include "SG_Stardust.h"
 #include "SG_Utils.h"
-#include "SG_const.h"
+#include "SG_Const.h"
 
 /* ------------------------------------------------------------------------- */
 /// Constructor.

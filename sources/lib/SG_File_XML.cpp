@@ -9,7 +9,7 @@
 /*----------------------------------------------------------------------*/
 /// Constructor
 /*----------------------------------------------------------------------*/
-SG_File_XML::SG_File_XML(SG_String filename, long seed) : SG_File(filename,seed)
+SG_File_XML::SG_File_XML(std::string filename, long seed) : SG_File(filename,seed)
 {}
 
 /*----------------------------------------------------------------------*/
@@ -23,7 +23,7 @@ SG_File_XML::~SG_File_XML()
 /*----------------------------------------------------------------------*/
 /// Write a data in the file.
 /*----------------------------------------------------------------------*/
-void SG_File_XML::addValue(SG_String name, long double value, SG_String comment)
+void SG_File_XML::addValue(std::string name, long double value, std::string comment)
 {
 	mOutputFile << name << "='" << ITOS(value) << "' ";
 }
@@ -31,7 +31,7 @@ void SG_File_XML::addValue(SG_String name, long double value, SG_String comment)
 /*----------------------------------------------------------------------*/
 /// Write a data in the file (converted to integer)
 /*----------------------------------------------------------------------*/
-void SG_File_XML::addIntValue(SG_String name, long double value, SG_String comment)
+void SG_File_XML::addIntValue(std::string name, long double value, std::string comment)
 {
 	int intvalue = (int)(value);
 	mOutputFile << name << "='" << ITOA(intvalue) << "' ";
@@ -40,7 +40,7 @@ void SG_File_XML::addIntValue(SG_String name, long double value, SG_String comme
 /*----------------------------------------------------------------------*/
 /// Write a data in the file
 /*----------------------------------------------------------------------*/
-void SG_File_XML::addValue(SG_String name, bool value)
+void SG_File_XML::addValue(std::string name, bool value)
 {
 	mOutputFile << name << "='" << ITOA(value) << "' ";
 }
@@ -48,7 +48,7 @@ void SG_File_XML::addValue(SG_String name, bool value)
 /*----------------------------------------------------------------------*/
 /// Write a data in the file
 /*----------------------------------------------------------------------*/
-void SG_File_XML::addPercentage(SG_String name, long double value)
+void SG_File_XML::addPercentage(std::string name, long double value)
 {
 	long double percentage = int(value*1000);
 	percentage /= 10;
@@ -58,7 +58,7 @@ void SG_File_XML::addPercentage(SG_String name, long double value)
 /*----------------------------------------------------------------------*/
 /// Write a data in the file
 /*----------------------------------------------------------------------*/
-void SG_File_XML::addValue(SG_String name, char* value, SG_String comment)
+void SG_File_XML::addValue(std::string name, char* value, std::string comment)
 {
 	mOutputFile << name << "='" << value << "' ";
 }
@@ -66,7 +66,7 @@ void SG_File_XML::addValue(SG_String name, char* value, SG_String comment)
 /*----------------------------------------------------------------------*/
 /// Write a data in the file
 /*----------------------------------------------------------------------*/
-void SG_File_XML::addValue(SG_String name, SG_String value, SG_String comment)
+void SG_File_XML::addValue(std::string name, std::string value, std::string comment)
 {
 	mOutputFile << name << "='" << value << "' ";
 }
@@ -74,7 +74,7 @@ void SG_File_XML::addValue(SG_String name, SG_String value, SG_String comment)
 /*----------------------------------------------------------------------*/
 /// Add a section header in the file
 /*----------------------------------------------------------------------*/
-void SG_File_XML::addSection(SG_String name)
+void SG_File_XML::addSection(std::string name)
 {
 	mOutputFile << "<" << name << " ";
 }
@@ -82,7 +82,7 @@ void SG_File_XML::addSection(SG_String name)
 /*----------------------------------------------------------------------*/
 /// Add a section ender in the file
 /*----------------------------------------------------------------------*/
-void SG_File_XML::closeSection(SG_String name)
+void SG_File_XML::closeSection(std::string name)
 {
 	if (name!="") mOutputFile << "</" << name << "> \n";
 	else          mOutputFile << "/>\n";

@@ -31,9 +31,9 @@ class SG_Atmosphere
 		~SG_Atmosphere();
 		int         calculateAtmosphere();
 		int         getBreathability();
-		SG_String   getToxicGasList();
-		SG_String   getGasName(int rank, int stateMask = ALL);
-		SG_String   getGasSymbol(int rank, int stateMask = ALL);
+        std::string getToxicGasList();
+        std::string getGasName(int rank, int stateMask = ALL);
+        std::string getGasSymbol(int rank, int stateMask = ALL);
 		SG_Gas*     getGas(int rank, int stateMask = ALL);
 		long double getGasRatio(int rank);
 		int         getGasState(int rank);
@@ -52,7 +52,7 @@ class SG_Atmosphere
 		long double mTotalIPP;          ///< Total pressure for the gases heavier than Nitrogen.
 		int         mGases;             ///< The number of gases in the atmosphere.
 		SG_Gas*     mGasList[MAX_GAZ];  ///< The list of the gas of the atmosphere.
-		SG_String   mPoisonedBy;        ///< List of the toxic gas of the atmosphere. 
+        std::string mPoisonedBy;        ///< List of the toxic gas of the atmosphere.
 };
 
 

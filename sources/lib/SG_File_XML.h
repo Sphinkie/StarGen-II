@@ -20,19 +20,19 @@ class SG_File_XML : public SG_File
 {
 	public:
 
-		SG_File_XML(SG_String filename, long seed);
+        SG_File_XML(std::string  filename, long seed);
 		~SG_File_XML();
 
 	protected:
 
-		void addValue     (SG_String name, bool value);
-		void addValue     (SG_String name, char* value,       SG_String comment);
-		void addValue     (SG_String name, SG_String value,     SG_String comment);
-		void addValue     (SG_String name, long double value, SG_String comment);
-		void addIntValue  (SG_String name, long double value, SG_String comment);
-		void addPercentage(SG_String name, long double value);
-		void addSection   (SG_String name);
-		void closeSection (SG_String name);
+        void addValue     (std::string  name, bool value);
+        void addValue     (std::string  name, char* value,        std::string  comment);
+        void addValue     (std::string  name, std::string  value, std::string  comment);
+        void addValue     (std::string  name, long double value,  std::string  comment);
+        void addIntValue  (std::string  name, long double value,  std::string  comment);
+        void addPercentage(std::string  name, long double value);
+        void addSection   (std::string  name);
+        void closeSection (std::string  name);
 		void subSection   ();
 		void addLine      ();
 };

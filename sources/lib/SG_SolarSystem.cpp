@@ -98,7 +98,7 @@ SG_Star* SG_SolarSystem::getStar()
 @param filename The name of the file to generate (".xml" or ".txt")
 */
 /* ------------------------------------------------------------------------- */
-void SG_SolarSystem::generateSystem(SG_String filename)
+void SG_SolarSystem::generateSystem(std::string filename)
 {
 	mFilename = filename;
 
@@ -181,8 +181,8 @@ void SG_SolarSystem::writePlanets()
 {
 	int format;
 	// Analyse the file extension to determine the desired format
-	if      (mFilename.find(".xml",1)!=SG_String::npos) format=SG_XML;
-	else if (mFilename.find(".txt",1)!=SG_String::npos) format=SG_TXT;
+    if      (mFilename.find(".xml",1)!=std::string::npos) format=SG_XML;
+    else if (mFilename.find(".txt",1)!=std::string::npos) format=SG_TXT;
 
 	SG_FileWriter DescFile(mFilename, mSeed, format);
 	// Write the description of the star in the file
@@ -205,7 +205,7 @@ void SG_SolarSystem::writePlanets()
 /* ------------------------------------------------------------------------- */
 /// This function generate the planets of our solar System around the given star.
 /* ------------------------------------------------------------------------- */
-void SG_SolarSystem::generateSolarSystem(SG_String filename)
+void SG_SolarSystem::generateSolarSystem(std::string filename)
 {
 	mFilename = filename;
 	SG_Utils::writeLog("Recreating our Solar System :");
@@ -277,8 +277,8 @@ void SG_SolarSystem::generateSolarSystem(SG_String filename)
 	// Write the data in a file.
 	int format;
 	// Analyse the file extension to determine the desired format
-	if      (mFilename.find(".xml",1)!=SG_String::npos) format=SG_XML;
-	else if (mFilename.find(".txt",1)!=SG_String::npos) format=SG_TXT;
+    if      (mFilename.find(".xml",1)!=std::string::npos) format=SG_XML;
+    else if (mFilename.find(".txt",1)!=std::string::npos) format=SG_TXT;
 
 	SG_FileWriter DescFile(mFilename, mSeed, format);
 	DescFile.writeStarDescription(mSun);

@@ -24,10 +24,10 @@
 @param Name          The full name of the gas.
 */
 /* ------------------------------------------------------------------------- */
-SG_Gas::SG_Gas(	int AtomicNumber, SG_String Symbol, 
+SG_Gas::SG_Gas(	int AtomicNumber, std::string Symbol,
                 long double AtomicWeight, long double MeltPoint, long double BoilingPoint, 
                 long double	Density,      long double Abunds, 
-                long double Reactivity,   long double Toxicity,  SG_String Name)
+                long double Reactivity,   long double Toxicity,  std::string Name)
 {
 	// Gas description
 	mNum        = AtomicNumber;
@@ -294,7 +294,7 @@ long double SG_Gas::getAmount()
 /* ------------------------------------------------------------------------- */
 /// This function return the chemical symbol of the gas.
 /* ------------------------------------------------------------------------- */
-SG_String SG_Gas::getSymbol()
+std::string SG_Gas::getSymbol()
 {
 	return mSymbol;
 }
@@ -322,7 +322,7 @@ bool SG_Gas::isToxic(long double surf_pressure)
 /* ------------------------------------------------------------------------- */
 /// This function returns the name of the gas.
 /* ------------------------------------------------------------------------- */
-SG_String SG_Gas::getName()
+std::string SG_Gas::getName()
 {
 	return mName;
 }

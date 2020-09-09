@@ -28,10 +28,10 @@ class SG_Gas
 		typedef struct SG_colour{double r; double g; double b; double a; };
 
 	public:
-		SG_Gas(	int AtomicNumber, SG_String Symbol, 
+        SG_Gas(	int AtomicNumber, std::string  Symbol,
 		        long double AtomicWeight, long double MeltPoint, long double BoilingPoint, 
 		        long double	Density,      long double Abunds, 
-		        long double Reactivity,   long double Max_ipp, SG_String Name);
+                long double Reactivity,   long double Max_ipp, std::string  Name);
 		~SG_Gas();
 
 		long double getAbound();
@@ -48,8 +48,8 @@ class SG_Gas
 		long double getAmount();
 		long double getWeight();
 		int         getAtomicNumber();
-		SG_String   getSymbol();
-		SG_String   getName();
+        std::string    getSymbol();
+        std::string    getName();
 		long double getMaxIPP();
 		long double getInspiredPartialPressure(long double surf_pressure);
 		void        setPartialPressure(long double Partial_pressure);
@@ -64,8 +64,8 @@ class SG_Gas
 		long double getPres2(long double temperature, long double pressure, long double years);
 		long double getRMSvelocity(long double temperature);
 
-		SG_String   mName;     ///< Name of the gas molecule.
-		SG_String   mSymbol;   ///< Chemical Symbol of the Gas.
+        std::string    mName;     ///< Name of the gas molecule.
+        std::string    mSymbol;   ///< Chemical Symbol of the Gas.
 		int         mNum;      ///< Atomic Number (AN).
 		long double mWeight;   ///< Atomic Weight.
 		long double mMelt;     ///< Fusion Point of the molecule (under 1 bar).

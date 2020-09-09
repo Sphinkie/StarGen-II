@@ -31,8 +31,8 @@ class SG_SolarSystem
 		SG_SolarSystem(long seed);
 		~SG_SolarSystem();
 		void setSeed(long seed);
-		void generateSystem(SG_String filename);
-		void generateSolarSystem(SG_String filename);
+        void generateSystem(std::string  filename);
+        void generateSolarSystem(std::string  filename);
 		void setStarMass(long mass =1);
 		void setStarLuminosity(long luminosity =1);
 		SG_Star* getStar();
@@ -44,7 +44,7 @@ class SG_SolarSystem
 		long         mSeed;             ///< Seed pour les éléments aléatoires
 		SG_Star*     mSun;              ///< The central star of eh planetary system
 		SG_Stardust* mStardust;         ///< The stardust cloud sourrounding the star
-		SG_String    mFilename;         ///< The name of the file to generate
+        std::string     mFilename;      ///< The name of the file to generate
 };
 
 #endif

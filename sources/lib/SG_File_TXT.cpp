@@ -9,7 +9,7 @@
 /*----------------------------------------------------------------------*/
 /// Constructor
 /*----------------------------------------------------------------------*/
-SG_File_TXT::SG_File_TXT(SG_String filename, long seed) : SG_File(filename,seed)
+SG_File_TXT::SG_File_TXT(std::string filename, long seed) : SG_File(filename,seed)
 {}
 
 /*----------------------------------------------------------------------*/
@@ -23,7 +23,7 @@ SG_File_TXT::~SG_File_TXT()
 /*----------------------------------------------------------------------*/
 /// Write a data in the file
 /*----------------------------------------------------------------------*/
-void SG_File_TXT::addValue(SG_String name, long double value, SG_String comment)
+void SG_File_TXT::addValue(std::string name, long double value, std::string comment)
 {
 	mOutputFile << "  " << name << " = " << ITOS(value) ;
 	if (comment!="") mOutputFile << " (" << comment << ")";
@@ -33,7 +33,7 @@ void SG_File_TXT::addValue(SG_String name, long double value, SG_String comment)
 /*----------------------------------------------------------------------*/
 /// Write a data in the file (converted to integer)
 /*----------------------------------------------------------------------*/
-void SG_File_TXT::addIntValue(SG_String name, long double value, SG_String comment)
+void SG_File_TXT::addIntValue(std::string name, long double value, std::string comment)
 {
 	int intvalue = (int)(value);
 	mOutputFile << "  " << name << " = " << ITOA(intvalue) ;
@@ -44,7 +44,7 @@ void SG_File_TXT::addIntValue(SG_String name, long double value, SG_String comme
 /*----------------------------------------------------------------------*/
 /// Write a data in the file
 /*----------------------------------------------------------------------*/
-void SG_File_TXT::addValue(SG_String name, bool value)
+void SG_File_TXT::addValue(std::string name, bool value)
 {
 	mOutputFile << "  " << name << " = " << ITOA(value) << "\n";
 }
@@ -62,7 +62,7 @@ void SG_File_TXT::addPercentage(SG_String name, long double value)
 /*----------------------------------------------------------------------*/
 /// Write a data in the file
 /*----------------------------------------------------------------------*/
-void SG_File_TXT::addValue(SG_String name, char* value, SG_String comment)
+void SG_File_TXT::addValue(std::string name, char* value, std::string comment)
 {
 	mOutputFile << "  " << name << " = " << value;
 	if (comment!="") mOutputFile << " (" << comment << ")";
@@ -72,7 +72,7 @@ void SG_File_TXT::addValue(SG_String name, char* value, SG_String comment)
 /*----------------------------------------------------------------------*/
 /// Write a data in the file
 /*----------------------------------------------------------------------*/
-void SG_File_TXT::addValue(SG_String name, SG_String value, SG_String comment)
+void SG_File_TXT::addValue(std::string name, std::string value, std::string comment)
 {
 	mOutputFile << "  " << name << " = " << value;
 	if (comment!="") mOutputFile << " (" << comment << ")";
@@ -82,7 +82,7 @@ void SG_File_TXT::addValue(SG_String name, SG_String value, SG_String comment)
 /*----------------------------------------------------------------------*/
 /// Add a section header in the file
 /*----------------------------------------------------------------------*/
-void SG_File_TXT::addSection(SG_String name)
+void SG_File_TXT::addSection(std::string name)
 {
 	mOutputFile << name << ":\n";
 }
@@ -90,7 +90,7 @@ void SG_File_TXT::addSection(SG_String name)
 /*----------------------------------------------------------------------*/
 /// Add a section ender in the file
 /*----------------------------------------------------------------------*/
-void SG_File_TXT::closeSection(SG_String name)
+void SG_File_TXT::closeSection(std::string name)
 {
 	mOutputFile << "\n";
 }

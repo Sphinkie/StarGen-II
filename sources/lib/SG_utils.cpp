@@ -52,7 +52,7 @@ long double SG_Utils::random_eccentricity()
 /*----------------------------------------------------------------------*/
 /// This function write in a logFile nammed "stargen.log"
 /*----------------------------------------------------------------------*/
-void SG_Utils::writeLog(SG_String data, bool append)
+void SG_Utils::writeLog(std::string data, bool append)
 {
 using namespace std;
 
