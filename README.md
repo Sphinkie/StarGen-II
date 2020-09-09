@@ -12,7 +12,7 @@ Rewritten in C++, *StarGen-II* offers a set of classes that can be used to defin
 
 The program generate an XML file, describing a solar system.
 
-All technical information about how works the library can be found in the [doxygen documentation](docs/doxygen/html/index.html).
+All technical information about how works the library can be found in the [doxygen documentation](https://sphinkie.github.io/StarGen-II/doxygen/html/index.html).
 
 
 ## Output Format
