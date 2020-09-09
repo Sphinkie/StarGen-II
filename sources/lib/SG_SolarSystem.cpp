@@ -19,13 +19,13 @@
 SG_SolarSystem::SG_SolarSystem(long seed)
 {
 	SG_Utils::writeLog(">> STARGEN starting ",false);
-	SG_Utils::writeLog("Size of float:      "+ITOA(sizeof(float))      +" bytes: "+ITOA(sizeof(float)*8)      +" bits");
-	SG_Utils::writeLog("Size of long double:"+ITOA(sizeof(long double))+" bytes: "+ITOA(sizeof(long double)*8)+" bits");
-	SG_Utils::writeLog("Size of short      :"+ITOA(sizeof(short))      +" bytes: "+ITOA(sizeof(short)*8)      +" bits");
-	SG_Utils::writeLog("Size of int        :"+ITOA(sizeof(int))        +" bytes: "+ITOA(sizeof(int)*8)        +" bits");
-	SG_Utils::writeLog("Size of long       :"+ITOA(sizeof(long))       +" bytes: "+ITOA(sizeof(long)*8)       +" bits");
-	SG_Utils::writeLog("Size of long int   :"+ITOA(sizeof(long int))   +" bytes: "+ITOA(sizeof(long int)*8)   +" bits");
-	SG_Utils::writeLog("Size of double     :"+ITOA(sizeof(double))     +" bytes: "+ITOA(sizeof(double)*8)     +" bits");
+    SG_Utils::writeLog("Size of float      :"+std::to_string(sizeof(float))      +" bytes: "+std::to_string(sizeof(float)*8)      +" bits");
+    SG_Utils::writeLog("Size of long double:"+std::to_string(sizeof(long double))+" bytes: "+std::to_string(sizeof(long double)*8)+" bits");
+    SG_Utils::writeLog("Size of short      :"+std::to_string(sizeof(short))      +" bytes: "+std::to_string(sizeof(short)*8)      +" bits");
+    SG_Utils::writeLog("Size of int        :"+std::to_string(sizeof(int))        +" bytes: "+std::to_string(sizeof(int)*8)        +" bits");
+    SG_Utils::writeLog("Size of long       :"+std::to_string(sizeof(long))       +" bytes: "+std::to_string(sizeof(long)*8)       +" bits");
+    SG_Utils::writeLog("Size of long int   :"+std::to_string(sizeof(long int))   +" bytes: "+std::to_string(sizeof(long int)*8)   +" bits");
+    SG_Utils::writeLog("Size of double     :"+std::to_string(sizeof(double))     +" bytes: "+std::to_string(sizeof(double)*8)     +" bits");
 
 	mStardust = NULL;
 	mSun = new SG_Star();
@@ -50,7 +50,7 @@ void SG_SolarSystem::setSeed(long seed)
 {
 	mSeed = seed;
 	srand(mSeed);
-	SG_Utils::writeLog("Seed: " +ITOA(mSeed));
+    SG_Utils::writeLog("Seed: " +std::to_string(mSeed));
 }
 
 
@@ -104,7 +104,7 @@ void SG_SolarSystem::generateSystem(std::string filename)
 
 	// For information, we log here the temperature that would be on Earth with such a sun...
 	long double temp = mSun->getBodyTemperature(1, EARTH_ALBEDO) - FREEZING_POINT_OF_WATER;
-	SG_Utils::writeLog("Earth estimate temperature with this sun: "+ITOS(temp)+"°C");
+    SG_Utils::writeLog("Earth estimate temperature with this sun: "+std::to_string(temp)+"°C");
 
 	/*************************************************/
 	// Gestion des étoiles doubles
@@ -127,7 +127,7 @@ void SG_SolarSystem::generateSystem(std::string filename)
 				(0.464 + (-0.380 * mu) + (-0.631 * e) +
 				(0.586 * mu * e) + (0.150 * pow2(e)) +
 				(-0.198 * mu * pow2(e))) * a;
-			SG_Utils::writeLog("outer_planet_limit: " +ITOS(outer_planet_limit));
+            SG_Utils::writeLog("outer_planet_limit: " +std::to_string(outer_planet_limit));
 		}
 	}
 
@@ -199,8 +199,6 @@ void SG_SolarSystem::writePlanets()
 	}
 
 }
-
-
 
 /* ------------------------------------------------------------------------- */
 /// This function generate the planets of our solar System around the given star.

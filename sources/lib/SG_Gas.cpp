@@ -372,7 +372,7 @@ long double SG_Gas::getPartialPressure()
 
 /*--------------------------------------------------------------------------*/
 /// This function set the percentage of the gas in the atmosphere.
-/** @param pourcentage The percentage should be a value in [0..1].
+/** @param pourcentage The percentage should be a value in [0..1].          */
 /*--------------------------------------------------------------------------*/
 void SG_Gas::setPartialPercentage(long double pourcentage)
 {
@@ -382,7 +382,7 @@ void SG_Gas::setPartialPercentage(long double pourcentage)
 /*--------------------------------------------------------------------------*/
 /// This function returns the percentage of the gas in the atmosphere.
 /** @return The percentage is a value in [0..1].
-/*--------------------------------------------------------------------------*/
+ --------------------------------------------------------------------------*/
 long double SG_Gas::getPartialPercentage()
 {
 	return mPartialPercentage;
@@ -395,7 +395,7 @@ long double SG_Gas::getPartialPercentage()
 @param g The GREEN value of the color (0..1)
 @param b The BLUE value of the color (0..1)
 @param a The ALPHA value (transparency) of the color (0..1). 0=transparent.
-/*--------------------------------------------------------------------------*/
+  --------------------------------------------------------------------------*/
 void SG_Gas::setGasColour(double r, double g, double b, double a)
 {
 	mGasColour.r = r;
@@ -407,7 +407,7 @@ void SG_Gas::setGasColour(double r, double g, double b, double a)
 /*--------------------------------------------------------------------------*/
 /// This function returns the colour of this gas.
 /** @return The colour and transparency of the gas.
-/*--------------------------------------------------------------------------*/
+  --------------------------------------------------------------------------*/
 SG_Gas::SG_colour SG_Gas::getGasColour()
 {
 	return mGasColour;

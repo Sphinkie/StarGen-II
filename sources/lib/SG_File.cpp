@@ -225,7 +225,7 @@ void SG_File::writeSolidPlanet(SG_Planet* planet)
 	addValue("clouds"      ,S_clouds);
 	closeSection();
 
-	if (S_atm!="airless") writeClimate(planet);
+    if (S_atm != "airless") writeClimate(planet);
 }
 
 
@@ -267,7 +267,7 @@ void SG_File::writeClimate(SG_Planet* planet)
 
 	addSection("rain");
 	subSection();
-	for (i=0; i<MAX_GAZ; i++)
+    for (int i=0; i<MAX_GAZ; i++)
 	{
 		SG_Gas* liquid = planet->mAtmosphere->getGas(i,LIQUID);
 		if (liquid)

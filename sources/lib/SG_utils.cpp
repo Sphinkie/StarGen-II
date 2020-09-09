@@ -14,7 +14,7 @@
 
 
 /*----------------------------------------------------------------------*/
-/// This function returns a random real number between the specified inner and outer bounds.												*/
+/// This function returns a random real number between the specified inner and outer bounds.
 /*----------------------------------------------------------------------*/
 long double SG_Utils::random_number(long double inner, long double outer)
 {
@@ -26,7 +26,7 @@ long double SG_Utils::random_number(long double inner, long double outer)
 
 
 /*----------------------------------------------------------------------*/
-/// This function returns a value within a certain variation of the	exact value given it in 'value'.									*/
+/// This function returns a value within a certain variation of the	exact value given it in 'value'.
 /*----------------------------------------------------------------------*/
 long double SG_Utils::about(long double value, long double variation)
 {
@@ -50,7 +50,7 @@ long double SG_Utils::random_eccentricity()
 
 
 /*----------------------------------------------------------------------*/
-/// This function write in a logFile nammed "stargen.log"
+/// This function writes in a logFile named "Stargen.log"
 /*----------------------------------------------------------------------*/
 void SG_Utils::writeLog(std::string data, bool append)
 {
@@ -87,9 +87,8 @@ long double SG_Utils::max(long double X, long double Y)
 }
 
 
-
 /* ------------------------------------------------------------------------- */
-/// Generation d'une seed aléatoire pour les nombres aléatoires
+/// Generate a random seed.
 /* ------------------------------------------------------------------------- */
 long SG_Utils::generateSeed()
 {

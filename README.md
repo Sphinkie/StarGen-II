@@ -14,14 +14,20 @@ A GitHub repository is available [here](grahamreeds/StarGen).
 
 Rewritten in C++, *StarGen-II* offers a set of classes that can be used to define the characteristics of solar systems, during the runtime of your application, or in advance using the *command line* program.
 
-The program generate an XML file, describing a solar system.
+The program generate an XML file (or a plain TXT), describing a solar system.
 
 All technical information about how the library works can be found in the [doxygen documentation](https://sphinkie.github.io/StarGen-II/doxygen/html/index.html).
 
 
 ## Output Format
 
+### Output XML file
+
 *To be completed*
+
+
+
+### Output plain txt file
 
 
 

@@ -129,6 +129,7 @@ long double SG_Planet::getKothariRadius(long double mass, bool giant, int zone)
 @param r_ecosphere   The radius of the Star ecosphere (Units = AU).
 @param gas_giant     TRUE if you want to estimate for a gaz geant planet.
 @return The 'empirical' density (Units = grams/cc)
+*/
 /*--------------------------------------------------------------------------*/
 long double SG_Planet::estimateDensity(long double orbit_radius,long double r_ecosphere, bool gas_giant)
 {
@@ -186,7 +187,7 @@ long double SG_Planet::calculateDayLength()
 	base_angular_velocity = sqrt(2.0 * J * (planetary_mass_in_grams) /
 	                             (k2 * pow2(equatorial_radius_in_cm)) );
 
-	SG_Utils::writeLog("base_angular_velocity = "+ITOS(base_angular_velocity));
+    SG_Utils::writeLog("base_angular_velocity = " + std::to_string(base_angular_velocity));
 
 	// This next calculation determines how much the planet's rotation is
 	// slowed by the presence of the star.
@@ -198,7 +199,7 @@ long double SG_Planet::calculateDayLength()
 
 	ang_velocity = base_angular_velocity + (change_in_angular_velocity * mPrimaryStar->mAge);
 
-	SG_Utils::writeLog("ang_velocity = "+ITOS(ang_velocity));
+    SG_Utils::writeLog("ang_velocity = "+std::to_string(ang_velocity));
 
 	// Change from rad/sec to hours/rotation.
 	if (ang_velocity <= 0.0)
@@ -782,8 +783,8 @@ void SG_Planet::calculateSurfaceClimate(
 	if (mGreenhouse_effect && (mMax_temp < mBoiling_point))
 	{
 		SG_Utils::writeLog("Deluge ");
-		SG_Utils::writeLog(" Max Temp ("+ITOS(mMax_temp)+") < Boiling Point" );
-		SG_Utils::writeLog(" Boiling Point ="+ITOS(mBoiling_point));
+        SG_Utils::writeLog(" Max Temp ("+std::to_string(mMax_temp)+") < Boiling Point" );
+        SG_Utils::writeLog(" Boiling Point ="+std::to_string(mBoiling_point));
 		mGreenhouse_effect = 0;
 		mVolatile_gas_inventory = this->calculateVolatilGasRatio(
 				mEsc_velocity, mPrimaryStar->mMass,
@@ -920,8 +921,8 @@ void SG_Planet::calculateGlobalClimate()
 	}
 	mGreenhouse_rise = mSurf_temp - initial_temp;
 
-	SG_Utils::writeLog("Surface temperature = "+ITOS(mSurf_temp)); 
-	SG_Utils::writeLog("GreenHouse rise temperature = "+ITOS(mGreenhouse_rise)); 
+    SG_Utils::writeLog("Surface temperature = "+std::to_string(mSurf_temp));
+    SG_Utils::writeLog("GreenHouse rise temperature = "+std::to_string(mGreenhouse_rise));
 	if (mGreenhouse_effect) SG_Utils::writeLog("GreenHouse Effect = running");  
 }
 
@@ -1243,8 +1244,8 @@ void SG_Planet::calculatePlanet()
 {
 	mEarthlike = false;
 
-	SG_Utils::writeLog("Planet No "+ITOA(mPlanet_no));
-	SG_Utils::writeLog("Orbit    = "+ITOS(m_a) + "AU");
+    SG_Utils::writeLog("Planet No "+std::to_string(mPlanet_no));
+    SG_Utils::writeLog("Orbit    = "+std::to_string(m_a) + "AU");
 
 	if (mGas_giant)  this->calculateGasPlanet();
 	if (!mGas_giant) this->calculateSolidPlanet();
@@ -1268,7 +1269,7 @@ void SG_Planet::calculatePlanet()
 	{
 		mEarthlike = true ;
 	}
-	SG_Utils::writeLog("Earthlike  = "+ITOA(mEarthlike));
+    SG_Utils::writeLog("Earthlike  = "+std::to_string(mEarthlike));
 	SG_Utils::writeLog("===============================================");
 }
 
@@ -1403,8 +1404,8 @@ void SG_Planet::calculateSolidPlanet()
 		}
 
 		SG_Utils::writeLog("Planet is losing gas:");
-		SG_Utils::writeLog(" H2: "+ITOS(TOEM(h2_loss))+" EM lost");
-		SG_Utils::writeLog(" He: "+ITOS(TOEM(he_loss))+" EM lost");
+        SG_Utils::writeLog(" H2: "+std::to_string(TOEM(h2_loss))+" EM lost");
+        SG_Utils::writeLog(" He: "+std::to_string(TOEM(he_loss))+" EM lost");
 	}
 
 
@@ -1447,8 +1448,8 @@ void SG_Planet::calculateSolidPlanet()
 	mType = this->calculateType(mGas_planet);
 	if (mType==tIce) mIce_cover = 1.0;
 
-	SG_Utils::writeLog("Gravity    = "+ITOS(mSurf_grav)     + "g");
-	SG_Utils::writeLog("Pressure   = "+ITOS(mSurf_pressure) + "mB");
+    SG_Utils::writeLog("Gravity    = "+std::to_string(mSurf_grav)     + "g");
+    SG_Utils::writeLog("Pressure   = "+std::to_string(mSurf_pressure) + "mB");
 }
 
 

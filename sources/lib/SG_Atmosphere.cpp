@@ -170,11 +170,11 @@ long double SG_Atmosphere::getGasAmount(SG_Gas* gaz)
 		gaz->setAmount(gas_amount);
 
 		SG_Utils::writeLog("gas ="+gaz->getSymbol());
-		SG_Utils::writeLog("  abund :"+ITOS(abund));
-		SG_Utils::writeLog(" *pvrms :"+ITOS(pvrms));
-		SG_Utils::writeLog(" *react :"+ITOS(react));
-		SG_Utils::writeLog(" *fract :"+ITOS(fract));
-		SG_Utils::writeLog(" =amount:"+ITOS(gas_amount));
+        SG_Utils::writeLog("  abund :" + std::to_string(abund));
+        SG_Utils::writeLog(" *pvrms :" + std::to_string(pvrms));
+        SG_Utils::writeLog(" *react :" + std::to_string(react));
+        SG_Utils::writeLog(" *fract :" + std::to_string(fract));
+        SG_Utils::writeLog(" =amount:" + std::to_string(gas_amount));
 	}
 	return gas_amount;
 }
@@ -207,8 +207,8 @@ long double SG_Atmosphere::getGasPressure(SG_Gas* gaz)
 		partial_pressure = myPlanet->mSurf_pressure * (partial_amount / mTotalAmount);
 		pourcentage = partial_pressure / myPlanet->mSurf_pressure;
 		SG_Utils::writeLog(" gas :"+gaz->getSymbol());
-		SG_Utils::writeLog(" partial_pressure :"+ITOS(partial_pressure));
-		SG_Utils::writeLog(" pourcentage :"     +ITOS(pourcentage));
+        SG_Utils::writeLog(" partial_pressure :"+ std::to_string(partial_pressure));
+        SG_Utils::writeLog(" pourcentage :"     + std::to_string(pourcentage));
 	}
 
 	gaz->setPartialPressure(partial_pressure);
@@ -227,7 +227,7 @@ Note: The function estimateAtmosphere() should be called once before.
 int SG_Atmosphere::calculateAtmosphere()
 {
 	int number_of_gas = this->estimateComposition();
-	SG_Utils::writeLog(" number_of_gas :"+ITOS(number_of_gas));
+    SG_Utils::writeLog(" number_of_gas :" + std::to_string(number_of_gas));
 
 	if (number_of_gas>0) 
 	{
@@ -429,7 +429,7 @@ void SG_Atmosphere::swapGas(int index1, int index2)
 @sa getBreathability
 */
 /*--------------------------------------------------------------------------*/
-SG_String SG_Atmosphere::getToxicGasList()
+std::string SG_Atmosphere::getToxicGasList()
 {
 	return mPoisonedBy;
 }

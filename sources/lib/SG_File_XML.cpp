@@ -25,7 +25,8 @@ SG_File_XML::~SG_File_XML()
 /*----------------------------------------------------------------------*/
 void SG_File_XML::addValue(std::string name, long double value, std::string comment)
 {
-	mOutputFile << name << "='" << ITOS(value) << "' ";
+    (void)comment;
+    mOutputFile << name << "='" << std::to_string(value) << "' ";
 }
 
 /*----------------------------------------------------------------------*/
@@ -33,8 +34,9 @@ void SG_File_XML::addValue(std::string name, long double value, std::string comm
 /*----------------------------------------------------------------------*/
 void SG_File_XML::addIntValue(std::string name, long double value, std::string comment)
 {
+    (void)comment;
 	int intvalue = (int)(value);
-	mOutputFile << name << "='" << ITOA(intvalue) << "' ";
+    mOutputFile << name << "='" << std::to_string(intvalue) << "' ";
 }
 
 /*----------------------------------------------------------------------*/
@@ -42,7 +44,7 @@ void SG_File_XML::addIntValue(std::string name, long double value, std::string c
 /*----------------------------------------------------------------------*/
 void SG_File_XML::addValue(std::string name, bool value)
 {
-	mOutputFile << name << "='" << ITOA(value) << "' ";
+    mOutputFile << name << "='" << std::to_string(value) << "' ";
 }
 
 /*----------------------------------------------------------------------*/
@@ -52,7 +54,7 @@ void SG_File_XML::addPercentage(std::string name, long double value)
 {
 	long double percentage = int(value*1000);
 	percentage /= 10;
-	mOutputFile << name << "='" << ITOS(percentage) << "%' ";
+    mOutputFile << name << "='" << std::to_string(percentage) << "%' ";
 }
 
 /*----------------------------------------------------------------------*/
@@ -60,6 +62,7 @@ void SG_File_XML::addPercentage(std::string name, long double value)
 /*----------------------------------------------------------------------*/
 void SG_File_XML::addValue(std::string name, char* value, std::string comment)
 {
+    (void)comment;
 	mOutputFile << name << "='" << value << "' ";
 }
 
@@ -68,6 +71,7 @@ void SG_File_XML::addValue(std::string name, char* value, std::string comment)
 /*----------------------------------------------------------------------*/
 void SG_File_XML::addValue(std::string name, std::string value, std::string comment)
 {
+    (void)comment;
 	mOutputFile << name << "='" << value << "' ";
 }
 

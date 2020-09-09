@@ -216,6 +216,7 @@ This is Fogg's eq.19.
 @param  orbit_radius The distance from the star to the body (unit = AU).
 @param  albedo       The albedo of the body.
 @return The temperature at the surface of this body (Unit = Kelvin)
+*/
 /*--------------------------------------------------------------------------*/
 long double SG_Star::getBodyTemperature(long double orbit_radius, long double albedo)
 {
@@ -238,6 +239,7 @@ This is Fogg's eq.19.
 @param  orbit_radius The distance from the star to the body (unit = AU).
 @param  albedo       The albedo of the body.
 @return The Effective Temperature of this body (Unit = Kelvin)
+*/
 /*--------------------------------------------------------------------------*/
 long double SG_Star::getEffectiveTemperature(long double orbit_radius, long double albedo)
 {

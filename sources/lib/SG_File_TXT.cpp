@@ -25,7 +25,7 @@ SG_File_TXT::~SG_File_TXT()
 /*----------------------------------------------------------------------*/
 void SG_File_TXT::addValue(std::string name, long double value, std::string comment)
 {
-	mOutputFile << "  " << name << " = " << ITOS(value) ;
+    mOutputFile << "  " << name << " = " << std::to_string(value) ;
 	if (comment!="") mOutputFile << " (" << comment << ")";
 	mOutputFile << "\n";
 }
@@ -36,7 +36,7 @@ void SG_File_TXT::addValue(std::string name, long double value, std::string comm
 void SG_File_TXT::addIntValue(std::string name, long double value, std::string comment)
 {
 	int intvalue = (int)(value);
-	mOutputFile << "  " << name << " = " << ITOA(intvalue) ;
+    mOutputFile << "  " << name << " = " << std::to_string(intvalue) ;
 	if (comment!="") mOutputFile << " (" << comment << ")";
 	mOutputFile << "\n";
 }
@@ -46,17 +46,17 @@ void SG_File_TXT::addIntValue(std::string name, long double value, std::string c
 /*----------------------------------------------------------------------*/
 void SG_File_TXT::addValue(std::string name, bool value)
 {
-	mOutputFile << "  " << name << " = " << ITOA(value) << "\n";
+    mOutputFile << "  " << name << " = " << std::to_string(value) << "\n";
 }
 
 /*----------------------------------------------------------------------*/
 /// Write a data in the file
 /*----------------------------------------------------------------------*/
-void SG_File_TXT::addPercentage(SG_String name, long double value)
+void SG_File_TXT::addPercentage(std::string name, long double value)
 {
 	long double percentage = int(value*1000);
 	percentage /= 10;
-	mOutputFile << "  " << name << " = " << ITOS(percentage) << "% \n";
+    mOutputFile << "  " << name << " = " << std::to_string(percentage) << "% \n";
 }
 
 /*----------------------------------------------------------------------*/
@@ -80,7 +80,7 @@ void SG_File_TXT::addValue(std::string name, std::string value, std::string comm
 }
 
 /*----------------------------------------------------------------------*/
-/// Add a section header in the file
+/// Add a section Header in the file
 /*----------------------------------------------------------------------*/
 void SG_File_TXT::addSection(std::string name)
 {
@@ -88,10 +88,11 @@ void SG_File_TXT::addSection(std::string name)
 }
 
 /*----------------------------------------------------------------------*/
-/// Add a section ender in the file
+/// Add a section Ender in the file
 /*----------------------------------------------------------------------*/
 void SG_File_TXT::closeSection(std::string name)
 {
+    (void)name;    // unused parameter
 	mOutputFile << "\n";
 }
 

@@ -14,6 +14,7 @@
 /** 
 @param star       A reference to the star of the system.
 @param max_planet The max number of planets authorized for this system (default=10).
+*/
 /* ------------------------------------------------------------------------- */
 SG_Stardust::SG_Stardust(SG_Star* star, int max_planet)
 {
@@ -29,10 +30,10 @@ SG_Stardust::SG_Stardust(SG_Star* star, int max_planet)
 	mPlanet_inner_bound = mSun->getNearestPlanetOrbit();
 	mPlanet_outer_bound = mSun->getFarthestPlanetOrbit();
 
-	SG_Utils::writeLog("Dust inner limit  = "+ ITOS(mDust_inner_limit));
-	SG_Utils::writeLog("Dust outer limit  = "+ ITOS(mDust_outer_limit));
-	SG_Utils::writeLog("Planet inner limit= "+ ITOS(mPlanet_inner_bound));
-	SG_Utils::writeLog("Planet outer limit= "+ ITOS(mPlanet_outer_bound));
+    SG_Utils::writeLog("Dust inner limit  = "+ std::to_string(mDust_inner_limit));
+    SG_Utils::writeLog("Dust outer limit  = "+ std::to_string(mDust_outer_limit));
+    SG_Utils::writeLog("Planet inner limit= "+ std::to_string(mPlanet_inner_bound));
+    SG_Utils::writeLog("Planet outer limit= "+ std::to_string(mPlanet_outer_bound));
 	SG_Utils::writeLog(" ");
 
 	// Initialisation of the planet array.
@@ -331,8 +332,8 @@ void SG_Stardust::collectDust(protoPlanet* protoplanet, dust_band*  dustband)
 	long double Inner_effect = this->getInnerEffectLimit(protoplanet);
 	long double Outer_effect = this->getOuterEffectLimit(protoplanet);
 	
-	SG_Utils::writeLog(" Inner_effect ="+ITOS(Inner_effect) + " AU");
-	SG_Utils::writeLog(" Outer_effect ="+ITOS(Outer_effect) + " AU");
+    SG_Utils::writeLog(" Inner_effect =" + std::to_string(Inner_effect) + " AU");
+    SG_Utils::writeLog(" Outer_effect =" + std::to_string(Outer_effect) + " AU");
 	
 	if ((Inner_effect<dustband->outer_edge) && (dustband->inner_edge<Outer_effect))
 	{
@@ -361,11 +362,11 @@ void SG_Stardust::collectDust(protoPlanet* protoplanet, dust_band*  dustband)
 		width  = bandwidth - temp1 - temp2;
 		volume = 4 * PI * pow2(protoplanet->orbit) * (1.0 - protoplanet->eccnt*(temp1-temp2)/bandwidth);
 		volume *= protoplanet->reducedmass * width;
-		SG_Utils::writeLog("  mass_density ="+ITOS(mass_density));
-		SG_Utils::writeLog("  gas_density  ="+ITOS(gas_density));
-		SG_Utils::writeLog("  dust_density ="+ITOS(dust_density));
-		SG_Utils::writeLog(" volume        ="+ITOS(volume));
-		SG_Utils::writeLog(" collected new_mass ="+ITOS(volume * mass_density));
+        SG_Utils::writeLog("  mass_density =" + std::to_string(mass_density));
+        SG_Utils::writeLog("  gas_density  =" + std::to_string(gas_density));
+        SG_Utils::writeLog("  dust_density =" + std::to_string(dust_density));
+        SG_Utils::writeLog(" volume        =" + std::to_string(volume));
+        SG_Utils::writeLog(" collected new_mass =" + std::to_string(volume * mass_density));
 
 		// The protoplanet collects the dust and gas of this band
 		protoplanet->collectedmass += volume * mass_density;
@@ -425,7 +426,8 @@ void SG_Stardust::accreteDust(protoPlanet* protoplanet)
 
 
 /* ------------------------------------------------------------------------- */
-/// This function aggregates the protoplanet with the other bodies from the close orbits, and eventually create a planet.
+/// This function aggregates the protoplanet with the other bodies from the close orbits,
+/// and eventually create a planet.
 /* ------------------------------------------------------------------------- */
 void SG_Stardust::coalesceProtoplanets(protoPlanet* protoplanet)
 {
@@ -443,7 +445,7 @@ void SG_Stardust::coalesceProtoplanets(protoPlanet* protoplanet)
 	{
 		the_planet = mPlanetList[index];
 		if (!the_planet) break;
-		SG_Utils::writeLog("   checking collision with planet "+ITOA(index));
+        SG_Utils::writeLog("   checking collision with planet " + std::to_string(index));
 		
 		long double PlanetMass  = the_planet->getMass();  // Unit = solar mass
 		long double PlanetOrbit = the_planet->getOrbit(); // Major semi-axis
@@ -456,8 +458,8 @@ void SG_Stardust::coalesceProtoplanets(protoPlanet* protoplanet)
 		long double ProtoEccnt = protoplanet->eccnt;
 		long double ProtoReducedMass = protoplanet->reducedmass;
 
-		SG_Utils::writeLog(" PlanetReducedMass ="+ITOS(PlanetReducedMass));
-		SG_Utils::writeLog(" Proto ReducedMass ="+ITOS(ProtoReducedMass));
+        SG_Utils::writeLog(" PlanetReducedMass ="+std::to_string(PlanetReducedMass));
+        SG_Utils::writeLog(" Proto ReducedMass ="+std::to_string(ProtoReducedMass));
 
 		diff = PlanetOrbit - ProtoOrbit;
 
@@ -490,12 +492,12 @@ void SG_Stardust::coalesceProtoplanets(protoPlanet* protoplanet)
 			long double new_mass = PlanetMass + protoplanet->mass;
 
 			SG_Utils::writeLog("Collision between two protoplanets! ");
-			SG_Utils::writeLog(" orbit proto ="+ITOS(ProtoOrbit)+" AU");
-			SG_Utils::writeLog(" mass  proto ="+ITOS(TOEM(ProtoMass))+" EM");
-			SG_Utils::writeLog(" orbit Planet="+ITOS(PlanetOrbit)+" AU");
-			SG_Utils::writeLog(" mass  Planet="+ITOS(TOEM(PlanetMass))+" EM");
-			SG_Utils::writeLog(" new orbit   ="+ITOS(new_a)+" AU");
-			SG_Utils::writeLog(" new mass    ="+ITOS(TOEM(new_mass))+" EM");
+            SG_Utils::writeLog(" orbit proto ="+std::to_string(ProtoOrbit)+" AU");
+            SG_Utils::writeLog(" mass  proto ="+std::to_string(TOEM(ProtoMass))+" EM");
+            SG_Utils::writeLog(" orbit Planet="+std::to_string(PlanetOrbit)+" AU");
+            SG_Utils::writeLog(" mass  Planet="+std::to_string(TOEM(PlanetMass))+" EM");
+            SG_Utils::writeLog(" new orbit   ="+std::to_string(new_a)+" AU");
+            SG_Utils::writeLog(" new mass    ="+std::to_string(TOEM(new_mass))+" EM");
 
 			// Update the protoplanet
 			protoplanet->orbit   = new_a;
@@ -537,11 +539,11 @@ void SG_Stardust::coalesceProtoplanets(protoPlanet* protoplanet)
 			the_planet->addGasMass(protoplanet->gasmass);
 			mPlanetList[mPlanetIndex] = the_planet;
 
-			SG_Utils::writeLog("No collision found. Creating planet "+ITOA(mPlanetIndex));
-			SG_Utils::writeLog(" orbit    ="+ITOS(protoplanet->orbit)+" AU");
-			SG_Utils::writeLog(" mass     ="+ITOS(TOEM(protoplanet->mass))+" EM");
-			SG_Utils::writeLog(" dust mass="+ITOS(TOEM(protoplanet->dustmass))+" EM");
-			SG_Utils::writeLog(" gas mass ="+ITOS(TOEM(protoplanet->gasmass))+" EM");
+            SG_Utils::writeLog("No collision found. Creating planet " + std::to_string(mPlanetIndex));
+            SG_Utils::writeLog(" orbit    =" + std::to_string(protoplanet->orbit)+" AU");
+            SG_Utils::writeLog(" mass     =" + std::to_string(TOEM(protoplanet->mass))+" EM");
+            SG_Utils::writeLog(" dust mass=" + std::to_string(TOEM(protoplanet->dustmass))+" EM");
+            SG_Utils::writeLog(" gas mass =" + std::to_string(TOEM(protoplanet->gasmass))+" EM");
 
 		}
 	}
@@ -561,7 +563,7 @@ void SG_Stardust::generatePlanets()
 	// we keep creating new planets.
 	while ( (mDust_left) && (mPlanetIndex<mMaxPlanet))
 	{
-		SG_Utils::writeLog("mDust_left = "+ ITOA(mDust_left));
+        SG_Utils::writeLog("mDust_left = " + std::to_string(mDust_left));
 		protoPlanet* proto   = new protoPlanet;
 		proto->orbit         = mSun->getBodePlanetOrbit(BodeIndex++);
 		proto->eccnt         = SG_Utils::random_eccentricity();
@@ -573,7 +575,7 @@ void SG_Stardust::generatePlanets()
 		proto->criticalmass  = this->getCriticalMass(proto);
 		proto->innereffect   = this->getInnerEffectLimit(proto);
 		proto->outereffect   = this->getOuterEffectLimit(proto);
-		SG_Utils::writeLog("Injecting protoplanet at "+ITOS(proto->orbit)+" AU");
+        SG_Utils::writeLog("Injecting protoplanet at " + std::to_string(proto->orbit)+" AU");
 
 		if (this->isDustAvailable(proto->innereffect,proto->outereffect))
 		{
