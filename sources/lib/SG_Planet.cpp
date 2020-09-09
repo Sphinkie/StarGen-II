@@ -295,8 +295,8 @@ long double SG_Planet::calculateEscapeVelocity()
 This is an approximate value (molecule_limit), which is useful for determining the atmosphere composition.
 This function is based on the 'cinetic gas theory'.
 - PV = nRT    (perfect gas equation)
-- E  = mv²/2  (cinetic energy)
-- RT = mv²/3
+- E  = mvÂ²/2  (cinetic energy)
+- RT = mvÂ²/3
 @return The minimal molecule weight retained by the planet gravity. (unit=gram)
 @sa     calculateMinimalMoleculeWeight
 */
@@ -306,7 +306,7 @@ long double SG_Planet::estimateMinimalMoleculeWeight()
 	long double esc_velocity = this->calculateEscapeVelocity() / CM_PER_METER; // unit=m/s
 	long double V2 = pow2( esc_velocity/GAS_RETENTION_THRESHOLD );
 	long double RT = MOLAR_GAS_CONST * mExospheric_temp;
-    // m = 3RT/v²
+    // m = 3RT/vÂ²
 	return (3.0 * RT / V2);
 }
 
@@ -541,7 +541,7 @@ from the planet.
 Like in a greehouse, the atmosphere may keep the solar radiation, and rise the surface temperature.
 - This is Fogg's eq.20, and is also Hart's eq.20 in his "Evolution of Earth's Atmosphere" article.
 - Note: pow(x,0.25) was changed to pow(x,0.4) to match Venus.
-- Examples: Earth = +30°   Venus = +500°
+- Examples: Earth = +30Â°   Venus = +500Â°
 
 @return The temperature rise, due to the GreeHouse effect (units = Kelvin).
 */
@@ -1254,8 +1254,8 @@ void SG_Planet::calculatePlanet()
 	// Is this planet like Earth ?
 	if ((mSurf_grav     >= 0.8  ) &&    // between 0.8 and 1.2 g
 	    (mSurf_grav     <= 1.2  ) &&    // (earth = 1g)
-	    (mSurf_temp     >= 285  ) &&    // between 12°C and 17°C
-	    (mSurf_temp     <= 290  ) &&    // (earth = 14°C)
+	    (mSurf_temp     >= 285  ) &&    // between 12Â°C and 17Â°C
+	    (mSurf_temp     <= 290  ) &&    // (earth = 14Â°C)
 	    (mSurf_pressure >= 700  ) &&    // between 700mB and 1600 mB
 	    (mSurf_pressure <= 1600 ) &&    // (earth = 1013mB)
 	    (mIce_cover     <= 0.10 ) &&    // less than 10% ice

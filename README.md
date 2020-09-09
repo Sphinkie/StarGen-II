@@ -8,7 +8,7 @@ It is used for developing space simulation games. It is a a random solar system 
 
 The original *StarGen* code is developed by *Jim Burrows* in *Visual C* and can be found at [eldacur.com](https://eldacur.com/~brons/NerdCorner/StarGen/StarGen.hmtl).   
 
-A GitHub repository is available [here]().
+A GitHub repository is available [here](grahamreeds/StarGen).
 
 ## StarGen 2
 

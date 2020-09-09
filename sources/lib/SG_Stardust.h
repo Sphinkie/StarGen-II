@@ -26,7 +26,7 @@ The schematic shows a star with its stellar-dust cloud. Inside the cloud, there 
 the planets can appear (<i>inner</i> to <i>outer planet bound</i>).
 A proto-planet is also represented, with its effect area, ie the area where dust will accrete 
 (by gravitation law) to the proto-planet and make it grow.
-@image html accretedust.gif
+
 <b>Bibliography:</b> Dole, Stephen H.  "Formation of Planetary Systems by Aggregation:
 a Computer Simulation"	October 1969,  Rand Corporation Paper P-4226.
 */

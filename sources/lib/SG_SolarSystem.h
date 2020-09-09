@@ -21,8 +21,8 @@
 /* ------------------------------------------------------------------------- */
 /// A Solar System (contains a primary star, several planets, and a dust cloud).
 /**
-	Librairie de génération d'un système planétaire réaliste à partir d'informations
-	sur l'étoile primaire (cad centrale) du système.
+	Librairie de gÃ©nÃ©ration d'un systÃ¨me planÃ©taire rÃ©aliste Ã  partir d'informations
+	sur l'Ã©toile primaire (cad centrale) du systÃ¨me.
 */
 /* ------------------------------------------------------------------------- */
 class SG_SolarSystem
@@ -41,7 +41,7 @@ class SG_SolarSystem
 		void calculatePlanets();
 		void writePlanets();
 
-		long         mSeed;             ///< Seed pour les éléments aléatoires
+		long         mSeed;             ///< Seed pour les Ã©lÃ©ments alÃ©atoires
 		SG_Star*     mSun;              ///< The central star of eh planetary system
 		SG_Stardust* mStardust;         ///< The stardust cloud sourrounding the star
 		SG_String    mFilename;         ///< The name of the file to generate

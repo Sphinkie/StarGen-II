@@ -64,7 +64,7 @@ using namespace std;
 
 	ofstream outputfile("Stargen.log", mode);
 	data += "\n";
-	outputfile << data;	// On ecrit les données
+	outputfile << data;	// On ecrit les donnÃ©es
 	outputfile.close();
 }
 
@@ -89,7 +89,7 @@ long double SG_Utils::max(long double X, long double Y)
 
 
 /* ------------------------------------------------------------------------- */
-/// Generation d'une seed aléatoire pour les nombres aléatoires
+/// Generation d'une seed alÃ©atoire pour les nombres alÃ©atoires
 /* ------------------------------------------------------------------------- */
 long SG_Utils::generateSeed()
 {

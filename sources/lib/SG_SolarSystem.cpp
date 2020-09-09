@@ -104,15 +104,15 @@ void SG_SolarSystem::generateSystem(SG_String filename)
 
 	// For information, we log here the temperature that would be on Earth with such a sun...
 	long double temp = mSun->getBodyTemperature(1, EARTH_ALBEDO) - FREEZING_POINT_OF_WATER;
-	SG_Utils::writeLog("Earth estimate temperature with this sun: "+ITOS(temp)+"°C");
+	SG_Utils::writeLog("Earth estimate temperature with this sun: "+ITOS(temp)+"Â°C");
 
 	/*************************************************/
-	// Gestion des étoiles doubles
+	// Gestion des Ã©toiles doubles
 	// The following is Holman & Wiegert's equation 1 from
 	// Long-Term Stability of Planets in Binary Systems
 	// The Astronomical Journal, 117:621-628, Jan 1999 
 	/*************************************************/
-	SG_Planet* SecondaryStar = NULL;	// TODO A gérer 
+	SG_Planet* SecondaryStar = NULL;	// TODO A gÃ©rer 
 
 	if (SecondaryStar) 
 	{

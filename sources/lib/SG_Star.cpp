@@ -76,9 +76,9 @@ luminosity must differ in size.
 
 The luminosity of a blackbody (which most stars closely approximate) of temperature T 
 and radius R is given by the Stefan-Boltzmann equation: 
- L = 4 pi R² sigma T4 
+ L = 4 pi RÂ² sigma T4 
 
-where sigma is the Stefan-Boltzmann constant (5.67 x 10-8 W/m²/K4).
+where sigma is the Stefan-Boltzmann constant (5.67 x 10-8 W/mÂ²/K4).
 
 @param luminosity The luminosity of the star (unit = solar luminosity)
 @sa calculateLuminosity setMagnitude
@@ -248,7 +248,7 @@ long double SG_Star::getEffectiveTemperature(long double orbit_radius, long doub
 
 
 /* ------------------------------------------------------------------------- */
-/// Renvoie l'orbite minimale où peut se former une planete.
+/// Renvoie l'orbite minimale oÃ¹ peut se former une planete.
 /** @return unit = UA */
 /* ------------------------------------------------------------------------- */
 long double SG_Star::getNearestPlanetOrbit()
@@ -258,7 +258,7 @@ long double SG_Star::getNearestPlanetOrbit()
 
 
 /* ------------------------------------------------------------------------- */
-/// Renvoie l'orbite maximale où peut se former une planete.
+/// Renvoie l'orbite maximale oÃ¹ peut se former une planete.
 /** @return unit = UA */
 /* ------------------------------------------------------------------------- */
 long double SG_Star::getFarthestPlanetOrbit()
