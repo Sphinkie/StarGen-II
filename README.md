@@ -1,10 +1,14 @@
 # StarGen-II
 
-*StarGen* creates datasheets for realistic solar systems. It is used for developing space simulation games.
+**StarGen** creates datasheets for realistic solar systems. 
+
+It is used for developing space simulation games. It is a a random solar system generator, derived from the work of a great number of people over the past three dozen years. It can be use for [Celestia](https://www.celestia.org/), space games, etc.
 
 ## Original StarGen
 
-The original *StarGen* code is developed by Jim Burrows in *Visual C* and can be found at [eldacur.com](https://eldacur.com/~brons/NerdCorner/StarGen/StarGen.hmtl).
+The original *StarGen* code is developed by *Jim Burrows* in *Visual C* and can be found at [eldacur.com](https://eldacur.com/~brons/NerdCorner/StarGen/StarGen.hmtl).   
+
+A GitHub repository is available [here]().
 
 ## StarGen 2
 
@@ -12,12 +16,12 @@ Rewritten in C++, *StarGen-II* offers a set of classes that can be used to defin
 
 The program generate an XML file, describing a solar system.
 
-All technical information about how works the library can be found in the [doxygen documentation](https://sphinkie.github.io/StarGen-II/doxygen/html/index.html).
+All technical information about how the library works can be found in the [doxygen documentation](https://sphinkie.github.io/StarGen-II/doxygen/html/index.html).
 
 
 ## Output Format
 
-
+*To be completed*
 
 
 

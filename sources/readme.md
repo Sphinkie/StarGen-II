@@ -1,30 +1,16 @@
-# StarGen
+# StarGen II
 
-## Welcome to StarGen
+## Source files
 
-**Stargen** is a a random solar system generator, derived from the work of a
-great number of people over the past three dozen years. (See [Credits](credits.md)
-for details). It's falled **StarGen** because there are already enough
-versions that call themselves *starform* to be confusing.
+The library source files are in the **/lib** folder. The **main.ccp** file is an example file that shows how to use the StarGen-II library.
 
-It can be use for [Celestia](https://www.celestia.org/), space games, etc.
+It uses a random seed, and generates an XML and an HTML *output files* for the same solar system. 
 
-## Contact
+If you just need the executable program, you can get it in the **Releases** section of the root repository.
 
-**For the version 2 (visual C++):**
-> David de Lorenzo
-> website: https://sphinkie.github.com
+If you need the library for your own program, you just need to use the **/lib** subfolder.
 
+### Change log
 
-**For the version 1 (visual C):**
-> Jim Burrows (aka Brons) - Eldacur Technologies
-> mailto:brons@eldacur.com
-> website: http://www.eldacur.com/~brons/
+The change history of the source files is [here](changelog.md).
 
-
-
-## See Also:
-
-[Change Log](changelog.md)
-
-[Credits](credits.md)
