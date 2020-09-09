@@ -1,1 +1,8 @@
 theme: jekyll-theme-slate
+title: StarGen II
+description: Realistic solar systems generator. (Windows application & C++ Library)
+show_downloads: true
+
+github:
+  owner_name: David de Lorenzo
+  owner_url: https://sphinkie.github.io/
