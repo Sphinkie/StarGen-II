@@ -4,16 +4,18 @@
 // Author C++ : David de Lorenzo
 // Author C   : Jim Burrows
 /* ------------------------------------------------------------------------- */
+
 #ifndef _STARGEN_UTILS_H_
 #define _STARGEN_UTILS_H_
+
 #include <string>
 
 #if _MSC_VER > 1000
 #pragma once
 #endif
 
-/* --------------------------------------------std::stringng-------------------- */
-/// Several utilities functions for StarGen calculations (random numbers, etc).
+/* ------------------------------------------------------------------------- */
+/// Several utilities functions for StarGen calculation (random numbers, etc).
 /* ------------------------------------------------------------------------- */
 class SG_Utils
 {

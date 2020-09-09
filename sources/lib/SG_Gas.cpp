@@ -143,13 +143,13 @@ long double SG_Gas::getReact(long double temperature, long double pressure, long
 	}
 
 	// Oxygen
-	else if (((mSymbol=="O") || (mSymbol=="O2")) && (bil_years>2) && (temperature>270) && (temperature<400))
+    else if (((mSymbol == "O") || (mSymbol=="O2")) && (bil_years>2) && (temperature>270) && (temperature<400))
 	{
 		return pow(1 / (1 + mReactivity), pow1_4(bil_years/2.0) * pres2);
 	}
 
 	// Carbon Dioxid
-	else if ((mSymbol, "CO2") && (bil_years>2) && (temperature>270) && (temperature<400))
+    else if ((mSymbol == "CO2") && (bil_years>2) && (temperature>270) && (temperature<400))
 	{
 		return (1.5 * pow(1 / (1 + mReactivity), sqrt(bil_years/2.0) * pres2));
 	}
@@ -193,7 +193,7 @@ long double SG_Gas::getPres2(long double temperature, long double pressure, long
 	}
 
 	// Carbon Dioxid
-	else if ((mSymbol, "CO2") && (bil_years>2) && (temperature>270) && (temperature<400))
+    else if ((mSymbol == "CO2") && (bil_years>2) && (temperature>270) && (temperature<400))
 	{
 		pres2 = 0.75 + pressureB;
 		return (pres2);
@@ -203,7 +203,7 @@ long double SG_Gas::getPres2(long double temperature, long double pressure, long
 	else 
 	{
 		pres2 = (0.75 + pressureB);
-		return (1 / (1 + mReactivity), bil_years/2.0 * pres2);	/// TODO : VERIFIER
+        return pow(1 / (1 + mReactivity), bil_years/2.0 * pres2);
 	}
 }
 

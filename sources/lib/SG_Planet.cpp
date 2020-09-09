@@ -400,8 +400,8 @@ This is more dedicated for solid (non gas) planets.
 /*--------------------------------------------------------------------------*/
 long double SG_Planet::calculatePressure(long double radius)
 {
-	long double radius_ER = mRadius/EARTH_RADIUS_IN_KM;         // unit = Earth radius
-	long double gravity   = this->calculateGravity(mRadius);    // unit = Earth G
+    long double radius_ER = radius/EARTH_RADIUS_IN_KM;         // unit = Earth radius
+    long double gravity   = this->calculateGravity(radius);    // unit = Earth G
 	return (mVolatile_gas_inventory * gravity * pow2(radius_ER) * EARTH_SURF_PRES_IN_BARS);
 }
 
@@ -830,7 +830,6 @@ void SG_Planet::calculateSurfaceClimate(
 }
 
 
-
 /*--------------------------------------------------------------------------*/
 /// This function estimates the climate at the surface of the planet.
 /*--------------------------------------------------------------------------*/
@@ -841,7 +840,6 @@ void SG_Planet::estimateSurfaceClimate()
 	long double clouds_raw;
 	long double opacity;
 	long double greenhouse_temp;
-	bool        boil_off = true;
 
 	mAlbedo         = EARTH_ALBEDO;
 	effective_temp  = mPrimaryStar->getEffectiveTemperature(m_a, mAlbedo);
@@ -1341,11 +1339,7 @@ void SG_Planet::calculateGasPlanet()
 	/********************************************************************/
 	mVolatile_gas_inventory = this->calculateVolatilGasRatio(mEsc_velocity,mPrimaryStar->mMass,false,true);
 	mSurf_pressure          = this->calculatePressure(mRadius);
-
-	// Estimation of the surface temperature of an earthlike planet located on this orbit.
-	long double temp = mPrimaryStar->getBodyTemperature(m_a,  EARTH_ALBEDO); 
 }
-
 
 
 /*--------------------------------------------------------------------------*/
@@ -1369,8 +1363,8 @@ void SG_Planet::calculateSolidPlanet()
 
 	mMolec_weight    = this->calculateMinimalMoleculeWeight(); // TODO: here?
 
-	mRadius          = this->getKothariRadius(mMass,false,mOrbit_zone);
-	mDensity         = this->getSphereDensity(mMass,mRadius);
+    mRadius          = this->getKothariRadius(mMass, false, mOrbit_zone);
+    mDensity         = this->getSphereDensity(mMass, mRadius);
 	mSurf_grav       = this->calculateGravity(mRadius);
 
 	// If there wher some gas at the birth of the planet,

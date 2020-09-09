@@ -65,8 +65,7 @@ class SG_Planet
 		void calculateSolidPlanet();
 
 		// Physical calculations
-		long double  estimateDensity(long double orbit_radius,
-			long double r_ecosphere, bool gas_giant);
+        long double  estimateDensity(long double orbit_radius, long double r_ecosphere, bool gas_giant);
 		long double  calculateOrbitPeriod(long double star_mass);
 		long double  calculateExoTemperature();
 		int          calculateInclination(long double orb_radius);

@@ -2,13 +2,11 @@
 
 **StarGen** creates datasheets for realistic solar systems. 
 
-It is used for developing space simulation games. It is a a random solar system generator, derived from the work of a great number of people over the past three dozen years. It can be use for [Celestia](https://www.celestia.org/), space games, etc.
+It is used for developing space simulation games. It is a a random solar system generator, derived from the work of a great number of people over the past three dozen years. It can be use for [Celestia](https://celestia.fr), space games, etc.
 
 ## Original StarGen
 
-The original *StarGen* code is developed by *Jim Burrows* in *Visual C* and can be found at [eldacur.com](https://eldacur.com/~brons/NerdCorner/StarGen/StarGen.hmtl).   
-
-A GitHub repository is available [here](grahamreeds/StarGen).
+The original *StarGen* code is developed by *Jim Burrows* in *Visual C* and can be found at [eldacur.com](https://eldacur.com/~brons/NerdCorner/StarGen/StarGen.hmtl). A GitHub repository is available [here](https://github.com/grahamreeds/StarGen).
 
 ## StarGen 2
 

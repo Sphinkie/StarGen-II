@@ -10,7 +10,7 @@
 #pragma once
 #endif
 
-#include <fstream.h>
+#include <fstream>
 #include "SG_Star.h"
 #include "SG_Planet.h"
 #include "SG_File.h"

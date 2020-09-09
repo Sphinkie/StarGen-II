@@ -181,8 +181,8 @@ void SG_SolarSystem::writePlanets()
 {
 	int format;
 	// Analyse the file extension to determine the desired format
-    if      (mFilename.find(".xml",1)!=std::string::npos) format=SG_XML;
-    else if (mFilename.find(".txt",1)!=std::string::npos) format=SG_TXT;
+    if      (mFilename.find(".xml",1) != std::string::npos) format=SG_XML;
+    else format=SG_TXT;
 
 	SG_FileWriter DescFile(mFilename, mSeed, format);
 	// Write the description of the star in the file
@@ -276,7 +276,7 @@ void SG_SolarSystem::generateSolarSystem(std::string filename)
 	int format;
 	// Analyse the file extension to determine the desired format
     if      (mFilename.find(".xml",1)!=std::string::npos) format=SG_XML;
-    else if (mFilename.find(".txt",1)!=std::string::npos) format=SG_TXT;
+    else format=SG_TXT;
 
 	SG_FileWriter DescFile(mFilename, mSeed, format);
 	DescFile.writeStarDescription(mSun);

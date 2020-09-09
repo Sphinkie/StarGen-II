@@ -4,6 +4,7 @@
 // Author C++ : David de Lorenzo
 // Author C   : Jim Burrows (see Credits.txt)
 /* ------------------------------------------------------------------------- */
+
 #ifndef _SG_ATMOSPHERE_H_
 #define _SG_ATMOSPHERE_H_
 

@@ -10,7 +10,7 @@
 #pragma once
 #endif
 
-#include <fstream.h>
+#include <fstream>
 #include "SG_Star.h"
 #include "SG_Planet.h"
 
@@ -39,7 +39,7 @@ class SG_File
 		void writeGasPlanet(SG_Planet* planet);
 		void writeClimate(SG_Planet* planet);
 		void writeAtmosphere(SG_Planet* planet);
-		ofstream    mOutputFile;
+        std::ofstream    mOutputFile;
 		char*       mPlanet_Phrase[11];
 		long        mSeed;
 

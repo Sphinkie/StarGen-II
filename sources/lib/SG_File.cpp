@@ -16,17 +16,17 @@ SG_File::SG_File(std::string filename, long seed)
 {
 using namespace std;
 
-	mPlanet_Phrase[SG_Planet::tUnknown] = "Unknown";
-	mPlanet_Phrase[SG_Planet::tRock]="Rock";
-	mPlanet_Phrase[SG_Planet::tVenusian]="Venusian";
-	mPlanet_Phrase[SG_Planet::tTerrestrial]="Terrestrial";
-	mPlanet_Phrase[SG_Planet::tGasGiant]="GasGiant";
-	mPlanet_Phrase[SG_Planet::tMartian]="Martian";
-	mPlanet_Phrase[SG_Planet::tWater]="Water";
-	mPlanet_Phrase[SG_Planet::tIce]="Ice";
-	mPlanet_Phrase[SG_Planet::tSubGasGiant]="GasPlanet";
-	mPlanet_Phrase[SG_Planet::tSubSubGasGiant]="GasDwarf";
-	mPlanet_Phrase[SG_Planet::tAsteroids]="Asteroids";
+    mPlanet_Phrase[SG_Planet::tUnknown]    = "Unknown";
+    mPlanet_Phrase[SG_Planet::tRock]       = "Rock";
+    mPlanet_Phrase[SG_Planet::tVenusian]   = "Venusian";
+    mPlanet_Phrase[SG_Planet::tTerrestrial]= "Terrestrial";
+    mPlanet_Phrase[SG_Planet::tGasGiant]   = "GasGiant";
+    mPlanet_Phrase[SG_Planet::tMartian]    = "Martian";
+    mPlanet_Phrase[SG_Planet::tWater]      = "Water";
+    mPlanet_Phrase[SG_Planet::tIce]        = "Ice";
+    mPlanet_Phrase[SG_Planet::tSubGasGiant]= "GasPlanet";
+    mPlanet_Phrase[SG_Planet::tSubSubGasGiant] = "GasDwarf";
+    mPlanet_Phrase[SG_Planet::tAsteroids] = "Asteroids";
 
 	fstream::openmode mode;
 
