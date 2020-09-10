@@ -25,7 +25,7 @@
 class SG_Gas
 {
 	public:
-		typedef struct SG_colour{double r; double g; double b; double a; };
+        struct SG_colour{double r; double g; double b; double a; };
 
 	public:
         SG_Gas(	int AtomicNumber, std::string  Symbol,

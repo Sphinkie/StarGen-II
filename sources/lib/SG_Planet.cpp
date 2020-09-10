@@ -260,7 +260,7 @@ int SG_Planet::calculateInclination(long double orb_radius)
 	long double Inclination;
 
 	// If mAxial_tilt is already defined, we dont calculate it.
-	if (mAxial_tilt != UNDEFINED_TILT) return mAxial_tilt;
+    if (mAxial_tilt != UNDEFINED_TILT) return (int)mAxial_tilt;
 
 	Inclination  = pow(orb_radius,0.2);
 	Inclination *= SG_Utils::about(EARTH_AXIAL_TILT,0.4);

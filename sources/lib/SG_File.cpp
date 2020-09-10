@@ -9,6 +9,8 @@
 #include "SG_File.h"
 #include "SG_Const.h"
 
+using namespace std;
+
 /*----------------------------------------------------------------------*/
 /// Constructor
 /*----------------------------------------------------------------------*/
@@ -190,28 +192,28 @@ void SG_File::writeSolidPlanet(SG_Planet* planet)
 	closeSection();
 
 	// We analyse some elements
-	char* S_grav = "gravity OK";
+    string S_grav = "gravity OK";
 	if (planet->mSurf_grav <0.8) S_grav = "low gravity";
 	else if (planet->mSurf_grav > 1.2) S_grav = "high gravity";
 
-	char* S_temp;
+    string S_temp;
 	if      (planet->mSurf_temp < EARTH_AVERAGE_KELVIN -5) S_temp = "cold";
 	else if (planet->mSurf_temp < EARTH_AVERAGE_KELVIN -2) S_temp = "cool";
 	else if (planet->mSurf_temp < EARTH_AVERAGE_KELVIN +3) S_temp = "temperature OK";
 	else if (planet->mSurf_temp > EARTH_AVERAGE_KELVIN +8) S_temp = "warm";
 	else                                                   S_temp = "hot";
 
-	char* S_ice = "no";
+    string S_ice = "no";
 	if (planet->mIce_cover >= 0.10) S_ice = "yes";  
 
-	char* S_atm = "normal atm";
+    string S_atm = "normal atm";
 	if      (planet->mSurf_pressure < EARTH_SURF_PRES_IN_MILLIBARS/1000.0) S_atm = "airless";
 	else if (planet->mSurf_pressure < MIN_O2_IPP)                          S_atm = "unbreathly thin atm";
 	else if (planet->mSurf_pressure < EARTH_SURF_PRES_IN_MILLIBARS/2.0)    S_atm = "thin atm";
 	else if (planet->mSurf_pressure > EARTH_SURF_PRES_IN_MILLIBARS*2.0)    S_atm = "thick atm";
 	else if (planet->mSurf_pressure > MAX_HABITABLE_PRESSURE)              S_atm = "unbreathly thick atm";
 
-	char* S_clouds;
+    string S_clouds;
 	if      (planet->mCloud_cover < 0.10) S_clouds = "cloudless";
 	else if (planet->mCloud_cover < 0.40) S_clouds = "few clouds";
 	else if (planet->mCloud_cover < 0.80) S_clouds = "mid-coverage";
@@ -235,7 +237,7 @@ void SG_File::writeSolidPlanet(SG_Planet* planet)
 /*----------------------------------------------------------------------*/
 void SG_File::writeClimate(SG_Planet* planet)
 {
-	char* S_hum = "balanced";
+    string S_hum = "balanced";
 	if      (planet->mHydrosphere < 0.25) S_hum = "arid";
 	else if (planet->mHydrosphere < 0.50) S_hum = "dry";
 	else if (planet->mHydrosphere > 0.80) S_hum = "wet";
@@ -302,7 +304,7 @@ void SG_File::writeClimate(SG_Planet* planet)
 void SG_File::writeAtmosphere(SG_Planet* planet)
 {
 	int g=0;
-	char* breathability_phrase[5];
+    string breathability_phrase[5];
 	breathability_phrase[NONE]="none";
 	breathability_phrase[BREATHABLE]="non-toxic";
 	breathability_phrase[UNBREATHABLE]="not enough oxygen";

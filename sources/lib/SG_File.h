@@ -40,7 +40,7 @@ class SG_File
 		void writeClimate(SG_Planet* planet);
 		void writeAtmosphere(SG_Planet* planet);
         std::ofstream    mOutputFile;
-		char*       mPlanet_Phrase[11];
+        std::string      mPlanet_Phrase[11];
 		long        mSeed;
 
 		// This functions must be implemented in the derived classes

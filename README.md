@@ -1,4 +1,4 @@
-# StarGen-II
+# StarGen II
 
 **StarGen** creates datasheets for realistic solar systems. 
 

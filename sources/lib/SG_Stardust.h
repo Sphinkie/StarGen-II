@@ -43,7 +43,7 @@ class SG_Stardust
 
 	protected:
 
-		typedef struct   dust_band
+        struct dust_band
 		{
 			long double  inner_edge;
 			long double  outer_edge;
@@ -53,7 +53,7 @@ class SG_Stardust
 		};
  
 
-		typedef struct   protoPlanet
+        struct protoPlanet
 		{
 			long double  orbit;         ///< Unit = AU
 			long double  eccnt;         ///< Unit = 0..1

@@ -1,0 +1,628 @@
+system:
+  seed = 6
+
+star:
+  mass = 1 (solar mass)
+  lum = 1 (solar lum)
+  age = 5 (billion years)
+  life = 10 (billion years left on main sequence)
+  ecosphere = 1 (AU)
+
+
+planet:
+  number = 1
+
+general:
+  type = Rock
+  giant = false
+  gasplanet = false
+  earthlike = false
+  albedo = 0.07
+  atmosphere = false
+
+orbit:
+  radius = 0.387 (unit = AU)
+  tilt = 2 (unit = degree)
+  eccentricity = 0.206
+  facelocked = false
+  resonnant = true
+
+physical:
+  density = 5.3363 (unit = grams/cc)
+  radius = 2450.04 (unit = km)
+  mass = 0.055 (unit = EM)
+  dustMass = 100% 
+  gasMass = 0% 
+  escVelocity = 4.23136 (unit = km/s)
+
+durations:
+  yearE = 87.9354 (unit = earth days)
+  yearL = 1.51889 (unit = local days)
+  day = 1389.47 (unit = hours)
+  dayE = 57.8945 (unit = earth days)
+
+composition:
+  minMolec = 294.998 (unit = u)
+<gas symbol='H' proportion='0%' name='Hydrogen' state='gas'  /> 
+<gas symbol='N2' proportion='0%' name='Nitrogen/Azote' state='gas'  /> 
+<gas symbol='O3' proportion='0%' name='Ozone' state='gas'  /> 
+<gas symbol='Ar' proportion='0%' name='Argon' state='gas'  /> 
+<gas symbol='Xe' proportion='0%' name='Xenon' state='gas'  /> 
+<gas symbol='H2O' proportion='0%' name='Water' state='gas'  /> 
+<gas symbol='CH4' proportion='0%' name='Methane' state='gas'  /> 
+
+
+temperatures:
+  exospheric = 8499.76 (unit = Kelvin)
+  surfaceAvg = 166 (unit = Celcius)
+  surfaceMax = 368 (unit = Celcius)
+  surfaceMin = -202 (unit = Celcius)
+
+surface:
+  gravity = 0.372581 (unit = Earth G)
+  pressure = 0 (unit = Earth atm)
+  boilingpoint = 0 (unit = Kelvin)
+  greenhouse = false
+
+coverage:
+  ground = 100% 
+  water = 0% 
+  ice = 0% 
+  cloud = 0% 
+
+comments:
+  gravity = low gravity
+  temperature = warm
+  icyPlanet = no
+  atmosphere = airless
+  clouds = cloudless
+
+
+planet:
+  number = 2
+
+general:
+  type = Venusian
+  giant = false
+  gasplanet = false
+  earthlike = false
+  albedo = 0.52
+  atmosphere = true
+
+orbit:
+  radius = 0.723 (unit = AU)
+  tilt = 177 (unit = degree)
+  eccentricity = 0.007
+  facelocked = false
+  resonnant = false
+
+physical:
+  density = 5.47418 (unit = grams/cc)
+  radius = 5966.84 (unit = km)
+  mass = 0.815 (unit = EM)
+  dustMass = 100% 
+  gasMass = 0% 
+  escVelocity = 10.4374 (unit = km/s)
+
+durations:
+  yearE = 224.545 (unit = earth days)
+  yearL = 179.784 (unit = local days)
+  day = 29.9753 (unit = hours)
+  dayE = 1.24897 (unit = earth days)
+
+composition:
+  minMolec = 13.9574 (unit = u)
+<gas symbol='CO2' proportion='1%' name='CarbonDiOxide' state='gas'  /> 
+<gas symbol='N2' proportion='40%' name='Nitrogen/Azote' state='gas'  /> 
+<gas symbol='O3' proportion='0%' name='Ozone' state='gas'  /> 
+<gas symbol='He' proportion='0%' name='Helium' state='gas'  /> 
+<gas symbol='Xe' proportion='0%' name='Xenon' state='gas'  /> 
+<gas symbol='H2O' proportion='0%' name='Water' state='gas'  /> 
+<gas symbol='CH4' proportion='0%' name='Methane' state='gas'  /> 
+
+
+temperatures:
+  exospheric = 2435.3 (unit = Kelvin)
+  surfaceAvg = 710 (unit = Celcius)
+  surfaceMax = 714 (unit = Celcius)
+  surfaceMin = 700 (unit = Celcius)
+
+surface:
+  gravity = 0.930833 (unit = Earth G)
+  pressure = 92.956 (unit = Earth atm)
+  boilingpoint = 562 (unit = Kelvin)
+  greenhouse = true
+
+coverage:
+  ground = 100% 
+  water = 0% 
+  ice = 0% 
+  cloud = 100% 
+
+comments:
+  gravity = gravity OK
+  temperature = warm
+  icyPlanet = no
+  atmosphere = thick atm
+  clouds = cloudy
+
+atmosphere:
+  breathe = poisonous
+<gas symbol='CO2' proportion='1%' name='CarbonDiOxide' state='gas'  /> 
+<gas symbol='Ar' proportion='57%' name='Argon' state='gas'  /> 
+<gas symbol='N2' proportion='40%' name='Nitrogen/Azote' state='gas'  /> 
+  toxicGas = CarbonDiOxide 
+
+climate:
+  water = arid
+
+
+planet:
+  number = 3
+
+general:
+  type = Terrestrial
+  giant = false
+  gasplanet = false
+  earthlike = true
+  albedo = 0.330146
+  atmosphere = true
+
+orbit:
+  radius = 1 (unit = AU)
+  tilt = 23 (unit = degree)
+  eccentricity = 0.017
+  facelocked = false
+  resonnant = false
+
+physical:
+  density = 5.49857 (unit = grams/cc)
+  radius = 6378.45 (unit = km)
+  mass = 1 (unit = EM)
+  dustMass = 100% 
+  gasMass = 0% 
+  escVelocity = 11.1822 (unit = km/s)
+
+durations:
+  yearE = 365.255 (unit = earth days)
+  yearL = 540.131 (unit = local days)
+  day = 16.2297 (unit = hours)
+  dayE = 0.676235 (unit = earth days)
+
+composition:
+  minMolec = 6.35637 (unit = u)
+<gas symbol='O' proportion='15%' name='Oxygen' state='gas'  /> 
+<gas symbol='H' proportion='0%' name='Hydrogen' state='gas'  /> 
+<gas symbol='O3' proportion='0%' name='Ozone' state='gas'  /> 
+<gas symbol='Ar' proportion='0%' name='Argon' state='gas'  /> 
+<gas symbol='Xe' proportion='0%' name='Xenon' state='gas'  /> 
+<gas symbol='H2O' proportion='0%' name='Water' state='liquid'  /> 
+<gas symbol='CH4' proportion='0%' name='Methane' state='gas'  /> 
+
+
+temperatures:
+  exospheric = 1273 (unit = Kelvin)
+  surfaceAvg = 15 (unit = Celcius)
+  surfaceMax = 40 (unit = Celcius)
+  surfaceMin = -10 (unit = Celcius)
+
+surface:
+  gravity = 0.999478 (unit = Earth G)
+  pressure = 0.999618 (unit = Earth atm)
+  boilingpoint = 373 (unit = Kelvin)
+  greenhouse = false
+
+coverage:
+  ground = 27% 
+  water = 70% 
+  ice = 1% 
+  cloud = 57% 
+
+comments:
+  gravity = gravity OK
+  temperature = temperature OK
+  icyPlanet = no
+  atmosphere = normal atm
+  clouds = mid-coverage
+
+atmosphere:
+  breathe = non-toxic
+<gas symbol='O' proportion='15%' name='Oxygen' state='gas'  /> 
+<gas symbol='N2' proportion='84%' name='Nitrogen/Azote' state='gas'  /> 
+
+climate:
+  water = balanced
+
+
+planet:
+  number = 4
+
+general:
+  type = Martian
+  giant = false
+  gasplanet = false
+  earthlike = false
+  albedo = 0.423496
+  atmosphere = true
+
+orbit:
+  radius = 1.524 (unit = AU)
+  tilt = 25 (unit = degree)
+  eccentricity = 0.093
+  facelocked = false
+  resonnant = false
+
+physical:
+  density = 5.35159 (unit = grams/cc)
+  radius = 3059.42 (unit = km)
+  mass = 0.1074 (unit = EM)
+  dustMass = 100% 
+  gasMass = 0% 
+  escVelocity = 5.29136 (unit = km/s)
+
+durations:
+  yearE = 687.187 (unit = earth days)
+  yearL = 714.891 (unit = local days)
+  day = 23.0699 (unit = hours)
+  dayE = 0.961246 (unit = earth days)
+
+composition:
+  minMolec = 12.2225 (unit = u)
+<gas symbol='Ar' proportion='4%' name='Argon' state='gas'  /> 
+<gas symbol='H' proportion='0%' name='Hydrogen' state='gas'  /> 
+<gas symbol='O3' proportion='0%' name='Ozone' state='gas'  /> 
+<gas symbol='He' proportion='0%' name='Helium' state='gas'  /> 
+<gas symbol='Xe' proportion='0%' name='Xenon' state='gas'  /> 
+<gas symbol='H2O' proportion='0%' name='Water' state='solid'  /> 
+<gas symbol='CH4' proportion='0%' name='Methane' state='gas'  /> 
+
+
+temperatures:
+  exospheric = 548.098 (unit = Kelvin)
+  surfaceAvg = -72 (unit = Celcius)
+  surfaceMax = -27 (unit = Celcius)
+  surfaceMin = -118 (unit = Celcius)
+
+surface:
+  gravity = 0.466584 (unit = Earth G)
+  pressure = 0.0115304 (unit = Earth atm)
+  boilingpoint = 280 (unit = Kelvin)
+  greenhouse = false
+
+coverage:
+  ground = 50% 
+  water = 0% 
+  ice = 49% 
+  cloud = 0% 
+
+comments:
+  gravity = low gravity
+  temperature = cold
+  icyPlanet = yes
+  atmosphere = unbreathly thin atm
+  clouds = cloudless
+
+atmosphere:
+  breathe = not enough oxygen
+<gas symbol='Ar' proportion='4%' name='Argon' state='gas'  /> 
+<gas symbol='N2' proportion='95%' name='Nitrogen/Azote' state='gas'  /> 
+
+climate:
+  water = arid
+
+
+planet:
+  number = 5
+
+general:
+  type = Asteroids
+  giant = false
+  gasplanet = false
+  earthlike = false
+  albedo = 0.07
+  atmosphere = false
+
+orbit:
+  radius = 2.767 (unit = AU)
+  tilt = 0 (unit = degree)
+  eccentricity = 0.079
+  facelocked = false
+  resonnant = false
+
+physical:
+  density = 5.30967 (unit = grams/cc)
+  radius = 330.225 (unit = km)
+  mass = 0.000134 (unit = EM)
+  dustMass = 100% 
+  gasMass = 0% 
+  escVelocity = 0.568895 (unit = km/s)
+
+durations:
+  yearE = 1681.17 (unit = earth days)
+  yearL = 464.898 (unit = local days)
+  day = 86.789 (unit = hours)
+  dayE = 3.61621 (unit = earth days)
+
+composition:
+  minMolec = 319.241 (unit = u)
+<gas symbol='H' proportion='0%' name='Hydrogen' state='gas'  /> 
+<gas symbol='N2' proportion='0%' name='Nitrogen/Azote' state='gas'  /> 
+<gas symbol='O3' proportion='0%' name='Ozone' state='gas'  /> 
+<gas symbol='Ar' proportion='0%' name='Argon' state='gas'  /> 
+<gas symbol='Xe' proportion='0%' name='Xenon' state='gas'  /> 
+<gas symbol='H2O' proportion='0%' name='Water' state='solid'  /> 
+<gas symbol='CH4' proportion='0%' name='Methane' state='gas'  /> 
+
+
+temperatures:
+  exospheric = 166.269 (unit = Kelvin)
+  surfaceAvg = -108 (unit = Celcius)
+  surfaceMax = -34 (unit = Celcius)
+  surfaceMin = -182 (unit = Celcius)
+
+surface:
+  gravity = 0.0499674 (unit = Earth G)
+  pressure = 0 (unit = Earth atm)
+  boilingpoint = 0 (unit = Kelvin)
+  greenhouse = false
+
+coverage:
+  ground = 100% 
+  water = 0% 
+  ice = 0% 
+  cloud = 0% 
+
+comments:
+  gravity = low gravity
+  temperature = cold
+  icyPlanet = no
+  atmosphere = airless
+  clouds = cloudless
+
+
+planet:
+  number = 6
+
+general:
+  type = GasGiant-Jovian
+  giant = true
+  gasplanet = true
+  earthlike = false
+  albedo = 0.450177
+  atmosphere = true
+
+orbit:
+  radius = 5.203 (unit = AU)
+  tilt = 3 (unit = degree)
+  eccentricity = 0.048
+  facelocked = false
+  resonnant = false
+
+physical:
+  density = 1.63269 (unit = grams/cc)
+  radius = 65252 (unit = km)
+  mass = 317.9 (unit = EM)
+  dustMass = 0% 
+  gasMass = 100% 
+  escVelocity = 62.3352 (unit = km/s)
+
+durations:
+  yearE = 4332.82 (unit = earth days)
+  yearL = 13883 (unit = local days)
+  day = 7.49029 (unit = hours)
+  dayE = 0.312095 (unit = earth days)
+
+composition:
+  minMolec = 0.010867 (unit = u)
+<gas symbol='H' proportion='0%' name='Hydrogen' state='gas'  /> 
+<gas symbol='N2' proportion='0%' name='Nitrogen/Azote' state='gas'  /> 
+<gas symbol='O3' proportion='0%' name='Ozone' state='gas'  /> 
+<gas symbol='Ar' proportion='0%' name='Argon' state='gas'  /> 
+<gas symbol='Xe' proportion='0%' name='Xenon' state='gas'  /> 
+<gas symbol='H2O' proportion='0%' name='Water' state='gas'  /> 
+<gas symbol='CH4' proportion='0%' name='Methane' state='gas'  /> 
+
+
+
+planet:
+  number = 7
+
+general:
+  type = GasGiant-Jovian
+  giant = true
+  gasplanet = true
+  earthlike = false
+  albedo = 0.470365
+  atmosphere = true
+
+orbit:
+  radius = 9.539 (unit = AU)
+  tilt = 26 (unit = degree)
+  eccentricity = 0.056
+  facelocked = false
+  resonnant = false
+
+physical:
+  density = 1.20677 (unit = grams/cc)
+  radius = 48280.6 (unit = km)
+  mass = 95.18 (unit = EM)
+  dustMass = 0% 
+  gasMass = 100% 
+  escVelocity = 39.6526 (unit = km/s)
+
+durations:
+  yearE = 10759.4 (unit = earth days)
+  yearL = 25494.8 (unit = local days)
+  day = 10.1286 (unit = hours)
+  dayE = 0.422025 (unit = earth days)
+
+composition:
+  minMolec = 0.00798979 (unit = u)
+<gas symbol='H' proportion='0%' name='Hydrogen' state='gas'  /> 
+<gas symbol='N2' proportion='0%' name='Nitrogen/Azote' state='gas'  /> 
+<gas symbol='O3' proportion='0%' name='Ozone' state='gas'  /> 
+<gas symbol='Ar' proportion='0%' name='Argon' state='gas'  /> 
+<gas symbol='Xe' proportion='0%' name='Xenon' state='gas'  /> 
+<gas symbol='H2O' proportion='0%' name='Water' state='gas'  /> 
+<gas symbol='CH4' proportion='0%' name='Methane' state='gas'  /> 
+
+
+
+planet:
+  number = 8
+
+general:
+  type = SubGasGiant-Sub jovian
+  giant = true
+  gasplanet = true
+  earthlike = false
+  albedo = 0.541919
+  atmosphere = true
+
+orbit:
+  radius = 19.191 (unit = AU)
+  tilt = 97 (unit = degree)
+  eccentricity = 0.046
+  facelocked = false
+  resonnant = false
+
+physical:
+  density = 0.801106 (unit = grams/cc)
+  radius = 29579.4 (unit = km)
+  mass = 14.53 (unit = EM)
+  dustMass = 0% 
+  gasMass = 93% 
+  escVelocity = 19.7935 (unit = km/s)
+
+durations:
+  yearE = 30706.8 (unit = earth days)
+  yearL = 46402.2 (unit = local days)
+  day = 15.8821 (unit = hours)
+  dayE = 0.661753 (unit = earth days)
+
+composition:
+  minMolec = 0.00792216 (unit = u)
+<gas symbol='H' proportion='0%' name='Hydrogen' state='gas'  /> 
+<gas symbol='N2' proportion='0%' name='Nitrogen/Azote' state='gas'  /> 
+<gas symbol='O3' proportion='0%' name='Ozone' state='gas'  /> 
+<gas symbol='Ar' proportion='0%' name='Argon' state='gas'  /> 
+<gas symbol='Xe' proportion='0%' name='Xenon' state='gas'  /> 
+<gas symbol='H2O' proportion='0%' name='Water' state='gas'  /> 
+<gas symbol='CH4' proportion='0%' name='Methane' state='gas'  /> 
+
+
+
+planet:
+  number = 9
+
+general:
+  type = SubGasGiant-Sub jovian
+  giant = true
+  gasplanet = true
+  earthlike = false
+  albedo = 0.498051
+  atmosphere = true
+
+orbit:
+  radius = 30.061 (unit = AU)
+  tilt = 29 (unit = degree)
+  eccentricity = 0.01
+  facelocked = false
+  resonnant = false
+
+physical:
+  density = 0.731024 (unit = grams/cc)
+  radius = 32222.4 (unit = km)
+  mass = 17.14 (unit = EM)
+  dustMass = 0% 
+  gasMass = 100% 
+  escVelocity = 20.5973 (unit = km/s)
+
+durations:
+  yearE = 60199.3 (unit = earth days)
+  yearL = 90698.5 (unit = local days)
+  day = 15.9295 (unit = hours)
+  dayE = 0.66373 (unit = earth days)
+
+composition:
+  minMolec = 0.00298164 (unit = u)
+<gas symbol='H' proportion='0%' name='Hydrogen' state='gas'  /> 
+<gas symbol='N2' proportion='0%' name='Nitrogen/Azote' state='gas'  /> 
+<gas symbol='O3' proportion='0%' name='Ozone' state='gas'  /> 
+<gas symbol='Ar' proportion='0%' name='Argon' state='gas'  /> 
+<gas symbol='Xe' proportion='0%' name='Xenon' state='gas'  /> 
+<gas symbol='H2O' proportion='0%' name='Water' state='gas'  /> 
+<gas symbol='CH4' proportion='0%' name='Methane' state='gas'  /> 
+
+
+
+planet:
+  number = 10
+
+general:
+  type = Rock
+  giant = false
+  gasplanet = false
+  earthlike = false
+  albedo = 0.150072
+  atmosphere = false
+
+orbit:
+  radius = 39.529 (unit = AU)
+  tilt = 122 (unit = degree)
+  eccentricity = 0.248
+  facelocked = false
+  resonnant = false
+
+physical:
+  density = 2.21401 (unit = grams/cc)
+  radius = 1088.3 (unit = km)
+  mass = 0.002 (unit = EM)
+  dustMass = 100% 
+  gasMass = 0% 
+  escVelocity = 1.21067 (unit = km/s)
+
+durations:
+  yearE = 90776 (unit = earth days)
+  yearL = 37303.3 (unit = local days)
+  day = 58.403 (unit = hours)
+  dayE = 2.43346 (unit = earth days)
+
+composition:
+  minMolec = 0.374337 (unit = u)
+<gas symbol='He' proportion='92%' name='Helium' state='gas'  /> 
+<gas symbol='N2' proportion='0%' name='Nitrogen/Azote' state='solid'  /> 
+<gas symbol='O3' proportion='0%' name='Ozone' state='solid'  /> 
+<gas symbol='Ar' proportion='0%' name='Argon' state='solid'  /> 
+<gas symbol='Xe' proportion='0%' name='Xenon' state='solid'  /> 
+<gas symbol='H2O' proportion='0%' name='Water' state='solid'  /> 
+<gas symbol='CH4' proportion='0%' name='Methane' state='solid'  /> 
+
+
+temperatures:
+  exospheric = 0.814698 (unit = Kelvin)
+  surfaceAvg = -230 (unit = Celcius)
+  surfaceMax = -205 (unit = Celcius)
+  surfaceMin = -253 (unit = Celcius)
+
+surface:
+  gravity = 0.0686651 (unit = Earth G)
+  pressure = 7.14013e-09 (unit = Earth atm)
+  boilingpoint = 156 (unit = Kelvin)
+  greenhouse = false
+
+coverage:
+  ground = 99% 
+  water = 0% 
+  ice = 0% 
+  cloud = 0% 
+
+comments:
+  gravity = low gravity
+  temperature = cold
+  icyPlanet = no
+  atmosphere = airless
+  clouds = cloudless
+
+
+

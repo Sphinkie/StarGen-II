@@ -4,7 +4,7 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp \
+        sources/main.cpp \
         sources/lib/SG_Atmosphere.cpp \
         sources/lib/SG_File.cpp \
         sources/lib/SG_FileWriter.cpp \

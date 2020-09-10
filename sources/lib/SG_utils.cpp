@@ -6,7 +6,7 @@
 /* ------------------------------------------------------------------------- */
 
 #include	<math.h>
-#include	<fstream.h>
+#include	<fstream>
 #include	<time.h>
 
 #include	"SG_Utils.h"

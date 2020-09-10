@@ -53,7 +53,7 @@ class SG_Planet
 		void setPlanetNumber(int number);
 
 	protected:
-		typedef enum planet_type
+        enum planet_type
 		{	tUnknown,     tRock,     tVenusian,
 			tTerrestrial, tGasGiant, tMartian,
 			tWater,       tIce,      tSubGasGiant,
