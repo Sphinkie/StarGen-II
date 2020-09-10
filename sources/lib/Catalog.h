@@ -1,19 +1,19 @@
 /* ------------------------------------------------------------------------- */
-// File       : StarDatabase.h
+// File       : Catalog.h
 // Project    : StarGen 2
 // Author     : David de Lorenzo
 // Author     : Chris Laurel (Celestia Project)
 /* ------------------------------------------------------------------------- */
 
-#ifndef _STAR_DATABASE_H_
-#define _STAR_DATABASE_H_
+#ifndef _CATALOG_H_
+#define _CATALOG_H_
 
 #if _MSC_VER > 1000
 #pragma once
 #endif 
 
 #include <fstream>
-#include <vector>
+#include <map>
 #include "CatalogStar.h"
 
 /* ------------------------------------------------------------------------- */
@@ -36,10 +36,10 @@ soit           = tttt ssss cccc llll
 - llll est la luminosité de l'étoile (classification Yerkes)
 */
 /* ------------------------------------------------------------------------- */
-class StarDatabase  
+class Catalog
 {
 public:
-    StarDatabase(std::string filename);
+    Catalog(std::string filename);
     int          readStars(int starNumber = 0);
     CatalogStar* getStar(unsigned int index);
 
@@ -48,10 +48,10 @@ protected:
     bool     openFile(std::string filename);
     void     closeFile();
 
-    std::string   mFilename;            ///< Celestia DAT filename (usually stars.dat)
-    std::ifstream starFile;             ///< Celestia DAT file
-    int      mStarsInFile;              ///< Nombre d'étoiles dans le fichier
-    std::vector<CatalogStar> mCatalog;  ///< Catalog of the stars found in the .dat file
+    std::string   mFilename;             ///< Celestia DAT filename (usually stars.dat)
+    std::ifstream mStarFile;             ///< Celestia DAT file
+    int           mStarsInFile;          ///< Nombre d'étoiles dans le fichier
+    std::map<const long, CatalogStar*> mCatalog; ///< Catalog of the stars found in the .dat file
 
 
 	int      mNormalStarCount;   ///< Compteur pour statistiques

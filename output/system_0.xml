@@ -1,75 +1,76 @@
 <system seed='0' >
-<star mass='1' lum='1.00326' age='5' life='9.96755' ecosphere='1.00163' planets='10' />
+<star name='Sol' mass='1.000000' lum='1.000000' age='5.000000' life='10.000000' ecosphere='1.000000' planets='10' />
 
 
 <!-- ********************************************** --> 
 <planet number='1' >
-<general type='Rock' giant='false' gasplanet='false' earthlike='false' albedo='0.07' atmosphere='false' />
-<orbit radius='0.387' tilt='2' eccentricity='0.206' facelocked='false' resonnant='true' />
-<physical density='5.3363' radius='2450.04' coreradius='2450.04' mass='0.055' dustMass='100%' gasMass='0%' escVelocity='4.23136' />
-<durations yearE='87.9354' yearL='1.51889' day='1389.47' dayE='57.8945' />
-<composition minMolec='295.958' metal='false' rock='true' >
+<general type='Rock' giant='no' gasPlanet='no' earthlike='no' albedo='0.070000' atmosphere='no' />
+<orbit radius='0.387000' tilt='2' eccentricity='0.206000' facelocked='no' resonnant='yes' />
+<physical density='5.336301' radius='2450.035344' coreRadius='2450.035344' mass='0.055000' dustMass='100%' gasMass='0%' escVelocity='4.231358' />
+<durations yearE='87.935405' yearL='1.518892' day='1389.466904' dayE='57.894454' />
+<composition minMolec='294.997646' metal='no' rock='yes' >
 </composition> 
 <atmosphere inventory='0' breathe='none' >
 </atmosphere> 
-<temperatures exospheric='8527.43' surfaceAvg='167' surfaceMax='368' surfaceMin='-202' nightTemp='-188' dayTemp='364' />
-<surface gravity='0.372581' pressure='0' boilingpoint='0' greenhouse='false' />
+<temperatures exospheric='8499.756291' surfaceAvg='166' surfaceMax='368' surfaceMin='-202' nightTemp='-188' dayTemp='364' />
+<surface gravity='0.372581' pressure='0.000000' boilingPoint='0' greenhouseEffect='no' />
 <coverage ground='100%' water='0%' ice='0%' cloud='0%' />
 <comments gravity='low gravity' temperature='warm' icyPlanet='no' atmosphere='airless' clouds='cloudless' />
 </planet> 
 
 <!-- ********************************************** --> 
 <planet number='2' >
-<general type='Venusian' giant='false' gasplanet='false' earthlike='false' albedo='0.52' atmosphere='true' />
-<orbit radius='0.723' tilt='177' eccentricity='0.007' facelocked='false' resonnant='false' />
-<physical density='5.47418' radius='5966.84' coreradius='5966.84' mass='0.815' dustMass='100%' gasMass='0%' escVelocity='10.4374' />
-<durations yearE='224.545' yearL='179.784' day='29.9753' dayE='1.24897' />
-<composition minMolec='14.0028' metal='true' rock='true' >
+<general type='Venusian' giant='no' gasPlanet='no' earthlike='no' albedo='0.520000' atmosphere='yes' />
+<orbit radius='0.723000' tilt='177' eccentricity='0.007000' facelocked='no' resonnant='no' />
+<physical density='5.474177' radius='5966.841180' coreRadius='5966.841180' mass='0.815000' dustMass='100%' gasMass='0%' escVelocity='10.437373' />
+<durations yearE='224.545457' yearL='179.784257' day='29.975322' dayE='1.248972' />
+<composition minMolec='13.957403' metal='yes' rock='yes' >
 <molecule symbol='Ni' />
 <molecule symbol='Cu' />
 <molecule symbol='Fe' />
 </composition> 
-<atmosphere inventory='114100' breathe='poisonous' toxicGas='Argon' >
-<gas symbol='Ar' proportion='80.7%' name='Argon' toxic='true' />
-<gas symbol='CO2' proportion='14.3%' name='CarbonDiOxide' toxic='true' />
-<gas symbol='N2' proportion='3.5%' name='Nitrogen/Azote' toxic='true' />
-<gas symbol='H2O' proportion='0.9%' name='Water' toxic='false' />
-<gas symbol='Kr' proportion='0.2%' name='Krypton' toxic='false' />
+<atmosphere inventory='114099' breathe='poisonous' toxicGas='Oxygen' >
+<gas symbol='O' proportion='98%' name='Oxygen' toxic='yes' />
+<gas symbol='Ar' proportion='0%' name='Argon' toxic='no' />
+<gas symbol='N2' proportion='0%' name='Nitrogen/Azote' toxic='no' />
+<gas symbol='Cl' proportion='0%' name='Chlore' toxic='yes' />
+<gas symbol='CO2' proportion='0%' name='CarbonDiOxide' toxic='yes' />
 </atmosphere> 
-<temperatures exospheric='2443.22' surfaceAvg='711' surfaceMax='715' surfaceMin='700' nightTemp='705' dayTemp='710' />
-<surface gravity='0.930833' pressure='92.956' boilingpoint='437' greenhouse='true' />
+<temperatures exospheric='2435.296301' surfaceAvg='710' surfaceMax='714' surfaceMin='700' nightTemp='704' dayTemp='710' />
+<surface gravity='0.930833' pressure='92.955982' boilingPoint='437' greenhouseEffect='yes' />
 <coverage ground='100%' water='0%' ice='0%' cloud='100%' />
 <comments gravity='gravity OK' temperature='warm' icyPlanet='no' atmosphere='thick atm' clouds='cloudy' />
 <ocean >
 </ocean> 
 <rain >
-<liquid liquid='Sulfuric acid' symbol='H2SO4' />
+<liquid liquid='yes' symbol='yes' />
 </rain> 
-<climate water='arid' />
+<climate humidityLevel='arid' />
 </planet> 
 
 <!-- ********************************************** --> 
 <planet number='3' >
-<general type='Terrestrial' giant='false' gasplanet='false' earthlike='true' albedo='0.331353' atmosphere='true' />
-<orbit radius='1' tilt='23' eccentricity='0.017' facelocked='false' resonnant='false' />
-<physical density='5.49857' radius='6378.45' coreradius='6378.45' mass='1' dustMass='100%' gasMass='0%' escVelocity='11.1822' />
-<durations yearE='365.255' yearL='540.131' day='16.2297' dayE='0.676235' />
-<composition minMolec='6.37707' metal='true' rock='true' >
+<general type='Terrestrial' giant='no' gasPlanet='no' earthlike='no' albedo='0.330146' atmosphere='yes' />
+<orbit radius='1.000000' tilt='23' eccentricity='0.017000' facelocked='no' resonnant='no' />
+<physical density='5.498567' radius='6378.448328' coreRadius='6378.448328' mass='1.000000' dustMass='100%' gasMass='0%' escVelocity='11.182197' />
+<durations yearE='365.255451' yearL='540.130535' day='16.229652' dayE='0.676236' />
+<composition minMolec='6.356373' metal='yes' rock='yes' >
 <molecule symbol='Ni' />
 <molecule symbol='Cu' />
 <molecule symbol='Fe' />
 <molecule symbol='S' />
 <molecule symbol='C' />
 </composition> 
-<atmosphere inventory='1000' breathe='non-toxic' >
-<gas symbol='N2' proportion='83.8%' name='Nitrogen/Azote' toxic='false' />
-<gas symbol='O' proportion='15.2%' name='Oxygen' toxic='false' />
-<gas symbol='Ar' proportion='0.7%' name='Argon' toxic='false' />
-<gas symbol='CO2' proportion='0.1%' name='CarbonDiOxide' toxic='false' />
+<atmosphere inventory='1000' breathe='poisonous' toxicGas='Chlore' >
+<gas symbol='N2' proportion='77%' name='Nitrogen/Azote' toxic='no' />
+<gas symbol='O' proportion='21%' name='Oxygen' toxic='no' />
+<gas symbol='Ar' proportion='1%' name='Argon' toxic='no' />
+<gas symbol='CO2' proportion='0%' name='CarbonDiOxide' toxic='no' />
+<gas symbol='Cl' proportion='0%' name='Chlore' toxic='yes' />
 </atmosphere> 
-<temperatures exospheric='1277.14' surfaceAvg='16' surfaceMax='40' surfaceMin='-10' nightTemp='11' dayTemp='20' />
-<surface gravity='0.999478' pressure='0.999618' boilingpoint='373' greenhouse='false' />
-<coverage ground='27.2%' water='70.9%' ice='1.7%' cloud='57.3%' />
+<temperatures exospheric='1273.000000' surfaceAvg='15' surfaceMax='40' surfaceMin='-10' nightTemp='11' dayTemp='20' />
+<surface gravity='0.999478' pressure='0.999618' boilingPoint='373' greenhouseEffect='no' />
+<coverage ground='27%' water='70%' ice='1%' cloud='57%' />
 <comments gravity='gravity OK' temperature='temperature OK' icyPlanet='no' atmosphere='normal atm' clouds='mid-coverage' />
 <ocean >
 <liquid liquid='Water' symbol='H2O' />
@@ -77,117 +78,117 @@
 <rain >
 <liquid liquid='Water' symbol='H2O' />
 </rain> 
-<climate water='balanced' />
+<climate humidityLevel='balanced' />
 </planet> 
 
 <!-- ********************************************** --> 
 <planet number='4' >
-<general type='Martian' giant='false' gasplanet='false' earthlike='false' albedo='0.423497' atmosphere='true' />
-<orbit radius='1.524' tilt='25' eccentricity='0.093' facelocked='false' resonnant='false' />
-<physical density='5.35159' radius='3059.42' coreradius='3059.42' mass='0.1074' dustMass='100%' gasMass='0%' escVelocity='5.29136' />
-<durations yearE='687.187' yearL='714.891' day='23.0699' dayE='0.961246' />
-<composition minMolec='12.2623' metal='true' rock='true' >
+<general type='Martian' giant='no' gasPlanet='no' earthlike='no' albedo='0.423496' atmosphere='yes' />
+<orbit radius='1.524000' tilt='25' eccentricity='0.093000' facelocked='no' resonnant='no' />
+<physical density='5.351588' radius='3059.417483' coreRadius='3059.417483' mass='0.107400' dustMass='100%' gasMass='0%' escVelocity='5.291361' />
+<durations yearE='687.186690' yearL='714.891276' day='23.069914' dayE='0.961246' />
+<composition minMolec='12.222467' metal='yes' rock='yes' >
 <molecule symbol='Ni' />
 <molecule symbol='Cu' />
 <molecule symbol='Fe' />
 <molecule symbol='S' />
 <molecule symbol='H2O' />
 </composition> 
-<atmosphere inventory='107.4' breathe='not enough oxygen' >
-<gas symbol='N2' proportion='94.1%' name='Nitrogen/Azote' toxic='false' />
-<gas symbol='Ar' proportion='4.9%' name='Argon' toxic='false' />
-<gas symbol='CO2' proportion='0.8%' name='CarbonDiOxide' toxic='false' />
+<atmosphere inventory='107' breathe='not enough oxygen' >
+<gas symbol='O' proportion='92%' name='Oxygen' toxic='no' />
+<gas symbol='N2' proportion='6%' name='Nitrogen/Azote' toxic='no' />
+<gas symbol='Ar' proportion='0%' name='Argon' toxic='no' />
 </atmosphere> 
-<temperatures exospheric='549.883' surfaceAvg='-72' surfaceMax='-27' surfaceMin='-118' nightTemp='-90' dayTemp='-53' />
-<surface gravity='0.466584' pressure='0.0115304' boilingpoint='326' greenhouse='false' />
-<coverage ground='50.2%' water='0%' ice='49.7%' cloud='0%' />
+<temperatures exospheric='548.098318' surfaceAvg='-72' surfaceMax='-27' surfaceMin='-118' nightTemp='-91' dayTemp='-53' />
+<surface gravity='0.466584' pressure='0.011530' boilingPoint='326' greenhouseEffect='no' />
+<coverage ground='50%' water='0%' ice='49%' cloud='0%' />
 <comments gravity='low gravity' temperature='cold' icyPlanet='yes' atmosphere='unbreathly thin atm' clouds='cloudless' />
 <ocean >
 </ocean> 
 <rain >
 </rain> 
-<climate water='arid' />
+<climate humidityLevel='arid' />
 </planet> 
 
 <!-- ********************************************** --> 
 <planet number='5' >
-<general type='Asteroids' giant='false' gasplanet='false' earthlike='false' albedo='0.07' atmosphere='false' />
-<orbit radius='2.767' tilt='0' eccentricity='0.079' facelocked='false' resonnant='false' />
-<physical density='5.30967' radius='330.225' coreradius='330.225' mass='0.000134' dustMass='100%' gasMass='0%' escVelocity='0.568895' />
-<durations yearE='1681.17' yearL='464.898' day='86.789' dayE='3.61621' />
-<composition minMolec='320.28' metal='false' rock='true' >
+<general type='Asteroids' giant='no' gasPlanet='no' earthlike='no' albedo='0.070000' atmosphere='no' />
+<orbit radius='2.767000' tilt='0' eccentricity='0.079000' facelocked='no' resonnant='no' />
+<physical density='5.309672' radius='330.225486' coreRadius='330.225486' mass='0.000134' dustMass='100%' gasMass='0%' escVelocity='0.568895' />
+<durations yearE='1681.167932' yearL='464.897792' day='86.789034' dayE='3.616210' />
+<composition minMolec='319.240728' metal='no' rock='yes' >
 </composition> 
 <atmosphere inventory='0' breathe='none' >
 </atmosphere> 
-<temperatures exospheric='166.81' surfaceAvg='-108' surfaceMax='-34' surfaceMin='-182' nightTemp='-158' dayTemp='-59' />
-<surface gravity='0.0499674' pressure='0' boilingpoint='0' greenhouse='false' />
+<temperatures exospheric='166.268541' surfaceAvg='-108' surfaceMax='-34' surfaceMin='-182' nightTemp='-158' dayTemp='-59' />
+<surface gravity='0.049967' pressure='0.000000' boilingPoint='0' greenhouseEffect='no' />
 <coverage ground='100%' water='0%' ice='0%' cloud='0%' />
 <comments gravity='low gravity' temperature='cold' icyPlanet='no' atmosphere='airless' clouds='cloudless' />
 </planet> 
 
 <!-- ********************************************** --> 
 <planet number='6' >
-<general type='GasGiant' giant='true' gasplanet='true' earthlike='false' albedo='0.450116' atmosphere='true' />
-<orbit radius='5.203' tilt='3' eccentricity='0.048' facelocked='false' resonnant='false' />
-<physical density='1.63335' radius='65243' coreradius='0' mass='317.9' dustMass='0%' gasMass='100%' escVelocity='62.3395' />
-<durations yearE='4332.82' yearL='13884.9' day='7.48925' dayE='0.312052' />
-<composition minMolec='0.0109009' metal='false' rock='false' >
+<general type='GasGiant' giant='yes' gasPlanet='yes' earthlike='no' albedo='0.450116' atmosphere='yes' />
+<orbit radius='5.203000' tilt='3' eccentricity='0.048000' facelocked='no' resonnant='no' />
+<physical density='1.632691' radius='65251.831817' coreRadius='0.000000' mass='317.900000' dustMass='0%' gasMass='100%' escVelocity='62.335228' />
+<durations yearE='4332.821086' yearL='13883.041219' day='7.490268' dayE='0.312095' />
+<composition minMolec='0.010867' metal='no' rock='no' >
 </composition> 
-<atmosphere inventory='2.38425e+07' breathe='none' >
+<atmosphere inventory='23842500' breathe='none' >
 </atmosphere> 
-<limit gravity='3.03687' pressure='0.0986923' />
-<center gravity='0' pressure='7.57664e+06' />
+<limit gravity='3.036045' pressure='0.098692' />
+<center gravity='0.000000' pressure='7576635.726465' />
 </planet> 
 
 <!-- ********************************************** --> 
 <planet number='7' >
-<general type='GasGiant' giant='true' gasplanet='true' earthlike='false' albedo='0.473557' atmosphere='true' />
-<orbit radius='9.539' tilt='26' eccentricity='0.056' facelocked='false' resonnant='false' />
-<physical density='1.20726' radius='48273.9' coreradius='0' mass='95.18' dustMass='0%' gasMass='100%' escVelocity='39.6553' />
-<durations yearE='10759.4' yearL='25498.3' day='10.1272' dayE='0.421967' />
-<composition minMolec='0.00801469' metal='false' rock='false' >
+<general type='GasGiant' giant='yes' gasPlanet='yes' earthlike='no' albedo='0.473557' atmosphere='yes' />
+<orbit radius='9.539000' tilt='26' eccentricity='0.056000' facelocked='no' resonnant='no' />
+<physical density='1.206768' radius='48280.441384' coreRadius='0.000000' mass='95.180000' dustMass='0%' gasMass='100%' escVelocity='39.652619' />
+<durations yearE='10759.436646' yearL='25494.849794' day='10.128574' dayE='0.422024' />
+<composition minMolec='0.007990' metal='no' rock='no' >
 </composition> 
-<atmosphere inventory='7.1385e+06' breathe='none' >
+<atmosphere inventory='7138500' breathe='none' >
 </atmosphere> 
-<limit gravity='1.66083' pressure='0.0986923' />
-<center gravity='0' pressure='679183' />
+<limit gravity='1.660376' pressure='0.098692' />
+<center gravity='0.000000' pressure='679182.915013' />
 </planet> 
 
 <!-- ********************************************** --> 
 <planet number='8' >
-<general type='GasPlanet' giant='true' gasplanet='true' earthlike='false' albedo='0.514815' atmosphere='true' />
-<orbit radius='19.191' tilt='97' eccentricity='0.046' facelocked='false' resonnant='false' />
-<physical density='0.801432' radius='29575.4' coreradius='0' mass='14.53' dustMass='0%' gasMass='93.1%' escVelocity='19.7949' />
-<durations yearE='30706.8' yearL='46408.6' day='15.8799' dayE='0.661662' />
-<composition minMolec='0.00794685' metal='false' rock='false' >
+<general type='GasPlanet' giant='yes' gasPlanet='yes' earthlike='no' albedo='0.514815' atmosphere='yes' />
+<orbit radius='19.191000' tilt='97' eccentricity='0.046000' facelocked='no' resonnant='no' />
+<physical density='0.801106' radius='29579.383925' coreRadius='0.000000' mass='14.530000' dustMass='0%' gasMass='93%' escVelocity='19.793513' />
+<durations yearE='30706.780588' yearL='46402.275203' day='15.882039' dayE='0.661752' />
+<composition minMolec='0.007922' metal='no' rock='no' >
 </composition> 
-<atmosphere inventory='3632.5' breathe='none' >
+<atmosphere inventory='3632' breathe='none' >
 </atmosphere> 
-<limit gravity='0.675473' pressure='0.0986923' />
-<center gravity='0' pressure='52.7601' />
+<limit gravity='0.675290' pressure='0.098692' />
+<center gravity='0.000000' pressure='52.760065' />
 </planet> 
 
 <!-- ********************************************** --> 
 <planet number='9' >
-<general type='GasPlanet' giant='true' gasplanet='true' earthlike='false' albedo='0.457437' atmosphere='true' />
-<orbit radius='30.061' tilt='29' eccentricity='0.01' facelocked='false' resonnant='false' />
-<physical density='0.731321' radius='32218' coreradius='0' mass='17.14' dustMass='0%' gasMass='100%' escVelocity='20.5988' />
-<durations yearE='60199.3' yearL='90711' day='15.9273' dayE='0.663638' />
-<composition minMolec='0.00299093' metal='false' rock='false' >
+<general type='GasPlanet' giant='yes' gasPlanet='yes' earthlike='no' albedo='0.457437' atmosphere='yes' />
+<orbit radius='30.061000' tilt='29' eccentricity='0.010000' facelocked='no' resonnant='no' />
+<physical density='0.731024' radius='32222.331137' coreRadius='0.000000' mass='17.140000' dustMass='0%' gasMass='100%' escVelocity='20.597361' />
+<durations yearE='60199.281802' yearL='90698.701455' day='15.929476' dayE='0.663728' />
+<composition minMolec='0.002982' metal='no' rock='no' >
 </composition> 
 <atmosphere inventory='4285' breathe='none' >
 </atmosphere> 
-<limit gravity='0.671456' pressure='0.0986923' />
-<center gravity='0' pressure='73.4168' />
+<limit gravity='0.671274' pressure='0.098692' />
+<center gravity='0.000000' pressure='73.416848' />
 </planet> 
 
 <!-- ********************************************** --> 
 <planet number='10' >
-<general type='Rock' giant='false' gasplanet='false' earthlike='false' albedo='0.150072' atmosphere='false' />
-<orbit radius='39.529' tilt='122' eccentricity='0.248' facelocked='false' resonnant='false' />
-<physical density='2.21401' radius='1088.3' coreradius='1088.3' mass='0.002' dustMass='100%' gasMass='0%' escVelocity='1.21067' />
-<durations yearE='90776' yearL='37303.3' day='58.403' dayE='2.43346' />
-<composition minMolec='0.375555' metal='false' rock='true' >
+<general type='Rock' giant='no' gasPlanet='no' earthlike='no' albedo='0.150072' atmosphere='no' />
+<orbit radius='39.529000' tilt='122' eccentricity='0.248000' facelocked='no' resonnant='no' />
+<physical density='2.214006' radius='1088.299956' coreRadius='1088.299956' mass='0.002000' dustMass='100%' gasMass='0%' escVelocity='1.210669' />
+<durations yearE='90776.011959' yearL='37303.316264' day='58.402965' dayE='2.433457' />
+<composition minMolec='0.374337' metal='no' rock='yes' >
 <molecule symbol='Ni' />
 <molecule symbol='Cu' />
 <molecule symbol='Fe' />
@@ -207,13 +208,13 @@
 <molecule symbol='O' />
 <molecule symbol='N2' />
 </composition> 
-<atmosphere inventory='0.00357143' breathe='non-toxic' >
-<gas symbol='He' proportion='93%' name='Helium' toxic='false' />
-<gas symbol='H' proportion='6.9%' name='Hydrogen' toxic='false' />
+<atmosphere inventory='0' breathe='non-toxic' >
+<gas symbol='H' proportion='54%' name='Hydrogen' toxic='no' />
+<gas symbol='He' proportion='45%' name='Helium' toxic='no' />
 </atmosphere> 
-<temperatures exospheric='0.81735' surfaceAvg='-230' surfaceMax='-205' surfaceMin='-253' nightTemp='-239' dayTemp='-220' />
-<surface gravity='0.0686651' pressure='7.14013e-09' boilingpoint='233' greenhouse='false' />
-<coverage ground='99.9%' water='0%' ice='0%' cloud='0%' />
+<temperatures exospheric='0.814698' surfaceAvg='-230' surfaceMax='-205' surfaceMin='-253' nightTemp='-239' dayTemp='-220' />
+<surface gravity='0.068665' pressure='0.000000' boilingPoint='233' greenhouseEffect='no' />
+<coverage ground='99%' water='0%' ice='0%' cloud='0%' />
 <comments gravity='low gravity' temperature='cold' icyPlanet='no' atmosphere='airless' clouds='cloudless' />
 </planet> 
 </system> 

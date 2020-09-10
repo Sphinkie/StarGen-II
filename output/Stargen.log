@@ -1,504 +1,1013 @@
->> SG_SolarSystem
-Size of float:      4 bits
-Size of double:     8 bits
-Size of long double:8 bits
-Seed: 6
-Earth Estimate temperature   : 14 C
-Temperature relative to Earth: 0 C
->> generateSolarSystem
-   planets created
-   GasGiant set
-   Axial tilt set
-   Dust and gas mass set
+>> STARGEN starting 
+Size of float      :4 bytes: 32 bits
+Size of long double:8 bytes: 64 bits
+Size of short      :2 bytes: 16 bits
+Size of int        :4 bytes: 32 bits
+Size of long       :4 bytes: 32 bits
+Size of long int   :4 bytes: 32 bits
+Size of double     :8 bytes: 64 bits
+Seed: 0
+Recreating our Solar System :
+planets created
+===============================================
 Planet No 1
-Orbit    = 0.387AU
-base_angular_velocity = 6.96122e-05
-ang_velocity = -0.0129943
-Gas lifetime H2  = 0.000681074 years
-Gas lifetime H2O = 0.000191452 years
-Gas lifetime N   = 0.000168159 years
-Gas lifetime N2  = 0.000350248 years
-surface temperature  = 166.929 C
-greenhouse temperature = -64.5574
-    * GreenHouse Effect running
-Water:  0 %
-Clouds: 0 %
-Ice:    0 %
-Albedo: 0.07
+Orbit    = 0.387000AU
+base_angular_velocity = 0.000070
+ang_velocity = -0.012994
+Surface temperature = 440.079284
+GreenHouse rise temperature = -64.557412
+GreenHouse Effect = running
  number_of_gas :0
-Gravity    = 0.372581
-Temperature= 152.929
-Type       = 1
-Pressure   = 0
-Earthlike  = false
+Gravity    = 0.372581g
+Pressure   = 0.000000mB
+Earthlike  = 0
 ===============================================
 Planet No 2
-Orbit    = 0.723AU
-base_angular_velocity = 0.00011003
-ang_velocity = 5.82255e-05
-Gas lifetime H2  = 0.00115773 years
-Gas lifetime H2O = inf years
-Gas lifetime N   = 6.53929e+09 years
-Gas lifetime N2  = inf years
-surface temperature  = 710.332 C
-greenhouse temperature = 614.279
-    * GreenHouse Effect running
-Water:  0 %
-Clouds: 100 %
-Ice:    0 %
-Albedo: 0.52
+Orbit    = 0.723000AU
+base_angular_velocity = 0.000110
+ang_velocity = 0.000058
+Surface temperature = 983.481626
+GreenHouse rise temperature = 614.278676
+GreenHouse Effect = running
 gas =N2
-  abund :3.13329
- *pvrms :0.982987
- *react :1
- *pres2 :237.344
- *fract :0.00351957
- =amount:0.0108402
+  abund :3.133290
+ *pvrms :0.550524
+ *react :1.000000
+ *fract :0.003520
+ =amount:0.006071
 gas =O
-  abund :23.8232
- *pvrms :0.984071
- *react :0
- *pres2 :237.344
- *fract :0.12763
- =amount:0
+  abund :23.823200
+ *pvrms :0.570900
+ *react :1.000000
+ *fract :0.127662
+ =amount:1.736294
 gas =O3
-  abund :1e-06
- *pvrms :0.990766
- *react :0
- *pres2 :237.344
+  abund :0.000001
+ *pvrms :0.718028
+ *react :1.000000
  *fract :0.709221
- =amount:0
+ =amount:0.000001
 gas =Ne
-  abund :3.4435e-05
- *pvrms :0.985798
- *react :1
- *pres2 :237.344
+  abund :0.000034
+ *pvrms :0.605187
+ *react :1.000000
  *fract :0.308012
- =amount:1.04558e-05
+ =amount:0.000006
 gas =Ar
   abund :0.100925
- *pvrms :0.989884
- *react :0.2375
- *pres2 :1
+ *pvrms :0.696301
+ *react :0.237500
  *fract :0.650611
- =amount:0.0154372
+ =amount:0.010859
 gas =Kr
-  abund :4.4978e-05
- *pvrms :0.993002
- *react :1
- *pres2 :237.344
+  abund :0.000045
+ *pvrms :0.776705
+ *react :1.000000
  *fract :0.833444
- =amount:3.72243e-05
+ =amount:0.000029
 gas =Xe
-  abund :4.6989e-06
- *pvrms :0.994405
- *react :1
- *pres2 :237.344
+  abund :0.000005
+ *pvrms :0.816367
+ *react :1.000000
  *fract :0.893698
- =amount:4.1759e-06
+ =amount:0.000003
 gas =NH3
-  abund :0.0001
- *pvrms :0.984542
- *react :0
- *pres2 :237.344
+  abund :0.000100
+ *pvrms :0.580026
+ *react :1.000000
  *fract :0.178976
- =amount:0
+ =amount:0.000010
 gas =H2O
-  abund :0.001
- *pvrms :0.984974
- *react :1
- *pres2 :237.344
+  abund :0.001000
+ *pvrms :0.588533
+ *react :1.000000
  *fract :0.224589
- =amount:0.000221214
+ =amount:0.000132
 gas =CO2
-  abund :0.0005
- *pvrms :0.990358
- *react :1
- *pres2 :237.344
+  abund :0.004000
+ *pvrms :0.707881
+ *react :1.000000
  *fract :0.682786
- =amount:0.000338101
+ =amount:0.001933
 gas =CH4
-  abund :0.0001
- *pvrms :0.984071
- *react :0
- *pres2 :237.344
+  abund :0.000100
+ *pvrms :0.570900
+ *react :1.000000
  *fract :0.127662
- =amount:0
- number_of_gas :10
+ =amount:0.000007
+gas =F
+  abund :0.000843
+ *pvrms :0.596416
+ *react :1.000000
+ *fract :0.265013
+ =amount:0.000133
+gas =Cl
+  abund :0.005236
+ *pvrms :0.681528
+ *react :1.000000
+ *fract :0.606279
+ =amount:0.002163
+gas =SO2
+  abund :0.000200
+ *pvrms :0.749769
+ *react :1.000000
+ *fract :0.782120
+ =amount:0.000117
+gas =CO
+  abund :0.000010
+ *pvrms :0.650938
+ *react :1.000000
+ *fract :0.501699
+ =amount:0.000003
+ number_of_gas :15
  gas :N2
- partial_pressure :37972.1
- pourcentage :40
+ partial_pressure :325.308267
+ pourcentage :0.003454
+ gas :O
+ partial_pressure :93037.215979
+ pourcentage :0.987786
  gas :O3
- partial_pressure :0
- pourcentage :0
+ partial_pressure :0.027287
+ pourcentage :0.000000
  gas :Ne
- partial_pressure :36.6253
- pourcentage :0
+ partial_pressure :0.343946
+ pourcentage :0.000004
  gas :Ar
- partial_pressure :54074.7
- pourcentage :57
+ partial_pressure :581.854510
+ pourcentage :0.006178
  gas :Kr
- partial_pressure :130.393
- pourcentage :0
+ partial_pressure :1.560149
+ pourcentage :0.000017
  gas :Xe
- partial_pressure :14.6277
- pourcentage :0
+ partial_pressure :0.183699
+ pourcentage :0.000002
  gas :NH3
- partial_pressure :0
- pourcentage :0
+ partial_pressure :0.556258
+ pourcentage :0.000006
  gas :H2O
- partial_pressure :774.888
- pourcentage :0
+ partial_pressure :7.082596
+ pourcentage :0.000075
  gas :CO2
- partial_pressure :1184.33
- pourcentage :1
+ partial_pressure :103.594975
+ pourcentage :0.001100
  gas :CH4
- partial_pressure :0
- pourcentage :0
-Gravity    = 0.930833
-Temperature= 696.332
-Type       = 2
-Pressure   = 94187.6
-Earthlike  = false
+ partial_pressure :0.390532
+ pourcentage :0.000004
+ gas :F
+ partial_pressure :7.142449
+ pourcentage :0.000076
+ gas :Cl
+ partial_pressure :115.928340
+ pourcentage :0.001231
+ gas :SO2
+ partial_pressure :6.284407
+ pourcentage :0.000067
+ gas :CO
+ partial_pressure :0.174991
+ pourcentage :0.000002
+Gravity    = 0.930833g
+Pressure   = 94187.648386mB
+Earthlike  = 0
 ===============================================
 Planet No 3
-Orbit    = 1AU
-base_angular_velocity = 0.000114015
-ang_velocity = 0.00010754
-Gas lifetime H2  = 0.220992 years
-Gas lifetime H2O = inf years
-Gas lifetime N   = inf years
-Gas lifetime N2  = inf years
-surface temperature  = 15.998 C
-greenhouse temperature = -24.7831
-Water:  70.99 %
-Clouds: 57.1239 %
-Ice:    1.75386 %
-Albedo: 0.330146
+Orbit    = 1.000000AU
+base_angular_velocity = 0.000114
+ang_velocity = 0.000108
+Surface temperature = 289.148003
+GreenHouse rise temperature = -24.783074
 gas =N2
-  abund :3.13329
- *pvrms :0.981343
- *react :1.5
- *pres2 :1.76286
+  abund :3.133290
+ *pvrms :0.732727
+ *react :1.000000
  *fract :0.546191
- =amount:2.51917
+ =amount:1.253969
 gas =O
-  abund :23.8232
- *pvrms :0.98253
- *react :0.0318405
- *pres2 :1.14322
- *fract :0.602712
- =amount:0.449196
+  abund :23.823200
+ *pvrms :0.747113
+ *react :0.031840
+ *fract :0.602727
+ =amount:0.341575
 gas =O3
-  abund :1e-06
- *pvrms :0.989869
- *react :0.0701772
- *pres2 :1.76286
+  abund :0.000001
+ *pvrms :0.843338
+ *react :0.978554
  *fract :0.867576
- =amount:6.02673e-08
+ =amount:0.000001
 gas =Ne
-  abund :3.4435e-05
- *pvrms :0.984423
- *react :1.5
- *pres2 :1.76286
- *fract :0.68486
- =amount:3.48237e-05
+  abund :0.000034
+ *pvrms :0.770686
+ *react :1.000000
+ *fract :0.684860
+ =amount:0.000018
 gas =Ar
   abund :0.100925
- *pvrms :0.988901
- *react :0.2375
- *pres2 :1
+ *pvrms :0.829884
+ *react :0.237500
  *fract :0.840884
- =amount:0.019932
+ =amount:0.016727
 gas =Kr
-  abund :4.4978e-05
- *pvrms :0.992321
- *react :1.5
- *pres2 :1.76286
+  abund :0.000045
+ *pvrms :0.878547
+ *react :1.000000
  *fract :0.924148
- =amount:6.18707e-05
+ =amount:0.000037
 gas =Xe
-  abund :4.6989e-06
- *pvrms :0.99386
- *react :1.5
- *pres2 :1.76286
+  abund :0.000005
+ *pvrms :0.901484
+ *react :1.000000
  *fract :0.951589
- =amount:6.66595e-06
+ =amount:0.000004
 gas =NH3
-  abund :0.0001
- *pvrms :0.983047
- *react :0.217281
- *pres2 :1.76286
+  abund :0.000100
+ *pvrms :0.753463
+ *react :0.921573
  *fract :0.626096
- =amount:1.33732e-05
+ =amount:0.000043
 gas =CO2
-  abund :0.0005
- *pvrms :0.989421
- *react :1.5
- *pres2 :1.76286
+  abund :0.004000
+ *pvrms :0.837084
+ *react :1.500000
  *fract :0.855537
- =amount:0.000634865
+ =amount:0.004297
 gas =CH4
-  abund :0.0001
- *pvrms :0.982531
- *react :0.217281
- *pres2 :1.76286
+  abund :0.000100
+ *pvrms :0.747113
+ *react :0.921573
  *fract :0.602727
- =amount:1.28673e-05
- number_of_gas :10
+ =amount:0.000041
+gas =F
+  abund :0.000843
+ *pvrms :0.764728
+ *react :1.000000
+ *fract :0.665278
+ =amount:0.000429
+gas =Cl
+  abund :0.005236
+ *pvrms :0.820598
+ *react :0.999999
+ *fract :0.820695
+ =amount:0.003526
+gas =SO2
+  abund :0.000200
+ *pvrms :0.862581
+ *react :0.996663
+ *fract :0.900775
+ =amount:0.000155
+gas =CO
+  abund :0.000010
+ *pvrms :0.800998
+ *react :1.000000
+ *fract :0.773068
+ =amount:0.000006
+ number_of_gas :14
  gas :N2
- partial_pressure :853.637
- pourcentage :84
+ partial_pressure :783.610702
+ pourcentage :0.773659
  gas :O
- partial_pressure :152.213
- pourcentage :15
+ partial_pressure :213.451822
+ pourcentage :0.210741
  gas :O3
- partial_pressure :2.0422e-05
- pourcentage :0
+ partial_pressure :0.000447
+ pourcentage :0.000000
  gas :Ne
- partial_pressure :0.0118003
- pourcentage :0
+ partial_pressure :0.011358
+ pourcentage :0.000011
  gas :Ar
- partial_pressure :6.75411
- pourcentage :0
+ partial_pressure :10.452714
+ pourcentage :0.010320
  gas :Kr
- partial_pressure :0.0209653
- pourcentage :0
+ partial_pressure :0.022820
+ pourcentage :0.000023
  gas :Xe
- partial_pressure :0.0022588
- pourcentage :0
+ partial_pressure :0.002519
+ pourcentage :0.000002
  gas :NH3
- partial_pressure :0.00453161
- pourcentage :0
+ partial_pressure :0.027167
+ pourcentage :0.000027
  gas :CO2
- partial_pressure :0.215128
- pourcentage :0
+ partial_pressure :2.685175
+ pourcentage :0.002651
  gas :CH4
- partial_pressure :0.00436018
- pourcentage :0
-Gravity    = 0.999478
-Temperature= 1.998
-Type       = 3
-Pressure   = 1012.86
-Earthlike  = true
+ partial_pressure :0.025933
+ pourcentage :0.000026
+ gas :F
+ partial_pressure :0.268115
+ pourcentage :0.000265
+ gas :Cl
+ partial_pressure :2.203559
+ pourcentage :0.002176
+ gas :SO2
+ partial_pressure :0.096785
+ pourcentage :0.000096
+ gas :CO
+ partial_pressure :0.003870
+ pourcentage :0.000004
+Gravity    = 0.999478g
+Pressure   = 1012.862986mB
+Earthlike  = 0
 ===============================================
 Planet No 4
-Orbit    = 1.524AU
-base_angular_velocity = 7.79004e-05
-ang_velocity = 7.56539e-05
-Gas lifetime H2  = 0.00205933 years
-Gas lifetime H2O = inf years
-Gas lifetime N   = inf years
-Gas lifetime N2  = inf years
-surface temperature  = -72.2799 C
-greenhouse temperature = -1.862e+12
-Water:  0 %
-Clouds: 0.0945999 %
-Ice:    49.7102 %
-Albedo: 0.423496
+Orbit    = 1.524000AU
+base_angular_velocity = 0.000078
+ang_velocity = 0.000076
+Surface temperature = 200.870146
+GreenHouse rise temperature = -53.427199
 gas =N2
-  abund :3.13329
- *pvrms :0.952194
- *react :1
- *pres2 :1.90421
+  abund :3.133290
+ *pvrms :0.585414
+ *react :1.000000
  *fract :0.127384
- =amount:0.380051
+ =amount:0.233657
 gas =O
-  abund :23.8232
- *pvrms :0.955186
- *react :1.10263e-05
- *pres2 :1.90421
- *fract :0.236067
- =amount:5.92316e-05
+  abund :23.823200
+ *pvrms :0.604927
+ *react :0.939567
+ *fract :0.236096
+ =amount:3.196824
 gas =O3
-  abund :1e-06
- *pvrms :0.973827
- *react :0.00535371
- *pres2 :1.90421
+  abund :0.000001
+ *pvrms :0.743538
+ *react :0.712456
  *fract :0.745365
- =amount:3.88603e-09
+ =amount:0.000000
 gas =Ne
-  abund :3.4435e-05
- *pvrms :0.959969
- *react :1
- *pres2 :1.90421
+  abund :0.000034
+ *pvrms :0.637577
+ *react :1.000000
  *fract :0.394027
- =amount:1.30252e-05
+ =amount:0.000009
 gas =Ar
   abund :0.100925
- *pvrms :0.971354
- *react :0.2375
- *pres2 :1
+ *pvrms :0.723304
+ *react :0.237500
  *fract :0.694041
- =amount:0.0161594
+ =amount:0.012033
 gas =Kr
-  abund :4.4978e-05
- *pvrms :0.980115
- *react :1
- *pres2 :1.90421
+  abund :0.000045
+ *pvrms :0.797818
+ *react :1.000000
  *fract :0.854147
- =amount:3.76539e-05
+ =amount:0.000031
 gas =Xe
-  abund :4.6989e-06
- *pvrms :0.984076
- *react :1
- *pres2 :1.90421
+  abund :0.000005
+ *pvrms :0.834216
+ *react :1.000000
  *fract :0.906912
- =amount:4.19363e-06
+ =amount:0.000004
 gas =NH3
-  abund :0.0001
- *pvrms :0.95649
- *react :0.0368927
- *pres2 :1.90421
+  abund :0.000100
+ *pvrms :0.613638
+ *react :0.629419
  *fract :0.281031
- =amount:9.9169e-07
+ =amount:0.000011
 gas =CO2
-  abund :0.0005
- *pvrms :0.972682
- *react :1
- *pres2 :1.90421
+  abund :0.004000
+ *pvrms :0.734098
+ *react :1.000000
  *fract :0.722217
- =amount:0.000351244
+ =amount:0.002121
 gas =CH4
-  abund :0.0001
- *pvrms :0.955187
- *react :0.0368927
- *pres2 :1.90421
+  abund :0.000100
+ *pvrms :0.604927
+ *react :0.629419
  *fract :0.236096
- =amount:8.31989e-07
- number_of_gas :10
+ =amount:0.000009
+gas =F
+  abund :0.000843
+ *pvrms :0.629245
+ *react :0.994507
+ *fract :0.356374
+ =amount:0.000188
+gas =Cl
+  abund :0.005236
+ *pvrms :0.709501
+ *react :0.992149
+ *fract :0.655220
+ =amount:0.002415
+gas =CO
+  abund :0.000010
+ *pvrms :0.680804
+ *react :1.000000
+ *fract :0.563639
+ =amount:0.000004
+ number_of_gas :13
  gas :N2
- partial_pressure :11.1934
- pourcentage :95
+ partial_pressure :0.791879
+ pourcentage :0.067780
  gas :O
- partial_pressure :0.00174452
- pourcentage :0
+ partial_pressure :10.834236
+ pourcentage :0.927340
  gas :O3
- partial_pressure :1.14453e-07
- pourcentage :0
+ partial_pressure :0.000001
+ pourcentage :0.000000
  gas :Ne
- partial_pressure :0.000383623
- pourcentage :0
+ partial_pressure :0.000029
+ pourcentage :0.000003
  gas :Ar
- partial_pressure :0.475934
- pourcentage :4
+ partial_pressure :0.040780
+ pourcentage :0.003491
  gas :Kr
- partial_pressure :0.001109
- pourcentage :0
+ partial_pressure :0.000104
+ pourcentage :0.000009
  gas :Xe
- partial_pressure :0.000123513
- pourcentage :0
+ partial_pressure :0.000012
+ pourcentage :0.000001
  gas :NH3
- partial_pressure :2.92077e-05
- pourcentage :0
+ partial_pressure :0.000037
+ pourcentage :0.000003
  gas :CO2
- partial_pressure :0.010345
- pourcentage :0
+ partial_pressure :0.007187
+ pourcentage :0.000615
  gas :CH4
- partial_pressure :2.45041e-05
- pourcentage :0
-Gravity    = 0.466584
-Temperature= -86.2799
-Type       = 5
-Pressure   = 11.6831
-Earthlike  = false
+ partial_pressure :0.000030
+ pourcentage :0.000003
+ gas :F
+ partial_pressure :0.000637
+ pourcentage :0.000055
+ gas :Cl
+ partial_pressure :0.008185
+ pourcentage :0.000701
+ gas :CO
+ partial_pressure :0.000013
+ pourcentage :0.000001
+Gravity    = 0.466584g
+Pressure   = 11.683131mB
+Earthlike  = 0
 ===============================================
 Planet No 5
-Orbit    = 2.767AU
-base_angular_velocity = 2.54928e-05
-ang_velocity = 2.011e-05
-Gas lifetime H2  = 0.000754006 years
-Gas lifetime H2O = 0.000181717 years
-Gas lifetime N   = 0.00016587 years
-Gas lifetime N2  = 0.000301949 years
-surface temperature  = -108.568 C
-greenhouse temperature = -nan
-Water:  0 %
-Clouds: 0 %
-Ice:    0 %
-Albedo: 0.07
+Orbit    = 2.767000AU
+base_angular_velocity = 0.000025
+ang_velocity = 0.000020
+Surface temperature = 164.581808
+GreenHouse rise temperature = -24.143321
  number_of_gas :0
-Gravity    = 0.0499674
-Temperature= -122.568
-Type       = 10
-Pressure   = 0
-Earthlike  = false
+Gravity    = 0.049967g
+Pressure   = 0.000000mB
+Earthlike  = 0
 ===============================================
 Planet No 6
-Orbit    = 5.203AU
-base_angular_velocity = 0.000233012
-ang_velocity = 0.000233012
-Earthlike  = false
+Orbit    = 5.203000AU
+base_angular_velocity = 0.000233
+ang_velocity = 0.000233
+Earthlike  = 0
 ===============================================
 Planet No 7
-Orbit    = 9.539AU
-base_angular_velocity = 0.000172317
-ang_velocity = 0.000172317
-Earthlike  = false
+Orbit    = 9.539000AU
+base_angular_velocity = 0.000172
+ang_velocity = 0.000172
+Earthlike  = 0
 ===============================================
 Planet No 8
-Orbit    = 19.191AU
-base_angular_velocity = 0.000109893
-ang_velocity = 0.000109893
-Earthlike  = false
+Orbit    = 19.191000AU
+base_angular_velocity = 0.000110
+ang_velocity = 0.000110
+Earthlike  = 0
 ===============================================
 Planet No 9
-Orbit    = 30.061AU
-base_angular_velocity = 0.000109566
-ang_velocity = 0.000109566
-Earthlike  = false
+Orbit    = 30.061000AU
+base_angular_velocity = 0.000110
+ang_velocity = 0.000110
+Earthlike  = 0
 ===============================================
 Planet No 10
-Orbit    = 39.529AU
-base_angular_velocity = 2.98843e-05
-ang_velocity = 2.98843e-05
-Gas lifetime H2  = inf years
-Gas lifetime H2O = inf years
-Gas lifetime N   = inf years
-Gas lifetime N2  = inf years
-surface temperature  = -230.572 C
-greenhouse temperature = -7.35338
-Water:  0 %
-Clouds: 2.15817e-10 %
-Ice:    0.0130636 %
-Albedo: 0.150072
+Orbit    = 39.529000AU
+base_angular_velocity = 0.000030
+ang_velocity = 0.000030
+Surface temperature = 42.578327
+GreenHouse rise temperature = -7.353378
 gas =H
-  abund :27925.4
- *pvrms :0.050498
- *react :0.0388081
- *pres2 :1.875
+  abund :27925.400000
+ *pvrms :0.046412
+ *react :0.623488
  *fract :0.628597
- =amount:34.4008
+ =amount:507.955692
 gas =He
-  abund :2722.7
- *pvrms :0.179462
- *react :1
- *pres2 :1.875
+  abund :2722.700000
+ *pvrms :0.169903
+ *react :1.000000
  *fract :0.906477
- =amount:442.922
+ =amount:419.332104
 gas =Ne
-  abund :3.4435e-05
- *pvrms :0.432283
- *react :1
- *pres2 :1.875
+  abund :0.000034
+ *pvrms :0.419867
+ *react :1.000000
  *fract :0.981441
- =amount:1.46094e-05
+ =amount:0.000014
  number_of_gas :3
  gas :H
- partial_pressure :5.21409e-07
- pourcentage :7
+ partial_pressure :0.000004
+ pourcentage :0.547786
  gas :He
- partial_pressure :6.71333e-06
- pourcentage :92
+ partial_pressure :0.000003
+ pourcentage :0.452214
  gas :Ne
- partial_pressure :2.21433e-13
- pourcentage :0
-Gravity    = 0.0686651
-Temperature= -244.572
-Type       = 1
-Pressure   = 7.23474e-06
-Earthlike  = false
+ partial_pressure :0.000000
+ pourcentage :0.000000
+Gravity    = 0.068665g
+Pressure   = 0.000007mB
+Earthlike  = 0
 ===============================================
-   climate calculated
-   file created
-   system cleared
+Planet climate calculated
+Output file created system_0.xml
+Recreating our Solar System :
+planets created
+===============================================
+Planet No 1
+Orbit    = 0.387000AU
+base_angular_velocity = 0.000070
+ang_velocity = -0.012994
+Surface temperature = 440.079284
+GreenHouse rise temperature = -64.557412
+GreenHouse Effect = running
+ number_of_gas :0
+Gravity    = 0.372581g
+Pressure   = 0.000000mB
+Earthlike  = 0
+===============================================
+Planet No 2
+Orbit    = 0.723000AU
+base_angular_velocity = 0.000110
+ang_velocity = 0.000058
+Surface temperature = 983.481626
+GreenHouse rise temperature = 649.471056
+GreenHouse Effect = running
+gas =N2
+  abund :3.133290
+ *pvrms :0.550524
+ *react :1.000000
+ *fract :0.003520
+ =amount:0.006071
+gas =O
+  abund :23.823200
+ *pvrms :0.570900
+ *react :1.000000
+ *fract :0.127662
+ =amount:1.736294
+gas =O3
+  abund :0.000001
+ *pvrms :0.718028
+ *react :1.000000
+ *fract :0.709221
+ =amount:0.000001
+gas =Ne
+  abund :0.000034
+ *pvrms :0.605187
+ *react :1.000000
+ *fract :0.308012
+ =amount:0.000006
+gas =Ar
+  abund :0.100925
+ *pvrms :0.696301
+ *react :0.237500
+ *fract :0.650611
+ =amount:0.010859
+gas =Kr
+  abund :0.000045
+ *pvrms :0.776705
+ *react :1.000000
+ *fract :0.833444
+ =amount:0.000029
+gas =Xe
+  abund :0.000005
+ *pvrms :0.816367
+ *react :1.000000
+ *fract :0.893698
+ =amount:0.000003
+gas =NH3
+  abund :0.000100
+ *pvrms :0.580026
+ *react :1.000000
+ *fract :0.178976
+ =amount:0.000010
+gas =H2O
+  abund :0.001000
+ *pvrms :0.588533
+ *react :1.000000
+ *fract :0.224589
+ =amount:0.000132
+gas =CO2
+  abund :0.004000
+ *pvrms :0.707881
+ *react :1.000000
+ *fract :0.682786
+ =amount:0.001933
+gas =CH4
+  abund :0.000100
+ *pvrms :0.570900
+ *react :1.000000
+ *fract :0.127662
+ =amount:0.000007
+gas =F
+  abund :0.000843
+ *pvrms :0.596416
+ *react :1.000000
+ *fract :0.265013
+ =amount:0.000133
+gas =Cl
+  abund :0.005236
+ *pvrms :0.681528
+ *react :1.000000
+ *fract :0.606279
+ =amount:0.002163
+gas =SO2
+  abund :0.000200
+ *pvrms :0.749769
+ *react :1.000000
+ *fract :0.782120
+ =amount:0.000117
+gas =CO
+  abund :0.000010
+ *pvrms :0.650938
+ *react :1.000000
+ *fract :0.501699
+ =amount:0.000003
+ number_of_gas :15
+ gas :N2
+ partial_pressure :325.308267
+ pourcentage :0.003454
+ gas :O
+ partial_pressure :93037.215979
+ pourcentage :0.987786
+ gas :O3
+ partial_pressure :0.027287
+ pourcentage :0.000000
+ gas :Ne
+ partial_pressure :0.343946
+ pourcentage :0.000004
+ gas :Ar
+ partial_pressure :581.854510
+ pourcentage :0.006178
+ gas :Kr
+ partial_pressure :1.560149
+ pourcentage :0.000017
+ gas :Xe
+ partial_pressure :0.183699
+ pourcentage :0.000002
+ gas :NH3
+ partial_pressure :0.556258
+ pourcentage :0.000006
+ gas :H2O
+ partial_pressure :7.082596
+ pourcentage :0.000075
+ gas :CO2
+ partial_pressure :103.594975
+ pourcentage :0.001100
+ gas :CH4
+ partial_pressure :0.390532
+ pourcentage :0.000004
+ gas :F
+ partial_pressure :7.142449
+ pourcentage :0.000076
+ gas :Cl
+ partial_pressure :115.928340
+ pourcentage :0.001231
+ gas :SO2
+ partial_pressure :6.284407
+ pourcentage :0.000067
+ gas :CO
+ partial_pressure :0.174991
+ pourcentage :0.000002
+Gravity    = 0.930833g
+Pressure   = 94187.648386mB
+Earthlike  = 0
+===============================================
+Planet No 3
+Orbit    = 1.000000AU
+base_angular_velocity = 0.000114
+ang_velocity = 0.000108
+Surface temperature = 289.148003
+GreenHouse rise temperature = -19.138880
+gas =N2
+  abund :3.133290
+ *pvrms :0.732727
+ *react :1.000000
+ *fract :0.546191
+ =amount:1.253969
+gas =O
+  abund :23.823200
+ *pvrms :0.747113
+ *react :0.031840
+ *fract :0.602727
+ =amount:0.341575
+gas =O3
+  abund :0.000001
+ *pvrms :0.843338
+ *react :0.978554
+ *fract :0.867576
+ =amount:0.000001
+gas =Ne
+  abund :0.000034
+ *pvrms :0.770686
+ *react :1.000000
+ *fract :0.684860
+ =amount:0.000018
+gas =Ar
+  abund :0.100925
+ *pvrms :0.829884
+ *react :0.237500
+ *fract :0.840884
+ =amount:0.016727
+gas =Kr
+  abund :0.000045
+ *pvrms :0.878547
+ *react :1.000000
+ *fract :0.924148
+ =amount:0.000037
+gas =Xe
+  abund :0.000005
+ *pvrms :0.901484
+ *react :1.000000
+ *fract :0.951589
+ =amount:0.000004
+gas =NH3
+  abund :0.000100
+ *pvrms :0.753463
+ *react :0.921573
+ *fract :0.626096
+ =amount:0.000043
+gas =CO2
+  abund :0.004000
+ *pvrms :0.837084
+ *react :1.500000
+ *fract :0.855537
+ =amount:0.004297
+gas =CH4
+  abund :0.000100
+ *pvrms :0.747113
+ *react :0.921573
+ *fract :0.602727
+ =amount:0.000041
+gas =F
+  abund :0.000843
+ *pvrms :0.764728
+ *react :1.000000
+ *fract :0.665278
+ =amount:0.000429
+gas =Cl
+  abund :0.005236
+ *pvrms :0.820598
+ *react :0.999999
+ *fract :0.820695
+ =amount:0.003526
+gas =SO2
+  abund :0.000200
+ *pvrms :0.862581
+ *react :0.996663
+ *fract :0.900775
+ =amount:0.000155
+gas =CO
+  abund :0.000010
+ *pvrms :0.800998
+ *react :1.000000
+ *fract :0.773068
+ =amount:0.000006
+ number_of_gas :14
+ gas :N2
+ partial_pressure :783.610702
+ pourcentage :0.773659
+ gas :O
+ partial_pressure :213.451822
+ pourcentage :0.210741
+ gas :O3
+ partial_pressure :0.000447
+ pourcentage :0.000000
+ gas :Ne
+ partial_pressure :0.011358
+ pourcentage :0.000011
+ gas :Ar
+ partial_pressure :10.452714
+ pourcentage :0.010320
+ gas :Kr
+ partial_pressure :0.022820
+ pourcentage :0.000023
+ gas :Xe
+ partial_pressure :0.002519
+ pourcentage :0.000002
+ gas :NH3
+ partial_pressure :0.027167
+ pourcentage :0.000027
+ gas :CO2
+ partial_pressure :2.685175
+ pourcentage :0.002651
+ gas :CH4
+ partial_pressure :0.025933
+ pourcentage :0.000026
+ gas :F
+ partial_pressure :0.268115
+ pourcentage :0.000265
+ gas :Cl
+ partial_pressure :2.203559
+ pourcentage :0.002176
+ gas :SO2
+ partial_pressure :0.096785
+ pourcentage :0.000096
+ gas :CO
+ partial_pressure :0.003870
+ pourcentage :0.000004
+Gravity    = 0.999478g
+Pressure   = 1012.862986mB
+Earthlike  = 0
+===============================================
+Planet No 4
+Orbit    = 1.524000AU
+base_angular_velocity = 0.000078
+ang_velocity = 0.000076
+Surface temperature = 200.870146
+GreenHouse rise temperature = -53.427199
+gas =N2
+  abund :3.133290
+ *pvrms :0.585414
+ *react :1.000000
+ *fract :0.127384
+ =amount:0.233657
+gas =O
+  abund :23.823200
+ *pvrms :0.604927
+ *react :0.939567
+ *fract :0.236096
+ =amount:3.196824
+gas =O3
+  abund :0.000001
+ *pvrms :0.743538
+ *react :0.712456
+ *fract :0.745365
+ =amount:0.000000
+gas =Ne
+  abund :0.000034
+ *pvrms :0.637577
+ *react :1.000000
+ *fract :0.394027
+ =amount:0.000009
+gas =Ar
+  abund :0.100925
+ *pvrms :0.723304
+ *react :0.237500
+ *fract :0.694041
+ =amount:0.012033
+gas =Kr
+  abund :0.000045
+ *pvrms :0.797818
+ *react :1.000000
+ *fract :0.854147
+ =amount:0.000031
+gas =Xe
+  abund :0.000005
+ *pvrms :0.834216
+ *react :1.000000
+ *fract :0.906912
+ =amount:0.000004
+gas =NH3
+  abund :0.000100
+ *pvrms :0.613638
+ *react :0.629419
+ *fract :0.281031
+ =amount:0.000011
+gas =CO2
+  abund :0.004000
+ *pvrms :0.734098
+ *react :1.000000
+ *fract :0.722217
+ =amount:0.002121
+gas =CH4
+  abund :0.000100
+ *pvrms :0.604927
+ *react :0.629419
+ *fract :0.236096
+ =amount:0.000009
+gas =F
+  abund :0.000843
+ *pvrms :0.629245
+ *react :0.994507
+ *fract :0.356374
+ =amount:0.000188
+gas =Cl
+  abund :0.005236
+ *pvrms :0.709501
+ *react :0.992149
+ *fract :0.655220
+ =amount:0.002415
+gas =CO
+  abund :0.000010
+ *pvrms :0.680804
+ *react :1.000000
+ *fract :0.563639
+ =amount:0.000004
+ number_of_gas :13
+ gas :N2
+ partial_pressure :0.791879
+ pourcentage :0.067780
+ gas :O
+ partial_pressure :10.834236
+ pourcentage :0.927340
+ gas :O3
+ partial_pressure :0.000001
+ pourcentage :0.000000
+ gas :Ne
+ partial_pressure :0.000029
+ pourcentage :0.000003
+ gas :Ar
+ partial_pressure :0.040780
+ pourcentage :0.003491
+ gas :Kr
+ partial_pressure :0.000104
+ pourcentage :0.000009
+ gas :Xe
+ partial_pressure :0.000012
+ pourcentage :0.000001
+ gas :NH3
+ partial_pressure :0.000037
+ pourcentage :0.000003
+ gas :CO2
+ partial_pressure :0.007187
+ pourcentage :0.000615
+ gas :CH4
+ partial_pressure :0.000030
+ pourcentage :0.000003
+ gas :F
+ partial_pressure :0.000637
+ pourcentage :0.000055
+ gas :Cl
+ partial_pressure :0.008185
+ pourcentage :0.000701
+ gas :CO
+ partial_pressure :0.000013
+ pourcentage :0.000001
+Gravity    = 0.466584g
+Pressure   = 11.683131mB
+Earthlike  = 0
+===============================================
+Planet No 5
+Orbit    = 2.767000AU
+base_angular_velocity = 0.000025
+ang_velocity = 0.000020
+Surface temperature = 164.581808
+GreenHouse rise temperature = -nan(ind)
+ number_of_gas :0
+Gravity    = 0.049967g
+Pressure   = 0.000000mB
+Earthlike  = 0
+===============================================
+Planet No 6
+Orbit    = 5.203000AU
+base_angular_velocity = 0.000233
+ang_velocity = 0.000233
+Earthlike  = 0
+===============================================
+Planet No 7
+Orbit    = 9.539000AU
+base_angular_velocity = 0.000172
+ang_velocity = 0.000172
+Earthlike  = 0
+===============================================
+Planet No 8
+Orbit    = 19.191000AU
+base_angular_velocity = 0.000110
+ang_velocity = 0.000110
+Earthlike  = 0
+===============================================
+Planet No 9
+Orbit    = 30.061000AU
+base_angular_velocity = 0.000110
+ang_velocity = 0.000110
+Earthlike  = 0
+===============================================
+Planet No 10
+Orbit    = 39.529000AU
+base_angular_velocity = 0.000030
+ang_velocity = 0.000030
+Surface temperature = 42.578327
+GreenHouse rise temperature = -7.353378
+gas =H
+  abund :27925.400000
+ *pvrms :0.046412
+ *react :0.623488
+ *fract :0.628597
+ =amount:507.955692
+gas =He
+  abund :2722.700000
+ *pvrms :0.169903
+ *react :1.000000
+ *fract :0.906477
+ =amount:419.332104
+gas =Ne
+  abund :0.000034
+ *pvrms :0.419867
+ *react :1.000000
+ *fract :0.981441
+ =amount:0.000014
+ number_of_gas :3
+ gas :H
+ partial_pressure :0.000004
+ pourcentage :0.547786
+ gas :He
+ partial_pressure :0.000003
+ pourcentage :0.452214
+ gas :Ne
+ partial_pressure :0.000000
+ pourcentage :0.000000
+Gravity    = 0.068665g
+Pressure   = 0.000007mB
+Earthlike  = 0
+===============================================
+Planet climate calculated
+Output file created system_0.txt

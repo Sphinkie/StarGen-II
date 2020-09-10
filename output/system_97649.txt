@@ -1,13 +1,13 @@
 system:
-  seed = 0
+  seed = 97649
 
 star:
-  name = Sol
-  mass = 1.000000 (solar mass)
-  lum = 1.000000 (solar lum)
-  age = 5.000000 (billion years)
-  life = 10.000000 (billion years left on main sequence)
-  ecosphere = 1.000000 (AU)
+  name = Altair
+  mass = 5.400000 (solar mass)
+  lum = 94.943044 (solar lum)
+  age = 0.568762 (billion years)
+  life = 0.568762 (billion years left on main sequence)
+  ecosphere = 9.743872 (AU)
   planets = 10 (planets)
 
 
@@ -41,13 +41,13 @@ physical:
   escVelocity = 4.231358 (unit = km/s)
 
 durations:
-  yearE = 87.935405 (unit = earth days)
+  yearE = 37.841376 (unit = earth days)
   yearL = 1.518892 (unit = local days)
-  day = 1389.466904 (unit = hours)
-  dayE = 57.894454 (unit = earth days)
+  day = 597.931394 (unit = hours)
+  dayE = 24.913808 (unit = earth days)
 
 composition:
-  minMolec = 294.997646 (and above)
+  minMolec = 26308.193875 (and above)
   metal = no
   rock = yes
 
@@ -58,12 +58,12 @@ atmosphere:
 
 
 temperatures:
-  exospheric = 8499.756291 (unit = Kelvin)
-  surfaceAvg = 166 (unit = Celcius)
-  surfaceMax = 368 (unit = Celcius)
-  surfaceMin = -202 (unit = Celcius)
-  nightTemp = -188 (unit = Celcius)
-  dayTemp = 364 (unit = Celcius)
+  exospheric = 806992.735297 (unit = Kelvin)
+  surfaceAvg = 1100 (unit = Celcius)
+  surfaceMax = 1455 (unit = Celcius)
+  surfaceMin = 62 (unit = Celcius)
+  nightTemp = 94 (unit = Celcius)
+  dayTemp = 1451 (unit = Celcius)
 
 surface:
   gravity = 0.372581 (unit = Earth G)
@@ -91,18 +91,18 @@ planet:
   number = 2
 
 general:
-  type = Venusian
+  type = Rock
   giant = no
   gasPlanet = no
   earthlike = no
-  albedo = 0.520000
-  atmosphere = yes
+  albedo = 0.070000
+  atmosphere = no
 
 orbit:
   radius = 0.723000 (unit = AU)
   tilt = 177 (unit = degree)
   eccentricity = 0.007000
-  facelocked = no
+  facelocked = yes
   resonnant = no
 
 physical:
@@ -115,101 +115,48 @@ physical:
   escVelocity = 10.437373 (unit = km/s)
 
 durations:
-  yearE = 224.545457 (unit = earth days)
-  yearL = 179.784257 (unit = local days)
-  day = 29.975322 (unit = hours)
-  dayE = 1.248972 (unit = earth days)
+  yearE = 96.629076 (unit = earth days)
+  yearL = 1.000000 (unit = local days)
+  day = 2319.097822 (unit = hours)
+  dayE = 96.629076 (unit = earth days)
 
 composition:
-  minMolec = 13.957403 (and above)
-  metal = yes
+  minMolec = 1239.311519 (and above)
+  metal = no
   rock = yes
-
-molecule:
-  symbol = Ni (solid)
-
-molecule:
-  symbol = Cu (solid)
-
-molecule:
-  symbol = Fe (solid)
 
 
 atmosphere:
-  inventory = 114099 (unitless. Ref: Earth=1000)
-  breathe = poisonous
-  toxicGas = Oxygen
-
-gas:
-  symbol = O
-  proportion = 98% 
-  name = Oxygen
-  toxic = yes
-
-gas:
-  symbol = Ar
-  proportion = 0% 
-  name = Argon
-  toxic = no
-
-gas:
-  symbol = N2
-  proportion = 0% 
-  name = Nitrogen/Azote
-  toxic = no
-
-gas:
-  symbol = Cl
-  proportion = 0% 
-  name = Chlore
-  toxic = yes
-
-gas:
-  symbol = CO2
-  proportion = 0% 
-  name = CarbonDiOxide
-  toxic = yes
+  inventory = 0 (unitless. Ref: Earth=1000)
+  breathe = none
 
 
 temperatures:
-  exospheric = 2435.296301 (unit = Kelvin)
-  surfaceAvg = 710 (unit = Celcius)
-  surfaceMax = 714 (unit = Celcius)
-  surfaceMin = 700 (unit = Celcius)
-  nightTemp = 704 (unit = Celcius)
-  dayTemp = 710 (unit = Celcius)
+  exospheric = 231214.443761 (unit = Kelvin)
+  surfaceAvg = 731 (unit = Celcius)
+  surfaceMax = 1039 (unit = Celcius)
+  surfaceMin = -131 (unit = Celcius)
+  nightTemp = -121 (unit = Celcius)
+  dayTemp = 1037 (unit = Celcius)
 
 surface:
   gravity = 0.930833 (unit = Earth G)
-  pressure = 92.955982 (unit = Earth atm)
-  boilingPoint = 437 (unit = Kelvin)
-  greenhouseEffect = yes
+  pressure = 0.000000 (unit = Earth atm)
+  boilingPoint = 0 (unit = Kelvin)
+  greenhouseEffect = no
 
 coverage:
   ground = 100% 
   water = 0% 
   ice = 0% 
-  cloud = 100% 
+  cloud = 0% 
 
 comments:
   gravity = gravity OK
   temperature = warm
   icyPlanet = no
-  atmosphere = thick atm
-  clouds = cloudy
-
-ocean:
-
-
-rain:
-
-liquid:
-  liquid = yes
-  symbol = yes
-
-
-climate:
-  humidityLevel = arid
+  atmosphere = airless
+  clouds = cloudless
 
 
 
@@ -218,12 +165,12 @@ planet:
   number = 3
 
 general:
-  type = Terrestrial
+  type = Rock
   giant = no
   gasPlanet = no
   earthlike = no
-  albedo = 0.330146
-  atmosphere = yes
+  albedo = 0.070000
+  atmosphere = no
 
 orbit:
   radius = 1.000000 (unit = AU)
@@ -242,111 +189,48 @@ physical:
   escVelocity = 11.182197 (unit = km/s)
 
 durations:
-  yearE = 365.255451 (unit = earth days)
-  yearL = 540.130535 (unit = local days)
-  day = 16.229652 (unit = hours)
-  dayE = 0.676236 (unit = earth days)
+  yearE = 157.181112 (unit = earth days)
+  yearL = 200.007591 (unit = local days)
+  day = 18.861018 (unit = hours)
+  dayE = 0.785876 (unit = earth days)
 
 composition:
-  minMolec = 6.356373 (and above)
-  metal = yes
+  minMolec = 564.450698 (and above)
+  metal = no
   rock = yes
-
-molecule:
-  symbol = Ni (solid)
-
-molecule:
-  symbol = Cu (solid)
-
-molecule:
-  symbol = Fe (solid)
-
-molecule:
-  symbol = S (solid)
-
-molecule:
-  symbol = C (solid)
 
 
 atmosphere:
-  inventory = 1000 (unitless. Ref: Earth=1000)
-  breathe = poisonous
-  toxicGas = Chlore
-
-gas:
-  symbol = N2
-  proportion = 77% 
-  name = Nitrogen/Azote
-  toxic = no
-
-gas:
-  symbol = O
-  proportion = 21% 
-  name = Oxygen
-  toxic = no
-
-gas:
-  symbol = Ar
-  proportion = 1% 
-  name = Argon
-  toxic = no
-
-gas:
-  symbol = CO2
-  proportion = 0% 
-  name = CarbonDiOxide
-  toxic = no
-
-gas:
-  symbol = Cl
-  proportion = 0% 
-  name = Chlore
-  toxic = yes
+  inventory = 0 (unitless. Ref: Earth=1000)
+  breathe = none
 
 
 temperatures:
-  exospheric = 1273.000000 (unit = Kelvin)
-  surfaceAvg = 15 (unit = Celcius)
-  surfaceMax = 40 (unit = Celcius)
-  surfaceMin = -10 (unit = Celcius)
-  nightTemp = 11 (unit = Celcius)
-  dayTemp = 20 (unit = Celcius)
+  exospheric = 120862.494973 (unit = Kelvin)
+  surfaceAvg = 581 (unit = Celcius)
+  surfaceMax = 688 (unit = Celcius)
+  surfaceMin = 462 (unit = Celcius)
+  nightTemp = 507 (unit = Celcius)
+  dayTemp = 647 (unit = Celcius)
 
 surface:
   gravity = 0.999478 (unit = Earth G)
-  pressure = 0.999618 (unit = Earth atm)
-  boilingPoint = 373 (unit = Kelvin)
+  pressure = 0.000000 (unit = Earth atm)
+  boilingPoint = 0 (unit = Kelvin)
   greenhouseEffect = no
 
 coverage:
-  ground = 27% 
-  water = 70% 
-  ice = 1% 
-  cloud = 57% 
+  ground = 100% 
+  water = 0% 
+  ice = 0% 
+  cloud = 0% 
 
 comments:
   gravity = gravity OK
-  temperature = temperature OK
+  temperature = warm
   icyPlanet = no
-  atmosphere = normal atm
-  clouds = mid-coverage
-
-ocean:
-
-liquid:
-  liquid = Water
-  symbol = H2O
-
-
-rain:
-
-liquid:
-  liquid = Water
-  symbol = H2O
-
-
-climate:
-  humidityLevel = balanced
+  atmosphere = airless
+  clouds = cloudless
 
 
 
@@ -355,12 +239,12 @@ planet:
   number = 4
 
 general:
-  type = Martian
+  type = Rock
   giant = no
   gasPlanet = no
   earthlike = no
-  albedo = 0.423496
-  atmosphere = yes
+  albedo = 0.070000
+  atmosphere = no
 
 orbit:
   radius = 1.524000 (unit = AU)
@@ -379,90 +263,48 @@ physical:
   escVelocity = 5.291361 (unit = km/s)
 
 durations:
-  yearE = 687.186690 (unit = earth days)
-  yearL = 714.891276 (unit = local days)
-  day = 23.069914 (unit = hours)
-  dayE = 0.961246 (unit = earth days)
+  yearE = 295.718106 (unit = earth days)
+  yearL = 286.474266 (unit = local days)
+  day = 24.774423 (unit = hours)
+  dayE = 1.032268 (unit = earth days)
 
 composition:
-  minMolec = 12.222467 (and above)
-  metal = yes
+  minMolec = 1084.905833 (and above)
+  metal = no
   rock = yes
-
-molecule:
-  symbol = Ni (solid)
-
-molecule:
-  symbol = Cu (solid)
-
-molecule:
-  symbol = Fe (solid)
-
-molecule:
-  symbol = S (solid)
-
-molecule:
-  symbol = H2O (solid)
 
 
 atmosphere:
-  inventory = 107 (unitless. Ref: Earth=1000)
-  breathe = not enough oxygen
-
-gas:
-  symbol = O
-  proportion = 92% 
-  name = Oxygen
-  toxic = no
-
-gas:
-  symbol = N2
-  proportion = 6% 
-  name = Nitrogen/Azote
-  toxic = no
-
-gas:
-  symbol = Ar
-  proportion = 0% 
-  name = Argon
-  toxic = no
+  inventory = 0 (unitless. Ref: Earth=1000)
+  breathe = none
 
 
 temperatures:
-  exospheric = 548.098318 (unit = Kelvin)
-  surfaceAvg = -72 (unit = Celcius)
-  surfaceMax = -27 (unit = Celcius)
-  surfaceMin = -118 (unit = Celcius)
-  nightTemp = -91 (unit = Celcius)
-  dayTemp = -53 (unit = Celcius)
+  exospheric = 52038.122745 (unit = Kelvin)
+  surfaceAvg = 419 (unit = Celcius)
+  surfaceMax = 529 (unit = Celcius)
+  surfaceMin = 299 (unit = Celcius)
+  nightTemp = 342 (unit = Celcius)
+  dayTemp = 489 (unit = Celcius)
 
 surface:
   gravity = 0.466584 (unit = Earth G)
-  pressure = 0.011530 (unit = Earth atm)
-  boilingPoint = 326 (unit = Kelvin)
+  pressure = 0.000000 (unit = Earth atm)
+  boilingPoint = 0 (unit = Kelvin)
   greenhouseEffect = no
 
 coverage:
-  ground = 50% 
+  ground = 100% 
   water = 0% 
-  ice = 49% 
+  ice = 0% 
   cloud = 0% 
 
 comments:
   gravity = low gravity
-  temperature = cold
-  icyPlanet = yes
-  atmosphere = unbreathly thin atm
+  temperature = warm
+  icyPlanet = no
+  atmosphere = airless
   clouds = cloudless
-
-ocean:
-
-
-rain:
-
-
-climate:
-  humidityLevel = arid
 
 
 
@@ -495,13 +337,13 @@ physical:
   escVelocity = 0.568895 (unit = km/s)
 
 durations:
-  yearE = 1681.167932 (unit = earth days)
-  yearL = 464.897792 (unit = local days)
-  day = 86.789034 (unit = hours)
-  dayE = 3.616210 (unit = earth days)
+  yearE = 723.459489 (unit = earth days)
+  yearL = 75.984609 (unit = local days)
+  day = 228.507168 (unit = hours)
+  dayE = 9.521132 (unit = earth days)
 
 composition:
-  minMolec = 319.240728 (and above)
+  minMolec = 28468.128373 (and above)
   metal = no
   rock = yes
 
@@ -512,12 +354,12 @@ atmosphere:
 
 
 temperatures:
-  exospheric = 166.268541 (unit = Kelvin)
-  surfaceAvg = -108 (unit = Celcius)
-  surfaceMax = -34 (unit = Celcius)
-  surfaceMin = -182 (unit = Celcius)
-  nightTemp = -158 (unit = Celcius)
-  dayTemp = -59 (unit = Celcius)
+  exospheric = 15786.041380 (unit = Kelvin)
+  surfaceAvg = 240 (unit = Celcius)
+  surfaceMax = 439 (unit = Celcius)
+  surfaceMin = -61 (unit = Celcius)
+  nightTemp = -32 (unit = Celcius)
+  dayTemp = 427 (unit = Celcius)
 
 surface:
   gravity = 0.049967 (unit = Earth G)
@@ -533,7 +375,7 @@ coverage:
 
 comments:
   gravity = low gravity
-  temperature = cold
+  temperature = warm
   icyPlanet = no
   atmosphere = airless
   clouds = cloudless
@@ -549,7 +391,7 @@ general:
   giant = yes
   gasPlanet = yes
   earthlike = no
-  albedo = 0.477024
+  albedo = 0.531533
   atmosphere = yes
 
 orbit:
@@ -560,38 +402,38 @@ orbit:
   resonnant = no
 
 physical:
-  density = 1.632691 (unit = grams/cc)
-  radius = 65251.831817 (unit = km)
+  density = 2.884609 (unit = grams/cc)
+  radius = 53975.716789 (unit = km)
   coreRadius = 0.000000 (unit = km)
   mass = 317.900000 (unit = EM)
   dustMass = 0% 
   gasMass = 100% 
-  escVelocity = 62.335228 (unit = km/s)
+  escVelocity = 68.537885 (unit = km/s)
 
 durations:
-  yearE = 4332.821086 (unit = earth days)
-  yearL = 13883.041219 (unit = local days)
-  day = 7.490268 (unit = hours)
-  dayE = 0.312095 (unit = earth days)
+  yearE = 1865.274728 (unit = earth days)
+  yearL = 7225.217669 (unit = local days)
+  day = 6.195882 (unit = hours)
+  dayE = 0.258162 (unit = earth days)
 
 composition:
-  minMolec = 0.010867 (and above)
+  minMolec = 0.586746 (and above)
   metal = no
   rock = no
 
 
 atmosphere:
-  inventory = 23842500 (unitless. Ref: Earth=1000)
+  inventory = 8241851 (unitless. Ref: Earth=1000)
   breathe = none
 
 
 limit:
-  gravity = 3.036045 (unit = Earth G)
+  gravity = 4.437075 (unit = Earth G)
   pressure = 0.098692 (unit = Earth atm)
 
 center:
   gravity = 0.000000 (unit = Earth G)
-  pressure = 7576635.726465 (unit = Earth atm)
+  pressure = 2619083.954828 (unit = Earth atm)
 
 
 
@@ -604,7 +446,7 @@ general:
   giant = yes
   gasPlanet = yes
   earthlike = no
-  albedo = 0.486003
+  albedo = 0.455817
   atmosphere = yes
 
 orbit:
@@ -615,38 +457,38 @@ orbit:
   resonnant = no
 
 physical:
-  density = 1.206768 (unit = grams/cc)
-  radius = 48280.441384 (unit = km)
+  density = 2.132095 (unit = grams/cc)
+  radius = 39937.138284 (unit = km)
   coreRadius = 0.000000 (unit = km)
   mass = 95.180000 (unit = EM)
   dustMass = 0% 
   gasMass = 100% 
-  escVelocity = 39.652619 (unit = km/s)
+  escVelocity = 43.598247 (unit = km/s)
 
 durations:
-  yearE = 10759.436646 (unit = earth days)
-  yearL = 25494.849794 (unit = local days)
-  day = 10.128574 (unit = hours)
-  dayE = 0.422024 (unit = earth days)
+  yearE = 4630.663797 (unit = earth days)
+  yearL = 13264.792610 (unit = local days)
+  day = 8.378264 (unit = hours)
+  dayE = 0.349094 (unit = earth days)
 
 composition:
-  minMolec = 0.007990 (and above)
+  minMolec = 0.470613 (and above)
   metal = no
   rock = no
 
 
 atmosphere:
-  inventory = 7138500 (unitless. Ref: Earth=1000)
+  inventory = 2467629 (unitless. Ref: Earth=1000)
   breathe = none
 
 
 limit:
-  gravity = 1.660376 (unit = Earth G)
+  gravity = 2.426582 (unit = Earth G)
   pressure = 0.098692 (unit = Earth atm)
 
 center:
   gravity = 0.000000 (unit = Earth G)
-  pressure = 679182.915013 (unit = Earth atm)
+  pressure = 234779.279264 (unit = Earth atm)
 
 
 
@@ -659,7 +501,7 @@ general:
   giant = yes
   gasPlanet = yes
   earthlike = no
-  albedo = 0.475529
+  albedo = 0.489348
   atmosphere = yes
 
 orbit:
@@ -670,38 +512,38 @@ orbit:
   resonnant = no
 
 physical:
-  density = 0.801106 (unit = grams/cc)
-  radius = 29579.383925 (unit = km)
+  density = 1.415380 (unit = grams/cc)
+  radius = 24467.795080 (unit = km)
   coreRadius = 0.000000 (unit = km)
   mass = 14.530000 (unit = EM)
   dustMass = 0% 
   gasMass = 93% 
-  escVelocity = 19.793513 (unit = km/s)
+  escVelocity = 21.763064 (unit = km/s)
 
 durations:
-  yearE = 30706.780588 (unit = earth days)
-  yearL = 46402.275203 (unit = local days)
-  day = 15.882039 (unit = hours)
-  dayE = 0.661752 (unit = earth days)
+  yearE = 13214.329483 (unit = earth days)
+  yearL = 24140.397141 (unit = local days)
+  day = 13.137477 (unit = hours)
+  dayE = 0.547395 (unit = earth days)
 
 composition:
-  minMolec = 0.007922 (and above)
+  minMolec = 0.466630 (and above)
   metal = no
   rock = no
 
 
 atmosphere:
-  inventory = 3632 (unitless. Ref: Earth=1000)
+  inventory = 376703 (unitless. Ref: Earth=1000)
   breathe = none
 
 
 limit:
-  gravity = 0.675290 (unit = Earth G)
+  gravity = 0.986913 (unit = Earth G)
   pressure = 0.098692 (unit = Earth atm)
 
 center:
   gravity = 0.000000 (unit = Earth G)
-  pressure = 52.760065 (unit = Earth atm)
+  pressure = 5471.414194 (unit = Earth atm)
 
 
 
@@ -714,7 +556,7 @@ general:
   giant = yes
   gasPlanet = yes
   earthlike = no
-  albedo = 0.548529
+  albedo = 0.517397
   atmosphere = yes
 
 orbit:
@@ -725,38 +567,38 @@ orbit:
   resonnant = no
 
 physical:
-  density = 0.731024 (unit = grams/cc)
-  radius = 32222.331137 (unit = km)
+  density = 1.291560 (unit = grams/cc)
+  radius = 26654.016773 (unit = km)
   coreRadius = 0.000000 (unit = km)
   mass = 17.140000 (unit = EM)
   dustMass = 0% 
   gasMass = 100% 
-  escVelocity = 20.597361 (unit = km/s)
+  escVelocity = 22.646898 (unit = km/s)
 
 durations:
-  yearE = 60199.281802 (unit = earth days)
-  yearL = 90698.701455 (unit = local days)
-  day = 15.929476 (unit = hours)
-  dayE = 0.663728 (unit = earth days)
+  yearE = 25906.189801 (unit = earth days)
+  yearL = 47185.394680 (unit = local days)
+  day = 13.176716 (unit = hours)
+  dayE = 0.549030 (unit = earth days)
 
 composition:
-  minMolec = 0.002982 (and above)
+  minMolec = 0.175624 (and above)
   metal = no
   rock = no
 
 
 atmosphere:
-  inventory = 4285 (unitless. Ref: Earth=1000)
+  inventory = 444370 (unitless. Ref: Earth=1000)
   breathe = none
 
 
 limit:
-  gravity = 0.671274 (unit = Earth G)
+  gravity = 0.981044 (unit = Earth G)
   pressure = 0.098692 (unit = Earth atm)
 
 center:
   gravity = 0.000000 (unit = Earth G)
-  pressure = 73.416848 (unit = Earth atm)
+  pressure = 7613.599001 (unit = Earth atm)
 
 
 
@@ -769,7 +611,7 @@ general:
   giant = no
   gasPlanet = no
   earthlike = no
-  albedo = 0.150072
+  albedo = 0.070000
   atmosphere = no
 
 orbit:
@@ -789,13 +631,13 @@ physical:
   escVelocity = 1.210669 (unit = km/s)
 
 durations:
-  yearE = 90776.011959 (unit = earth days)
-  yearL = 37303.316264 (unit = local days)
-  day = 58.402965 (unit = hours)
+  yearE = 39063.775935 (unit = earth days)
+  yearL = 16052.791372 (unit = local days)
+  day = 58.402966 (unit = hours)
   dayE = 2.433457 (unit = earth days)
 
 composition:
-  minMolec = 0.374337 (and above)
+  minMolec = 30.450214 (and above)
   metal = no
   rock = yes
 
@@ -815,78 +657,36 @@ molecule:
   symbol = S (solid)
 
 molecule:
-  symbol = C (solid)
-
-molecule:
   symbol = Cl (solid)
-
-molecule:
-  symbol = F (solid)
-
-molecule:
-  symbol = CH4 (solid)
 
 molecule:
   symbol = CO2 (solid)
 
 molecule:
-  symbol = H2O (solid)
-
-molecule:
-  symbol = NH3 (solid)
-
-molecule:
   symbol = Xe (solid)
-
-molecule:
-  symbol = Kr (solid)
-
-molecule:
-  symbol = Ar (solid)
-
-molecule:
-  symbol = O3 (solid)
-
-molecule:
-  symbol = O (solid)
-
-molecule:
-  symbol = N2 (solid)
 
 
 atmosphere:
   inventory = 0 (unitless. Ref: Earth=1000)
   breathe = non-toxic
 
-gas:
-  symbol = H
-  proportion = 54% 
-  name = Hydrogen
-  toxic = no
-
-gas:
-  symbol = He
-  proportion = 45% 
-  name = Helium
-  toxic = no
-
 
 temperatures:
-  exospheric = 0.814698 (unit = Kelvin)
-  surfaceAvg = -230 (unit = Celcius)
-  surfaceMax = -205 (unit = Celcius)
-  surfaceMin = -253 (unit = Celcius)
-  nightTemp = -239 (unit = Celcius)
-  dayTemp = -220 (unit = Celcius)
+  exospheric = 77.349925 (unit = Kelvin)
+  surfaceAvg = -137 (unit = Celcius)
+  surfaceMax = -86 (unit = Celcius)
+  surfaceMin = -187 (unit = Celcius)
+  nightTemp = -167 (unit = Celcius)
+  dayTemp = -106 (unit = Celcius)
 
 surface:
   gravity = 0.068665 (unit = Earth G)
   pressure = 0.000000 (unit = Earth atm)
-  boilingPoint = 233 (unit = Kelvin)
+  boilingPoint = 0 (unit = Kelvin)
   greenhouseEffect = no
 
 coverage:
-  ground = 99% 
+  ground = 100% 
   water = 0% 
   ice = 0% 
   cloud = 0% 

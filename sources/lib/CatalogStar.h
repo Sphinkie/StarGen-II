@@ -28,18 +28,19 @@ on déduit les autres données par calcul.
 class CatalogStar
 {
 public:
-    CatalogStar(int Number, double Magn, short spectrum, short SubSpectrum, short YerkesType);
+    CatalogStar(long Number, double Magn, short spectrum, short SubSpectrum, short YerkesType);
 	~CatalogStar();
     void    setAbsoluteMagnitude(float Magnitude);
 	void    setCatalogNumber(int Number);
 	void    setSpectralType(short spectralType);
 	int     getCatalogNumber();
-    std::string  getSpectralType();
     double  getAbsoluteMagnitude();
     double  getBolometricMagnitude();
     double  getMass();
     double  getTemperature();
     double  getAge();
+    std::string  getSpectralType();
+    std::string  getName();
 
 
     enum SpectralClass
@@ -93,14 +94,16 @@ public:
 
 private:
 
-    double  calculateAge();
+    double      calculateAge();
+    std::string readNameFromFile(long index);
 
     unsigned int    mCatalogNumber; ///< No de l'étoile dans le catalogue Celestia
-    double          mAbsMag;        ///< magnitude absolue
+    double          mAbsMag;        ///< Magnitude absolue
 	SpectralClass   mSpectrum;      ///< Spectre de l'étoile O,B,A,F,G etc
-	short           mSubSpectrum;   ///< sous-spectre de l'étoile : 0..9
+    short           mSubSpectrum;   ///< Sous-spectre de l'étoile : 0..9
 	LuminosityClass mType;          ///< Type de l'étoile (classification Yerkes)
     double          mAge;           ///< Age of the star (random, but following the rules)
+    std::string     mName;          ///< Name of the star (from the starnames.dat file)
 
 };
 

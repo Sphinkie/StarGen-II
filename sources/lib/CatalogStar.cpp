@@ -1,31 +1,35 @@
 /* ------------------------------------------------------------------------- */
 // File       : CatalogStar.cpp
-// Project    : Long Forgotten Earth
+// Project    : StarGen 2
 // Author     : David de Lorenzo
 /* ------------------------------------------------------------------------- */
 
 #include "CatalogStar.h"
+#include <fstream>
 
+using namespace std;
 
 /* ------------------------------------------------------------------------- */
 /// Contructeur
 /** 
-@param Number       Number of the star in the Celestia catalog
-@param Magn         Absolute magnitude of the star
+@param index        Index of the star in the Celestia catalog
+@param magnitude    Absolute magnitude of the star
 @param Pos          Cartesian position of the star (unit = al)
-@param Spectrum     Spectrum of the star (@sa SpectralClass)
+@param spectrum     Spectrum of the star (@sa SpectralClass)
 @param SubSpectrum  Sub Spectrum of the star (0..9)
 @param YerkesType   Luminosity type of the star (@sa LuminosityClass)
 */
 /* ------------------------------------------------------------------------- */
-CatalogStar::CatalogStar(int Number, double Magn, short spectrum, short SubSpectrum, short YerkesType)
+CatalogStar::CatalogStar(long index, double magnitude, short spectrum, short SubSpectrum, short YerkesType)
 {
-    this->mCatalogNumber = Number;
-    this->mAbsMag        = Magn;
+    this->mCatalogNumber = index;
+    this->mAbsMag        = magnitude;
     this->mSpectrum      = static_cast<SpectralClass>(spectrum);
     this->mSubSpectrum   = SubSpectrum;
     this->mType          = static_cast<LuminosityClass>(YerkesType);
     this->mAge           = this->calculateAge();
+    this->mName          = "";
+
 };
 
 /* ------------------------------------------------------------------------- */
@@ -287,3 +291,44 @@ double CatalogStar::getAge()
 {
     return this->mAge;
 }
+
+/* ------------------------------------------------------------------------- */
+/// Returns the name of the star.
+/* ------------------------------------------------------------------------- */
+std::string CatalogStar::getName()
+{
+    if (this->mName.empty())
+        this->mName = this->readNameFromFile(mCatalogNumber);
+    return this->mName;
+
+}
+
+/* ------------------------------------------------------------------------- */
+/// Returns the name of the star from the starnames.dat file.
+/* ------------------------------------------------------------------------- */
+std::string CatalogStar::readNameFromFile(long index)
+{
+    ifstream inFile;
+    string   line;
+    string   delimiter = ":";
+    string   starName = "";
+    bool     found = false;
+
+    inFile.open("starnames.dat");
+    if (inFile.bad()) return "";
+    while ((std::getline(inFile, line)) && (!found))
+    {
+        // Example "1067:Algenib:GAM Peg:88 Peg"
+        string catIndex = line.substr(0, line.find(delimiter));
+        if ((!catIndex.empty()) && (stol(catIndex) == index))   // stol = string to long
+        {
+            // Found !
+            string part2 = line.substr(line.find(delimiter)+1);
+            starName = part2.substr(0, part2.find(delimiter));
+            found=true;
+        }
+    }
+    inFile.close();
+    return starName;
+}
+

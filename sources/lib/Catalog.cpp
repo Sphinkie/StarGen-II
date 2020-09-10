@@ -1,12 +1,12 @@
 /* ------------------------------------------------------------------------- */
-// File       : StarDatabase.cpp
+// File       : Catalog.cpp
 // Project    : StarGen 2
 // Author     : David de Lorenzo
 // Author     : Chris Laurel (Celestia Project)
 /* ------------------------------------------------------------------------- */
 
 #include <iostream>
-#include "StarDatabase.h"
+#include "Catalog.h"
 #include "Bytes.h"
 using namespace std;
 
@@ -17,7 +17,7 @@ using namespace std;
 @param sizeArray est la taille de ce tableau, à ne pas dépasser.
 */
 /* ------------------------------------------------------------------------- */
-StarDatabase::StarDatabase(std::string filename)
+Catalog::Catalog(std::string filename)
 {
 	mStarsInFile = 0;
     mFilename    = filename;
@@ -31,12 +31,12 @@ StarDatabase::StarDatabase(std::string filename)
 /* ------------------------------------------------------------------------- */
 /// Ouvre en lecture un fichier de type CELESTIA, et vérifie son entête.
 /* ------------------------------------------------------------------------- */
-bool StarDatabase::openFile(std::string filename)
+bool Catalog::openFile(std::string filename)
 {
-	starFile.open(filename.c_str(), ios::in | ios::binary);
-	if (!starFile.good())
+    mStarFile.open(filename.c_str(), ios::in | ios::binary);
+    if (!mStarFile.good())
 	{
-        std::cout << "Error opening " << filename;
+        std::cout << "Error opening " << filename << endl;
 		return false;
 	}
 
@@ -44,21 +44,21 @@ bool StarDatabase::openFile(std::string filename)
 	{
         int   headerLength = 8;
 		char* header = new char[headerLength];
-		starFile.read(header, headerLength);
+        mStarFile.read(header, headerLength);
         if (strncmp(header, "CELSTARS", headerLength)) return false;
 		delete[] header;
 	}
 
-	// Verifie la version du format de fichier
+    // File version: 16 bits: 01 00 = 0x0001
 	{
         uint16_t version;
-		starFile.read((char*) &version, sizeof version);
+        mStarFile.read((char*) &version, sizeof(version));
 		LE_TO_CPU_INT16(version, version);
 		if (version != 0x0100) return false;
 	}
 
-	// Lit le nombre d'étoiles dans le fichier
-	starFile.read((char*) &mStarsInFile, sizeof mStarsInFile);
+    // Lit le nombre d'étoiles dans le fichier - 32 bits : 87 B7 01 00 = 0x0001B787 = 112.519
+    mStarFile.read((char*) &mStarsInFile, sizeof(mStarsInFile));
 	LE_TO_CPU_INT32(mStarsInFile, mStarsInFile);
 
 	return true;
@@ -67,9 +67,9 @@ bool StarDatabase::openFile(std::string filename)
 /* ------------------------------------------------------------------------- */
 /// Close the DAT file.
 /* ------------------------------------------------------------------------- */
-void StarDatabase::closeFile()
+void Catalog::closeFile()
 {
-    starFile.close();
+    mStarFile.close();
 }
 
 /* ------------------------------------------------------------------------- */
@@ -81,7 +81,7 @@ Note: La lecture des 112000 étoiles du fichier prend moins d'une seconde.
 Des conversions sont nécesaires, car les valeurs sont stockées en binaire inverse.
 */
 /* ------------------------------------------------------------------------- */
-int StarDatabase::readStars(int starNumber)
+int Catalog::readStars(int starNumber)
 {
     if (!this->openFile(mFilename))
     {
@@ -90,29 +90,29 @@ int StarDatabase::readStars(int starNumber)
         return 0;
     }
 
-    if (!starFile.good()) return 0;
-
-    int starIndex = 0;
+    if (mStarFile.bad()) return 0;
+    int starIndex = 1;
     if (starNumber==0) starNumber = mStarsInFile;
+
     while ((starIndex<mStarsInFile) && // On ne lit pas au dela du fichier
-           (starIndex<starNumber)   )  // On ne lit pas au dela de ce qui est demandé
+           (starIndex<=starNumber)   )  // On ne lit pas au dela de ce qui est demandé
 	{
         uint32_t  catNo = 0;      // 32 bits
         float     x=0, y=0, z=0;  // 32 bits
         uint16_t  absMag;         // 16 bits
         uint16_t  spectralType;   // 16 bits
 
-        starFile.read((char*) &catNo, sizeof catNo);        // Catalog Nb - 8 bits
+        mStarFile.read((char*) &catNo, sizeof catNo);        // Catalog Nb - 8 bits
 		LE_TO_CPU_INT32(catNo, catNo);
-        starFile.read((char*) &x, sizeof x);                // X position - 32 bits
+        mStarFile.read((char*) &x, sizeof x);                // X position - 32 bits
 		LE_TO_CPU_FLOAT(x, x);
-        starFile.read((char*) &y, sizeof y);                // Y position - 32 bits
+        mStarFile.read((char*) &y, sizeof y);                // Y position - 32 bits
 		LE_TO_CPU_FLOAT(y, y);
-        starFile.read((char*) &z, sizeof z);                // Z position - 32 bits
+        mStarFile.read((char*) &z, sizeof z);                // Z position - 32 bits
 		LE_TO_CPU_FLOAT(z, z);
-        starFile.read((char*) &absMag, sizeof absMag);      // Absolute magnitude - 16 bits
+        mStarFile.read((char*) &absMag, sizeof absMag);      // Absolute magnitude - 16 bits
 		LE_TO_CPU_INT16(absMag, absMag);
-        starFile.read((char*) &spectralType, sizeof spectralType); // Spectral Type - 16 bits
+        mStarFile.read((char*) &spectralType, sizeof spectralType); // Spectral Type - 16 bits
 		LE_TO_CPU_INT16(spectralType, spectralType);
 
         double M  = absMag / 256.0;
@@ -160,9 +160,8 @@ int StarDatabase::readStars(int starNumber)
 			}
 		}
         // Add this Star in our std::vectorCatalog
-        CatalogStar newStar = CatalogStar(catNo, M, SP, SS, ST);
-        cout << catNo<< endl;
-        this->mCatalog.push_back(newStar);
+        CatalogStar* newStar = new CatalogStar(catNo, M, SP, SS, ST);
+        this->mCatalog[catNo] = newStar;
         starIndex++;
 	}
 
@@ -173,7 +172,7 @@ int StarDatabase::readStars(int starNumber)
     std::cout << "Neutron Star Count " << mNeutronStarCount << endl;
     std::cout << "Black-Hole Count   " << mBlackHoleCount   << endl;
 
-    return (mCatalog.size());
+    return (int)mCatalog.size();
 
     this->closeFile();
 
@@ -182,10 +181,10 @@ int StarDatabase::readStars(int starNumber)
 /* ------------------------------------------------------------------------- */
 /// Returns a star from the catalog (0 is Sol)
 /* ------------------------------------------------------------------------- */
-CatalogStar* StarDatabase::getStar(unsigned int index)
+CatalogStar* Catalog::getStar(unsigned int index)
 {
     if (index<this->mCatalog.size())
-        return &this->mCatalog[index];
+        return this->mCatalog[index];
     else
         return nullptr;
 }

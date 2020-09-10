@@ -1,0 +1,702 @@
+system:
+  seed = 1067
+
+star:
+  name = Algenib
+  mass = 4.400000 (solar mass)
+  lum = 114.564105 (solar lum)
+  age = 0.384064 (billion years)
+  life = 0.384064 (billion years left on main sequence)
+  ecosphere = 10.703462 (AU)
+  planets = 10 (planets)
+
+
+
+********************************************** 
+planet:
+  number = 1
+
+general:
+  type = Rock
+  giant = no
+  gasPlanet = no
+  earthlike = no
+  albedo = 0.070000
+  atmosphere = no
+
+orbit:
+  radius = 0.387000 (unit = AU)
+  tilt = 2 (unit = degree)
+  eccentricity = 0.206000
+  facelocked = no
+  resonnant = yes
+
+physical:
+  density = 5.336301 (unit = grams/cc)
+  radius = 2450.035344 (unit = km)
+  coreRadius = 2450.035344 (unit = km)
+  mass = 0.055000 (unit = EM)
+  dustMass = 100% 
+  gasMass = 0% 
+  escVelocity = 4.231358 (unit = km/s)
+
+durations:
+  yearE = 41.921562 (unit = earth days)
+  yearL = 1.518892 (unit = local days)
+  day = 662.402398 (unit = hours)
+  dayE = 27.600100 (unit = earth days)
+
+composition:
+  minMolec = 31374.066947 (and above)
+  metal = no
+  rock = yes
+
+
+atmosphere:
+  inventory = 0 (unitless. Ref: Earth=1000)
+  breathe = none
+
+
+temperatures:
+  exospheric = 973766.967987 (unit = Kelvin)
+  surfaceAvg = 1166 (unit = Celcius)
+  surfaceMax = 1531 (unit = Celcius)
+  surfaceMin = 59 (unit = Celcius)
+  nightTemp = 89 (unit = Celcius)
+  dayTemp = 1527 (unit = Celcius)
+
+surface:
+  gravity = 0.372581 (unit = Earth G)
+  pressure = 0.000000 (unit = Earth atm)
+  boilingPoint = 0 (unit = Kelvin)
+  greenhouseEffect = no
+
+coverage:
+  ground = 100% 
+  water = 0% 
+  ice = 0% 
+  cloud = 0% 
+
+comments:
+  gravity = low gravity
+  temperature = warm
+  icyPlanet = no
+  atmosphere = airless
+  clouds = cloudless
+
+
+
+********************************************** 
+planet:
+  number = 2
+
+general:
+  type = Rock
+  giant = no
+  gasPlanet = no
+  earthlike = no
+  albedo = 0.070000
+  atmosphere = no
+
+orbit:
+  radius = 0.723000 (unit = AU)
+  tilt = 177 (unit = degree)
+  eccentricity = 0.007000
+  facelocked = no
+  resonnant = no
+
+physical:
+  density = 5.474177 (unit = grams/cc)
+  radius = 5966.841180 (unit = km)
+  coreRadius = 5966.841180 (unit = km)
+  mass = 0.815000 (unit = EM)
+  dustMass = 100% 
+  gasMass = 0% 
+  escVelocity = 10.437373 (unit = km/s)
+
+durations:
+  yearE = 107.047948 (unit = earth days)
+  yearL = 48.564421 (unit = local days)
+  day = 52.901913 (unit = hours)
+  dayE = 2.204246 (unit = earth days)
+
+composition:
+  minMolec = 1477.954132 (and above)
+  metal = no
+  rock = yes
+
+
+atmosphere:
+  inventory = 0 (unitless. Ref: Earth=1000)
+  breathe = none
+
+
+temperatures:
+  exospheric = 278997.539889 (unit = Kelvin)
+  surfaceAvg = 780 (unit = Celcius)
+  surfaceMax = 983 (unit = Celcius)
+  surfaceMin = 511 (unit = Celcius)
+  nightTemp = 559 (unit = Celcius)
+  dayTemp = 951 (unit = Celcius)
+
+surface:
+  gravity = 0.930833 (unit = Earth G)
+  pressure = 0.000000 (unit = Earth atm)
+  boilingPoint = 0 (unit = Kelvin)
+  greenhouseEffect = no
+
+coverage:
+  ground = 100% 
+  water = 0% 
+  ice = 0% 
+  cloud = 0% 
+
+comments:
+  gravity = gravity OK
+  temperature = warm
+  icyPlanet = no
+  atmosphere = airless
+  clouds = cloudless
+
+
+
+********************************************** 
+planet:
+  number = 3
+
+general:
+  type = Rock
+  giant = no
+  gasPlanet = no
+  earthlike = no
+  albedo = 0.070000
+  atmosphere = no
+
+orbit:
+  radius = 1.000000 (unit = AU)
+  tilt = 23 (unit = degree)
+  eccentricity = 0.017000
+  facelocked = no
+  resonnant = no
+
+physical:
+  density = 5.498567 (unit = grams/cc)
+  radius = 6378.448328 (unit = km)
+  coreRadius = 6378.448328 (unit = km)
+  mass = 1.000000 (unit = EM)
+  dustMass = 100% 
+  gasMass = 0% 
+  escVelocity = 11.182197 (unit = km/s)
+
+durations:
+  yearE = 174.128906 (unit = earth days)
+  yearL = 249.945201 (unit = local days)
+  day = 16.720040 (unit = hours)
+  dayE = 0.696668 (unit = earth days)
+
+composition:
+  minMolec = 673.174392 (and above)
+  metal = no
+  rock = yes
+
+
+atmosphere:
+  inventory = 0 (unitless. Ref: Earth=1000)
+  breathe = none
+
+
+temperatures:
+  exospheric = 145840.105029 (unit = Kelvin)
+  surfaceAvg = 622 (unit = Celcius)
+  surfaceMax = 726 (unit = Celcius)
+  surfaceMin = 506 (unit = Celcius)
+  nightTemp = 553 (unit = Celcius)
+  dayTemp = 684 (unit = Celcius)
+
+surface:
+  gravity = 0.999478 (unit = Earth G)
+  pressure = 0.000000 (unit = Earth atm)
+  boilingPoint = 0 (unit = Kelvin)
+  greenhouseEffect = no
+
+coverage:
+  ground = 100% 
+  water = 0% 
+  ice = 0% 
+  cloud = 0% 
+
+comments:
+  gravity = gravity OK
+  temperature = warm
+  icyPlanet = no
+  atmosphere = airless
+  clouds = cloudless
+
+
+
+********************************************** 
+planet:
+  number = 4
+
+general:
+  type = Rock
+  giant = no
+  gasPlanet = no
+  earthlike = no
+  albedo = 0.070000
+  atmosphere = no
+
+orbit:
+  radius = 1.524000 (unit = AU)
+  tilt = 25 (unit = degree)
+  eccentricity = 0.093000
+  facelocked = no
+  resonnant = no
+
+physical:
+  density = 5.351588 (unit = grams/cc)
+  radius = 3059.417483 (unit = km)
+  coreRadius = 3059.417483 (unit = km)
+  mass = 0.107400 (unit = EM)
+  dustMass = 100% 
+  gasMass = 0% 
+  escVelocity = 5.291361 (unit = km/s)
+
+durations:
+  yearE = 327.603441 (unit = earth days)
+  yearL = 335.881671 (unit = local days)
+  day = 23.408490 (unit = hours)
+  dayE = 0.975354 (unit = earth days)
+
+composition:
+  minMolec = 1293.810962 (and above)
+  metal = no
+  rock = yes
+
+
+atmosphere:
+  inventory = 0 (unitless. Ref: Earth=1000)
+  breathe = none
+
+
+temperatures:
+  exospheric = 62792.393028 (unit = Kelvin)
+  surfaceAvg = 452 (unit = Celcius)
+  surfaceMax = 562 (unit = Celcius)
+  surfaceMin = 331 (unit = Celcius)
+  nightTemp = 376 (unit = Celcius)
+  dayTemp = 522 (unit = Celcius)
+
+surface:
+  gravity = 0.466584 (unit = Earth G)
+  pressure = 0.000000 (unit = Earth atm)
+  boilingPoint = 0 (unit = Kelvin)
+  greenhouseEffect = no
+
+coverage:
+  ground = 100% 
+  water = 0% 
+  ice = 0% 
+  cloud = 0% 
+
+comments:
+  gravity = low gravity
+  temperature = warm
+  icyPlanet = no
+  atmosphere = airless
+  clouds = cloudless
+
+
+
+********************************************** 
+planet:
+  number = 5
+
+general:
+  type = Asteroids
+  giant = no
+  gasPlanet = no
+  earthlike = no
+  albedo = 0.070000
+  atmosphere = no
+
+orbit:
+  radius = 2.767000 (unit = AU)
+  tilt = 0 (unit = degree)
+  eccentricity = 0.079000
+  facelocked = no
+  resonnant = no
+
+physical:
+  density = 5.309672 (unit = grams/cc)
+  radius = 330.225486 (unit = km)
+  coreRadius = 330.225486 (unit = km)
+  mass = 0.000134 (unit = EM)
+  dustMass = 100% 
+  gasMass = 0% 
+  escVelocity = 0.568895 (unit = km/s)
+
+durations:
+  yearE = 801.465365 (unit = earth days)
+  yearL = 192.734985 (unit = local days)
+  day = 99.801127 (unit = hours)
+  dayE = 4.158380 (unit = earth days)
+
+composition:
+  minMolec = 33949.785486 (and above)
+  metal = no
+  rock = yes
+
+
+atmosphere:
+  inventory = 0 (unitless. Ref: Earth=1000)
+  breathe = none
+
+
+temperatures:
+  exospheric = 19048.406484 (unit = Kelvin)
+  surfaceAvg = 265 (unit = Celcius)
+  surfaceMax = 437 (unit = Celcius)
+  surfaceMin = 49 (unit = Celcius)
+  nightTemp = 86 (unit = Celcius)
+  dayTemp = 413 (unit = Celcius)
+
+surface:
+  gravity = 0.049967 (unit = Earth G)
+  pressure = 0.000000 (unit = Earth atm)
+  boilingPoint = 0 (unit = Kelvin)
+  greenhouseEffect = no
+
+coverage:
+  ground = 100% 
+  water = 0% 
+  ice = 0% 
+  cloud = 0% 
+
+comments:
+  gravity = low gravity
+  temperature = warm
+  icyPlanet = no
+  atmosphere = airless
+  clouds = cloudless
+
+
+
+********************************************** 
+planet:
+  number = 6
+
+general:
+  type = GasGiant
+  giant = yes
+  gasPlanet = yes
+  earthlike = no
+  albedo = 0.463605
+  atmosphere = yes
+
+orbit:
+  radius = 5.203000 (unit = AU)
+  tilt = 3 (unit = degree)
+  eccentricity = 0.048000
+  facelocked = no
+  resonnant = no
+
+physical:
+  density = 2.953148 (unit = grams/cc)
+  radius = 53554.877041 (unit = km)
+  coreRadius = 0.000000 (unit = km)
+  mass = 317.900000 (unit = EM)
+  dustMass = 0% 
+  gasMass = 100% 
+  escVelocity = 68.806647 (unit = km/s)
+
+durations:
+  yearE = 2066.353494 (unit = earth days)
+  yearL = 8067.001779 (unit = local days)
+  day = 6.147573 (unit = hours)
+  dayE = 0.256149 (unit = earth days)
+
+composition:
+  minMolec = 0.702484 (and above)
+  metal = no
+  rock = no
+
+
+atmosphere:
+  inventory = 10115000 (unitless. Ref: Earth=1000)
+  breathe = none
+
+
+limit:
+  gravity = 4.507083 (unit = Earth G)
+  pressure = 0.098692 (unit = Earth atm)
+
+center:
+  gravity = 0.000000 (unit = Earth G)
+  pressure = 3214330.308197 (unit = Earth atm)
+
+
+
+********************************************** 
+planet:
+  number = 7
+
+general:
+  type = GasGiant
+  giant = yes
+  gasPlanet = yes
+  earthlike = no
+  albedo = 0.472321
+  atmosphere = yes
+
+orbit:
+  radius = 9.539000 (unit = AU)
+  tilt = 26 (unit = degree)
+  eccentricity = 0.056000
+  facelocked = no
+  resonnant = no
+
+physical:
+  density = 2.182754 (unit = grams/cc)
+  radius = 39625.755013 (unit = km)
+  coreRadius = 0.000000 (unit = km)
+  mass = 95.180000 (unit = EM)
+  dustMass = 0% 
+  gasMass = 100% 
+  escVelocity = 43.769211 (unit = km/s)
+
+durations:
+  yearE = 5129.926925 (unit = earth days)
+  yearL = 14810.433992 (unit = local days)
+  day = 8.312940 (unit = hours)
+  dayE = 0.346372 (unit = earth days)
+
+composition:
+  minMolec = 0.563443 (and above)
+  metal = no
+  rock = no
+
+
+atmosphere:
+  inventory = 3028454 (unitless. Ref: Earth=1000)
+  breathe = none
+
+
+limit:
+  gravity = 2.464868 (unit = Earth G)
+  pressure = 0.098692 (unit = Earth atm)
+
+center:
+  gravity = 0.000000 (unit = Earth G)
+  pressure = 288138.206369 (unit = Earth atm)
+
+
+
+********************************************** 
+planet:
+  number = 8
+
+general:
+  type = GasPlanet
+  giant = yes
+  gasPlanet = yes
+  earthlike = no
+  albedo = 0.510372
+  atmosphere = yes
+
+orbit:
+  radius = 19.191000 (unit = AU)
+  tilt = 97 (unit = degree)
+  eccentricity = 0.046000
+  facelocked = no
+  resonnant = no
+
+physical:
+  density = 1.449009 (unit = grams/cc)
+  radius = 24277.023724 (unit = km)
+  coreRadius = 0.000000 (unit = km)
+  mass = 14.530000 (unit = EM)
+  dustMass = 0% 
+  gasMass = 93% 
+  escVelocity = 21.848405 (unit = km/s)
+
+durations:
+  yearE = 14639.130214 (unit = earth days)
+  yearL = 26953.424119 (unit = local days)
+  day = 13.035046 (unit = hours)
+  dayE = 0.543127 (unit = earth days)
+
+composition:
+  minMolec = 0.558674 (and above)
+  metal = no
+  rock = no
+
+
+atmosphere:
+  inventory = 462318 (unitless. Ref: Earth=1000)
+  breathe = none
+
+
+limit:
+  gravity = 1.002485 (unit = Earth G)
+  pressure = 0.098692 (unit = Earth atm)
+
+center:
+  gravity = 0.000000 (unit = Earth G)
+  pressure = 6714.917420 (unit = Earth atm)
+
+
+
+********************************************** 
+planet:
+  number = 9
+
+general:
+  type = GasPlanet
+  giant = yes
+  gasPlanet = yes
+  earthlike = no
+  albedo = 0.516662
+  atmosphere = yes
+
+orbit:
+  radius = 30.061000 (unit = AU)
+  tilt = 29 (unit = degree)
+  eccentricity = 0.010000
+  facelocked = no
+  resonnant = no
+
+physical:
+  density = 1.322248 (unit = grams/cc)
+  radius = 26446.199807 (unit = km)
+  coreRadius = 0.000000 (unit = km)
+  mass = 17.140000 (unit = EM)
+  dustMass = 0% 
+  gasMass = 100% 
+  escVelocity = 22.735704 (unit = km/s)
+
+durations:
+  yearE = 28699.452648 (unit = earth days)
+  yearL = 52683.795447 (unit = local days)
+  day = 13.073980 (unit = hours)
+  dayE = 0.544749 (unit = earth days)
+
+composition:
+  minMolec = 0.210266 (and above)
+  metal = no
+  rock = no
+
+
+atmosphere:
+  inventory = 545363 (unitless. Ref: Earth=1000)
+  breathe = none
+
+
+limit:
+  gravity = 0.996523 (unit = Earth G)
+  pressure = 0.098692 (unit = Earth atm)
+
+center:
+  gravity = 0.000000 (unit = Earth G)
+  pressure = 9343.962410 (unit = Earth atm)
+
+
+
+********************************************** 
+planet:
+  number = 10
+
+general:
+  type = Rock
+  giant = no
+  gasPlanet = no
+  earthlike = no
+  albedo = 0.070000
+  atmosphere = no
+
+orbit:
+  radius = 39.529000 (unit = AU)
+  tilt = 122 (unit = degree)
+  eccentricity = 0.248000
+  facelocked = no
+  resonnant = no
+
+physical:
+  density = 5.312155 (unit = grams/cc)
+  radius = 812.926546 (unit = km)
+  coreRadius = 812.926546 (unit = km)
+  mass = 0.002000 (unit = EM)
+  dustMass = 100% 
+  gasMass = 0% 
+  escVelocity = 1.400793 (unit = km/s)
+
+durations:
+  yearE = 43275.765802 (unit = earth days)
+  yearL = 23807.753120 (unit = local days)
+  day = 43.625216 (unit = hours)
+  dayE = 1.817717 (unit = earth days)
+
+composition:
+  minMolec = 27.445962 (and above)
+  metal = yes
+  rock = yes
+
+molecule:
+  symbol = Ni (solid)
+
+molecule:
+  symbol = Cu (solid)
+
+molecule:
+  symbol = Fe (solid)
+
+molecule:
+  symbol = SO2 (solid)
+
+molecule:
+  symbol = S (solid)
+
+molecule:
+  symbol = Cl (solid)
+
+molecule:
+  symbol = CO2 (solid)
+
+molecule:
+  symbol = Xe (solid)
+
+
+atmosphere:
+  inventory = 0 (unitless. Ref: Earth=1000)
+  breathe = non-toxic
+
+
+temperatures:
+  exospheric = 93.335168 (unit = Kelvin)
+  surfaceAvg = -130 (unit = Celcius)
+  surfaceMax = -84 (unit = Celcius)
+  surfaceMin = -176 (unit = Celcius)
+  nightTemp = -156 (unit = Celcius)
+  dayTemp = -105 (unit = Celcius)
+
+surface:
+  gravity = 0.123064 (unit = Earth G)
+  pressure = 0.000000 (unit = Earth atm)
+  boilingPoint = 0 (unit = Kelvin)
+  greenhouseEffect = no
+
+coverage:
+  ground = 100% 
+  water = 0% 
+  ice = 0% 
+  cloud = 0% 
+
+comments:
+  gravity = low gravity
+  temperature = cold
+  icyPlanet = no
+  atmosphere = airless
+  clouds = cloudless
+
+
+
