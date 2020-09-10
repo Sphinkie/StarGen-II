@@ -36,10 +36,10 @@ class SG_Stardust
 	public:
 		SG_Stardust(SG_Star* star, int max_planet=10);
 		~SG_Stardust();
-		long double getDustDensityCoeff();
 		void setDustDensityRatio(long double ratio = 1);
 		void generatePlanets();
-		SG_Planet* getPlanet(int index);
+        long double getDustDensityCoeff();
+        SG_Planet* getPlanet(int index);
 
 	protected:
 

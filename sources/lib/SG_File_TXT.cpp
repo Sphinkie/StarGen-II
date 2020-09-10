@@ -46,7 +46,7 @@ void SG_File_TXT::addIntValue(std::string name, long double value, std::string c
 /*----------------------------------------------------------------------*/
 void SG_File_TXT::addValue(std::string name, bool value)
 {
-    mOutputFile << "  " << name << " = " << std::to_string(value) << "\n";
+    mOutputFile << "  " << name << " = " << (value? "yes":"no") << "\n";
 }
 
 /*----------------------------------------------------------------------*/
@@ -54,8 +54,7 @@ void SG_File_TXT::addValue(std::string name, bool value)
 /*----------------------------------------------------------------------*/
 void SG_File_TXT::addPercentage(std::string name, long double value)
 {
-	long double percentage = int(value*1000);
-	percentage /= 10;
+    int percentage = int(value*100);
     mOutputFile << "  " << name << " = " << std::to_string(percentage) << "% \n";
 }
 

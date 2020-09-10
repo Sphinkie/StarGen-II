@@ -25,6 +25,7 @@ SG_Star::SG_Star()
 	mAge  = 5e9;
 	mLife = 10e9;
 	mPlanetNumber = 0;
+    mName = "";
 }
 
 
@@ -44,7 +45,7 @@ void SG_Star::setRandomStar()
 	mLum         = this->calculateLuminosity(mMass);          
 	mR_ecosphere = this->calculateEcosphere(mLum);     
 	mLife        = this->calculateLife();
-	mAge         = SG_Utils::random_number(1e9, 6e9); // age of the star: 1 to 6 billions years
+    mAge         = SG_Utils::random_number(1, 6) *1e9; // age of the star: 1 to 6 billions years
 	if (mAge>mLife)   mAge = mLife;
 }
 
@@ -110,7 +111,7 @@ void SG_Star::setEcosphere(long double ecosphere)
 /* ------------------------------------------------------------------------- */
 /// This function set the age of the star.
 /**
-The age cannot be higher than teh life of the star.
+The age cannot be higher than the life of the star.
 @param age The age of the star (unit = years)
 */
 /* ------------------------------------------------------------------------- */
@@ -307,13 +308,12 @@ long double SG_Star::getBodePlanetOrbit(int index)
 	}
 	else 
 	{
-		int k= pow(2,index-1);
-		orbit = (3*k+4)/10.0*mMass;
+        int k = (int)pow(2,index-1);
+        orbit = (3*k+4)/10.0 * mMass;
 	}
 
 	return orbit;
 }
-
 
 /* ------------------------------------------------------------------------- */
 /// This function returns the number of planets orbiting around the star.
@@ -321,4 +321,20 @@ long double SG_Star::getBodePlanetOrbit(int index)
 int SG_Star::getPlanetNumber()
 {
 	return mPlanetNumber;
+}
+
+/* ------------------------------------------------------------------------- */
+/// This function sets a name for the star.
+/* ------------------------------------------------------------------------- */
+void SG_Star::setName(std::string name)
+{
+    this->mName = name;
+}
+
+/* ------------------------------------------------------------------------- */
+/// This function returns the name of the star.
+/* ------------------------------------------------------------------------- */
+std::string SG_Star::getName()
+{
+    return this->mName;
 }

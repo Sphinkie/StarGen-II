@@ -12,6 +12,8 @@
 #pragma once
 #endif
 
+#include <string>
+
 /* ------------------------------------------------------------------------- */
 /// The primary star of the planetary system.
 /** 
@@ -30,8 +32,9 @@ class SG_Star
 		~SG_Star();
 
 		void setRandomStar();
-		void setMass(long double mass);
-		void setLuminosity(long double luminosity);
+        void setName(std::string name);
+        void setMass(long double mass);
+        void setLuminosity(long double luminosity);
 		void setEcosphere(long double ecosphere);
 		void setLife(long double life);
 		void setAge(long double age);
@@ -44,15 +47,17 @@ class SG_Star
 		long double getFarthestPlanetOrbit();
 		long double getStellarDustLimit();
 		int         getPlanetNumber();
+        std::string getName();
 
-		long double mLum;             ///< The luminosity of the star (unit=solar lum)
-		long double mMass;            ///< The mass of the star (unit= solar mass)
+        std::string mName;            ///< The name of the star
+        long double mLum;             ///< The luminosity of the star (unit=solar lum)
+        long double mMass;            ///< The mass of the star (unit= solar mass)
 		long double mLife;            ///< The total lifetime estimlated for the star (unit=year)
 		long double mAge;             ///< The elapsed lifetile of the star (unit=year)
 		long double mR_ecosphere;     ///< The radius of the ecosphere (unit=UA)
 		int         mPlanetNumber;    ///< The number of planets orbiting around the star.
 
-	protected:
+    private:
 
 		long double calculateLuminosity(long double mass);
 		long double calculateEcosphere(long double luminosity);

@@ -1,6 +1,6 @@
 /* ------------------------------------------------------------------------- */
 // File       : SG_Atmosphere.h
-// Project    : Star Gen
+// Project    : Star Gen 2
 // Author C++ : David de Lorenzo
 // Author C   : Jim Burrows (see Credits.txt)
 /* ------------------------------------------------------------------------- */

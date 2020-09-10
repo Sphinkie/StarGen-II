@@ -44,7 +44,7 @@ void SG_File_XML::addIntValue(std::string name, long double value, std::string c
 /*----------------------------------------------------------------------*/
 void SG_File_XML::addValue(std::string name, bool value)
 {
-    mOutputFile << name << "='" << std::to_string(value) << "' ";
+    mOutputFile << name << "='" << (value? "yes":"no") << "' ";
 }
 
 /*----------------------------------------------------------------------*/
@@ -52,8 +52,7 @@ void SG_File_XML::addValue(std::string name, bool value)
 /*----------------------------------------------------------------------*/
 void SG_File_XML::addPercentage(std::string name, long double value)
 {
-	long double percentage = int(value*1000);
-	percentage /= 10;
+    int percentage = int(value*100);
     mOutputFile << name << "='" << std::to_string(percentage) << "%' ";
 }
 

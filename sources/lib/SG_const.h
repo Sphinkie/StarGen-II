@@ -1,6 +1,6 @@
 /* ------------------------------------------------------------------------- */
 // File       : SG_const.h
-// Project    : Star Gen
+// Project    : StarGen 2
 // Author C++ : David de Lorenzo
 // Author C   : Jim Burrows (see Credits.txt)
 /* ------------------------------------------------------------------------- */

@@ -58,12 +58,14 @@ void SG_File::writeStarDescription(SG_Star* star)
 	subSection();
 
 	addSection("star");
-	addValue("mass",     star->mMass,        "solar mass");
-	addValue("lum",      star->mLum,         "solar lum");
+    if (!star->mName.empty())
+        addValue("name", star->mName);
+    addValue("mass",     star->mMass,        "solar mass");
+    addValue("lum",      star->mLum,         "solar lum");
 	addValue("age",      star->mAge/1e9,     "billion years");
 	addValue("life",     star->mLife/1e9,    "billion years left on main sequence");
 	addValue("ecosphere",star->mR_ecosphere, "AU");
-	addValue("planets"  ,star->mPlanetNumber,"planets");
+    addIntValue("planets"  ,star->mPlanetNumber,"planets");
 	closeSection();
 	mOutputFile << "\n";
 }
@@ -77,7 +79,7 @@ void SG_File::writePlanetDescription(SG_Planet* planet)
 {
 	addLine();
 	addSection("planet");
-	addIntValue("number", planet->mPlanet_no+1);
+    addIntValue("number", planet->mPlanet_no);
 	subSection();
 
 	this->writePlanet(planet);
@@ -101,7 +103,7 @@ void SG_File::writePlanet(SG_Planet* planet)
 	addSection("general");
 	addValue("type"      ,mPlanet_Phrase[planet->mType]);
 	addValue("giant"     ,planet->mGas_giant);
-	addValue("gasplanet" ,planet->mGas_planet);
+    addValue("gasPlanet" ,planet->mGas_planet);
 	addValue("earthlike" ,planet->mEarthlike);
 	addValue("albedo"    ,planet->mAlbedo);
 	addValue("atmosphere",S_atm);
@@ -113,7 +115,7 @@ void SG_File::writePlanet(SG_Planet* planet)
 	addIntValue("tilt"     , planet->mAxial_tilt, "unit = degree");
 	addValue("eccentricity", planet->getEccentricity());
 	// Planet is tidally locked with one face to the star.
-	addValue("facelocked", planet->mFaceLocked);
+    addValue("facelocked", planet->mFaceLocked);
 	// Planet's rotation is in resonnant spin lock with the star.
 	addValue("resonnant" ,  planet->mResonant_period);           
 	closeSection();
@@ -121,7 +123,7 @@ void SG_File::writePlanet(SG_Planet* planet)
 	addSection("physical");
 	addValue("density"      , planet->mDensity,    "unit = grams/cc");
 	addValue("radius"       , planet->mRadius,     "unit = km");
-	addValue("coreradius"   , planet->mCore_radius,"unit = km");
+    addValue("coreRadius"   , planet->mCore_radius,"unit = km");
 	addValue("mass"         , TOEM(planet->mMass), "unit = EM");
 //	addValue("DustMass_EM"  , TOEM(planet->mDust_mass), "unit = EM"); // debug
 //	addValue("GasMass_EM"   , TOEM(planet->mGas_mass),  "unit = EM");  // debug
@@ -179,8 +181,8 @@ void SG_File::writeSolidPlanet(SG_Planet* planet)
 	addValue("gravity", planet->mSurf_grav,  "unit = Earth G");
 	long double pressure = planet->mSurf_pressure/EARTH_SURF_PRES_IN_MILLIBARS;
 	addValue   ("pressure",     pressure,               "unit = Earth atm");
-	addIntValue("boilingpoint", planet->mBoiling_point, "unit = Kelvin");
-	addValue   ("greenhouse"  ,(planet->mGreenhouse_effect && (pressure>0)));
+    addIntValue("boilingPoint", planet->mBoiling_point, "unit = Kelvin");
+    addValue   ("greenhouseEffect"  ,(planet->mGreenhouse_effect && (pressure>0)));
 	closeSection();
 
 
@@ -248,7 +250,7 @@ void SG_File::writeClimate(SG_Planet* planet)
 	subSection();
 	for (int i=0; i<MAX_GAZ; i++)
 	{
-		SG_Gas* liquid = planet->mAtmosphere->getGas(i,LIQUID);
+        SG_Gas* liquid = planet->mAtmosphere->getGas(i, LIQUID);
 		if (liquid)
 		{
 			switch(liquid->getAtomicNumber()) 
@@ -292,7 +294,7 @@ void SG_File::writeClimate(SG_Planet* planet)
 	closeSection("rain");
 
 	addSection("climate");
-	addValue("water",S_hum);
+    addValue("humidityLevel",S_hum);
 	closeSection();
 }
 
@@ -312,7 +314,7 @@ void SG_File::writeAtmosphere(SG_Planet* planet)
 	breathability_phrase[POISONOUS]="poisonous";
 
 	addSection("atmosphere");
-	addValue("inventory", planet->mVolatile_gas_inventory);
+    addIntValue("inventory", planet->mVolatile_gas_inventory, "unitless. Ref: Earth=1000" );
 	addValue("breathe", breathability_phrase[planet->mBreathe]);
 	if (planet->mBreathe==POISONOUS) addValue("toxicGas", planet->mAtmosphere->getToxicGasList());
 	subSection();

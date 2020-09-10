@@ -115,7 +115,7 @@ class SG_Planet
 		long double getSphereRadius(long double mass,  long double density);
 		long double getSphereDensity(long double mass, long double radius);
 
-	protected:
+    private:
 		// Global data
 		int         mPlanet_no;         ///< Planet index
 		planet_type mType;              ///< Code for the planet's type

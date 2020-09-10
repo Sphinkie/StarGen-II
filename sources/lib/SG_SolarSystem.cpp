@@ -61,7 +61,7 @@ void SG_SolarSystem::setSeed(long seed)
 If the data is not defined, the defalut value is the Sun mass (=1)
 */
 /* ------------------------------------------------------------------------- */
-void SG_SolarSystem::setStarMass(long mass)
+void SG_SolarSystem::setStarMass(double mass)
 {
 	if (mass==RANDOM) mass=SG_Utils::random_number(0.7, 7);
 
@@ -76,12 +76,47 @@ void SG_SolarSystem::setStarMass(long mass)
 If the data is not defined, the default value is the Sun luminosity (=1)
 */
 /* ------------------------------------------------------------------------- */
-void SG_SolarSystem::setStarLuminosity(long luminosity)
+void SG_SolarSystem::setStarLuminosity(long double luminosity)
 {
 	if (luminosity==RANDOM) luminosity=SG_Utils::random_number(0.7, 7);
 	mSun->setLuminosity(luminosity);
 }
 
+/* ------------------------------------------------------------------------- */
+/// Set some data about the primary star: Age
+/**
+@param age The age of the star (unit = year). The value RANDOM can also be used.
+*/
+/* ------------------------------------------------------------------------- */
+void SG_SolarSystem::setStarAge(long double age)
+{
+    if (age==RANDOM)
+        age = SG_Utils::random_number(1, 6) * 1e9; // age of the star: 1 to 6 billions years
+    mSun->setAge(age);
+}
+
+/* ------------------------------------------------------------------------- */
+/// Set some data about the primary star: Name
+/**
+@param mane The name of the star. If empty a default name is generated.
+*/
+/* ------------------------------------------------------------------------- */
+void SG_SolarSystem::setStarName(std::string name)
+{
+    if (name.empty()) name = "Random Star " + std::to_string(mSeed);
+    mSun->setName(name);
+}
+
+/* ------------------------------------------------------------------------- */
+/// Set some data about the primary star: Bolometric Magnitude
+/**
+@param luminosity The Bolometric Magnitude of the star
+*/
+/* ------------------------------------------------------------------------- */
+void SG_SolarSystem::setStarBoloMagnitude(long double magnitude)
+{
+    mSun->setMagnitude(magnitude);
+}
 
 /* ------------------------------------------------------------------------- */
 /// This function return a pointer on the primary star of the solar system.
@@ -112,7 +147,7 @@ void SG_SolarSystem::generateSystem(std::string filename)
 	// Long-Term Stability of Planets in Binary Systems
 	// The Astronomical Journal, 117:621-628, Jan 1999 
 	/*************************************************/
-	SG_Planet* SecondaryStar = NULL;	// TODO A gérer 
+    SG_Planet* SecondaryStar = NULL;	// TODO
 
 	if (SecondaryStar) 
 	{
@@ -141,13 +176,14 @@ void SG_SolarSystem::generateSystem(std::string filename)
 		// and we set a limit at 8 planets maximum
 		mStardust = new SG_Stardust(mSun, 8);
 
-		mStardust->setDustDensityRatio(1); //TODO: makke some tests with differents ratio
+        mStardust->setDustDensityRatio(1); //TODO: make some tests with differents ratio
 
 		// The dust is accreted into planets
 		mStardust->generatePlanets();
 		// We determine the climatic conditions for every planet
 		this->calculatePlanets();
 	}
+
 	// We write the data in a file
 	this->writePlanets();
 }
