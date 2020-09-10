@@ -41,7 +41,7 @@ class SG_Stardust
         long double getDustDensityCoeff();
         SG_Planet* getPlanet(int index);
 
-	protected:
+    private:
 
         struct dust_band
 		{

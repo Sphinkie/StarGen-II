@@ -38,7 +38,7 @@ class SG_FileWriter
 		void writeStarDescription(SG_Star* star);
 		void writePlanetDescription(SG_Planet* planet);
 
-	protected:
+    private:
 		int      mFormat;
 		SG_File* mFile;
 };

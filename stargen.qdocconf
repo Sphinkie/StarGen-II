@@ -1,0 +1,28 @@
+project = QDoc Project
+description = Sample QDoc project
+
+sourcedirs = sources/
+exampledirs = 
+imagedirs = 
+
+sources.fileextensions = "*.cpp *.qdoc *.mm *.qml"
+headers.fileextensions = "*.h *.ch *.h++ *.hh *.hpp *.hxx"
+examples.fileextensions = "*.cpp *.h *.js *.xq *.svg *.xml *.ui *.qhp *.qhcp *.qml"
+examples.imageextensions = "*.png *.jpeg *.jpg *.gif *.mng"
+
+outputdir  =    $SAMPLE_PROJECT/qdoc/html
+outputformats = HTML
+
+HTML.extraimages = extraImage.png \
+                   extraImage2.png
+				   
+HTML.postheader
+HTML.postpostheader
+HTML.postheader
+HTML.footer
+
+HTML.headerstyles
+HTML.stylesheets = template/style/style.css \
+                   template/style/style1.css
+
+HTML.scripts = template/scripts/script.js

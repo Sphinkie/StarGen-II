@@ -40,7 +40,7 @@ class SG_SolarSystem
         void setStarName(std::string name);
         SG_Star* getStar();
 
-	protected:
+    private:
 		void calculatePlanets();
 		void writePlanets();
 

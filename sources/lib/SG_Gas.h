@@ -59,7 +59,7 @@ class SG_Gas
 		void        setGasColour(double r, double g, double b, double a);
 		SG_colour   getGasColour();
 
-	protected:
+    private:
 
 		long double getPres2(long double temperature, long double pressure, long double years);
 		long double getRMSvelocity(long double temperature);

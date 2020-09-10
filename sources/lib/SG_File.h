@@ -31,17 +31,8 @@ class SG_File
 		void writeStarDescription(SG_Star* star);
 		void writePlanetDescription(SG_Planet* planet);
 
-	protected:
-		
-		void writeStar(SG_Star* star);
-		void writePlanet(SG_Planet* planet);
-		void writeSolidPlanet(SG_Planet* planet);
-		void writeGasPlanet(SG_Planet* planet);
-		void writeClimate(SG_Planet* planet);
-		void writeAtmosphere(SG_Planet* planet);
+    protected:
         std::ofstream    mOutputFile;
-        std::string      mPlanet_Phrase[11];
-		long        mSeed;
 
 		// This functions must be implemented in the derived classes
         virtual void addValue     (std::string  name, bool value) =0;
@@ -54,6 +45,16 @@ class SG_File
         virtual void closeSection (std::string  name="") =0;
 		virtual void subSection   () =0;
 		virtual void addLine      () =0;
+
+    private:
+        void writeStar(SG_Star* star);
+        void writePlanet(SG_Planet* planet);
+        void writeSolidPlanet(SG_Planet* planet);
+        void writeGasPlanet(SG_Planet* planet);
+        void writeClimate(SG_Planet* planet);
+        void writeAtmosphere(SG_Planet* planet);
+        std::string mPlanet_Phrase[11];
+        long        mSeed;
 
 };
 

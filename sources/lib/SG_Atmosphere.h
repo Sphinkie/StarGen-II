@@ -39,7 +39,7 @@ class SG_Atmosphere
 		long double getGasRatio(int rank);
 		int         getGasState(int rank);
 
-	protected:
+    private:
 
 		int   estimateComposition();
 		long  calculateGasRepartition();

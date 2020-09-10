@@ -52,14 +52,13 @@ class SG_Planet
 		void setGasGiant(bool giant);
 		void setPlanetNumber(int number);
 
-	protected:
+    private:
         enum planet_type
 		{	tUnknown,     tRock,     tVenusian,
 			tTerrestrial, tGasGiant, tMartian,
 			tWater,       tIce,      tSubGasGiant,
 			tSubSubGasGiant,         tAsteroids
 		}; 
-
 
 		void calculateGasPlanet();
 		void calculateSolidPlanet();

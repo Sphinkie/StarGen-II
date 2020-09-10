@@ -98,7 +98,7 @@ int main(int argv, char **args)
     // ------------------------------------------
     else
     {
-        srand(time(0));                // initiate the random generator
+        srand((int)time(0));           // initiate the random generator
         seed = (rand() % 100000) + 1;  // between 1 and 100.000
         cout << "Generating random solar system from seed " << seed << endl;
         SG_SolarSystem* SG = new SG_SolarSystem(seed);

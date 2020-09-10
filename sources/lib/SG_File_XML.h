@@ -23,7 +23,7 @@ class SG_File_XML : public SG_File
         SG_File_XML(std::string  filename, long seed);
 		~SG_File_XML();
 
-	protected:
+    private:
 
         void addValue     (std::string  name, bool value);
         void addValue     (std::string  name, char* value,        std::string  comment);
