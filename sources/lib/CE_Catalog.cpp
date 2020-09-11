@@ -11,7 +11,7 @@
 using namespace std;
 
 /* ------------------------------------------------------------------------- */
-/// Contructeur
+/// Contructor
 /* ------------------------------------------------------------------------- */
 CE_Catalog::CE_Catalog(std::string filename)
 {
@@ -25,7 +25,7 @@ CE_Catalog::CE_Catalog(std::string filename)
 }
 
 /* ------------------------------------------------------------------------- */
-/// Ouvre en lecture un fichier de type CELESTIA, et vérifie son entête.
+/// Open the Celestia database file, and check the Header
 /* ------------------------------------------------------------------------- */
 bool CE_Catalog::openFile(std::string filename)
 {
@@ -61,7 +61,7 @@ bool CE_Catalog::openFile(std::string filename)
 }
 
 /* ------------------------------------------------------------------------- */
-/// Close the DAT file.
+/// Close the database file.
 /* ------------------------------------------------------------------------- */
 void CE_Catalog::closeFile()
 {
@@ -69,11 +69,11 @@ void CE_Catalog::closeFile()
 }
 
 /* ------------------------------------------------------------------------- */
-/// Charge le contenu du fichier des étoiles stars.dat au format CELESTIA
+/// Read the content of the Celestia database file (stars.dat)
 /**
 @param limit Le nombre d'étoiles à lire (0 or empty for ALL).
 @return Le nombre d'étoiles lues.
-Note: La lecture des 112000 étoiles du fichier prend moins d'une seconde.
+_Note: La lecture des 112000 étoiles du fichier prend moins d'une seconde._  
 Des conversions sont nécessaires, car les valeurs sont stockées en binaire inverse.
 */
 /* ------------------------------------------------------------------------- */

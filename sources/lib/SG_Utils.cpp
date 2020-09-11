@@ -34,7 +34,7 @@ long double SG_Utils::about(long double value, long double variation)
 }
 
 /*----------------------------------------------------------------------*/
-///
+/// ???
 /*----------------------------------------------------------------------*/
 long double SG_Utils::random_eccentricity()
 {

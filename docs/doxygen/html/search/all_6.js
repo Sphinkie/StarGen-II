@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['mage_79',['mAge',['../class_s_g___star.html#a074cb81e6a90a0644863454c41a8c043',1,'SG_Star']]],
+  ['max_80',['max',['../class_s_g___utils.html#a728d0cef318f77a8e99402167508d715',1,'SG_Utils']]],
+  ['mblackholecount_81',['mBlackHoleCount',['../class_c_e___catalog.html#ac5f3eb45188f876547115ad39cf8b2e7',1,'CE_Catalog']]],
+  ['mcatalog_82',['mCatalog',['../class_c_e___catalog.html#a8f45bddf2049dbd4f6ce4972d0333ad4',1,'CE_Catalog']]],
+  ['mfilename_83',['mFilename',['../class_c_e___catalog.html#acad03925e5249ca443940007df3f9b36',1,'CE_Catalog']]],
+  ['min_84',['min',['../class_s_g___utils.html#a708000a2d17f1972fb44bc8dbef0ec8b',1,'SG_Utils']]],
+  ['mlife_85',['mLife',['../class_s_g___star.html#a966e7c4694e33ff31d2fb9c7697c94c9',1,'SG_Star']]],
+  ['mlum_86',['mLum',['../class_s_g___star.html#ac52f5e50e0e7d25f1385a09ee7a71824',1,'SG_Star']]],
+  ['mmass_87',['mMass',['../class_s_g___star.html#a161e191721a408188d7350d869104afb',1,'SG_Star']]],
+  ['mname_88',['mName',['../class_s_g___star.html#a72755a8005de8e474668a4d6f3c77a01',1,'SG_Star']]],
+  ['mneutronstarcount_89',['mNeutronStarCount',['../class_c_e___catalog.html#a9e6f7ff0b451fd9a18d880a06a2c9e30',1,'CE_Catalog']]],
+  ['mnormalstarcount_90',['mNormalStarCount',['../class_c_e___catalog.html#a78f20e33803c057f04cf08f4cf69c4ca',1,'CE_Catalog']]],
+  ['moutputfile_91',['mOutputFile',['../class_s_g___file.html#aba324188a50a568a636d50417724d134',1,'SG_File']]],
+  ['mplanetnumber_92',['mPlanetNumber',['../class_s_g___star.html#a74d5291623f91e44c461982931dbc3a7',1,'SG_Star']]],
+  ['mr_5fecosphere_93',['mR_ecosphere',['../class_s_g___star.html#aab8079c58440d6386e2e108d8f07c790',1,'SG_Star']]],
+  ['mstarfile_94',['mStarFile',['../class_c_e___catalog.html#aeaa9f79678971307058c6ee2812b1577',1,'CE_Catalog']]],
+  ['mstarsinfile_95',['mStarsInFile',['../class_c_e___catalog.html#a0f35afc86d9165fd595c64b807b1e5bb',1,'CE_Catalog']]],
+  ['mwhitedwarfcount_96',['mWhiteDwarfCount',['../class_c_e___catalog.html#a1d6805d18fdc1c8c30a3a1ff9b2dd8f1',1,'CE_Catalog']]]
+];

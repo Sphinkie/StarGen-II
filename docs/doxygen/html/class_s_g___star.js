@@ -1,0 +1,28 @@
+var class_s_g___star =
+[
+    [ "SG_Star", "class_s_g___star.html#af8d3deb2239fa8fc426c3e62c3484ead", null ],
+    [ "~SG_Star", "class_s_g___star.html#a3afb853f018fe9ccbfd12858ff9d55e0", null ],
+    [ "getBodePlanetOrbit", "class_s_g___star.html#ab8685a5e1aee282efff099790b9716fa", null ],
+    [ "getBodyTemperature", "class_s_g___star.html#aefb29cace8d7a554f6eb671399605867", null ],
+    [ "getEffectiveTemperature", "class_s_g___star.html#af1dc6e400f148f8eb1ef3225a15142a0", null ],
+    [ "getFarthestPlanetOrbit", "class_s_g___star.html#abe17c541d339ddb6d8bc942a50896680", null ],
+    [ "getName", "class_s_g___star.html#a77c26b9061599f62e220efa12990a110", null ],
+    [ "getNearestPlanetOrbit", "class_s_g___star.html#aaf35ce0b8982a9708eb0f983a662168d", null ],
+    [ "getPlanetNumber", "class_s_g___star.html#a272cbb96e19033198b66528fddb18659", null ],
+    [ "getStellarDustLimit", "class_s_g___star.html#a4784e873f8695d0b722b6b8f19cdbd85", null ],
+    [ "setAge", "class_s_g___star.html#aa3f30b5bea00b2113f7a046a75ef578d", null ],
+    [ "setEcosphere", "class_s_g___star.html#aa28ea118be2340fc5345dda144de7524", null ],
+    [ "setLife", "class_s_g___star.html#afe365252121a0a0869c4ec4551c8f0cf", null ],
+    [ "setLuminosity", "class_s_g___star.html#a01678200536a0b1390678c8a21f737dc", null ],
+    [ "setMagnitude", "class_s_g___star.html#a94ebee3399c2b96c551e1e3a584fd259", null ],
+    [ "setMass", "class_s_g___star.html#a74bef928ecc3b22f9fba42ee729ec3a2", null ],
+    [ "setName", "class_s_g___star.html#a02fc432f3ac053b5a82ac503782ad497", null ],
+    [ "setRandomStar", "class_s_g___star.html#a8063467f5d8699de0912740f7f1ca377", null ],
+    [ "mAge", "class_s_g___star.html#a074cb81e6a90a0644863454c41a8c043", null ],
+    [ "mLife", "class_s_g___star.html#a966e7c4694e33ff31d2fb9c7697c94c9", null ],
+    [ "mLum", "class_s_g___star.html#ac52f5e50e0e7d25f1385a09ee7a71824", null ],
+    [ "mMass", "class_s_g___star.html#a161e191721a408188d7350d869104afb", null ],
+    [ "mName", "class_s_g___star.html#a72755a8005de8e474668a4d6f3c77a01", null ],
+    [ "mPlanetNumber", "class_s_g___star.html#a74d5291623f91e44c461982931dbc3a7", null ],
+    [ "mR_ecosphere", "class_s_g___star.html#aab8079c58440d6386e2e108d8f07c790", null ]
+];

@@ -42,7 +42,8 @@ public:
     std::string  getSpectralType();
     std::string  getName();
 
-    enum SpectralClass
+	/// Spectral class of the star
+    enum SpectralClass    
     {
 		Spectral_O     = 0,  ///< very hot and luminous - violet-bleu
 		Spectral_B     = 1,  ///< very luminous - bleu-blanc
@@ -56,7 +57,7 @@ public:
 		Spectral_N     = 9,  ///< Carbon star (now classified in class C)
 		Spectral_WC    = 10, ///< superluminous Wolf-Rayet stars
 		Spectral_WN    = 11, ///< superluminous Wolf-Rayet stars
-		Spectral_Unknown=12,
+		Spectral_Unknown=12, ///< Undefined / Unknown
 		Spectral_L     = 13, ///< Lithium core stars
 		Spectral_T     = 14, ///< Cooler brown dwarf star (Methane)
 		Spectral_C     = 15, ///< Carbon Star
@@ -74,6 +75,7 @@ public:
 		Spectral_Q     = 27, ///< Nova
     };
 
+	/// Luminosity class of the star
 	enum LuminosityClass
     { 
 		Lum_Ia0      = 0,     ///< Ia-0 (hyper giant - extreme luminous)
@@ -84,7 +86,7 @@ public:
 		Lum_IV       = 5,     ///< IV   (sub giant) 
 		Lum_V        = 6,     ///< V    (main sequence star, dwarf)
 		Lum_VI       = 7,     ///< VI   (sub dwarf) 
-		Lum_Unknown  = 8,
+		Lum_Unknown  = 8,     ///< (Undefined / Unknown)
 		Lum_VII      = 9,     ///< VII  (white dwarfs)
 		Lum_Neutron  = 10,    ///< (neutron star)
 		Lum_BlackHole= 11,    ///< (Black Hole)

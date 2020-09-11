@@ -17,23 +17,23 @@
 #include "CE_Star.h"
 
 /* ------------------------------------------------------------------------- */
-/// Interface avec les fichiers Celestia.
+/// Interface with the Celestia database file.
 /** 
--header     = CELSTARS
--version    = 0x0001
--starcount  = 0x87B70100.....0001B787.....=112519 = Nombre d'étoiles dans le fichier.
--catalog No = 0x01000000.....00000001.....= No de catalog de l'étoile
--position X = 0x654D6644.....float........= Position de l'étoile
--position Y = 0x0F7C8041.....float........  unit = AL
--position Z = 0xB754DFC0.....float........  origin = Sun
--Abs magn   = 0xD701.........0x01D7........=471 = 1.84 * 256
--Spect. Type= 0x5803.........0x0358........champ de bits
-Exemple 0x0358 = 0000 0011 0101 1000
-soit           = tttt ssss cccc llll
-- tttt est le type global de l'étoile (normal, naine blanche, neutron, trou noir)
-- ssss est le spectre de l'étoile (O, B, A, etc)
-- cccc est la sous classe du spectre (0..9)
-- llll est la luminosité de l'étoile (classification Yerkes)
+- header     = CELSTARS
+- version    = 0x0001        
+- starcount  = 0x87B70100	=> 0001B787 : Number of stars in the file (112519)
+- catalog No = 0x01000000	=> 00000001 : Catalog index of the star
+- position X = 0x654D6644	=> float : Star Position X (unit = AL) origin = Sun
+- position Y = 0x0F7C8041	=> float : Star Position Y
+- position Z = 0xB754DFC0	=> float : Star Position Z
+- Abs magn   = 0xD701	=> 0x01D7 : 256 x Absolute Magnitude (ex: 471 = 1.84 * 256)
+- Spect. Type= 0x5803	=> 0x0358 : bit field
+
+Spectrum example: 0x0358 = 0000 0011 0101 1000 = tttt ssss cccc llll
+- tttt = global type of the star (normal, naine blanche, neutron, trou noir)
+- ssss = star spectrum (O, B, A, etc)
+- cccc = star sub-spectrum (0..9)
+- llll = star luminosity (classification Yerkes)
 */
 /* ------------------------------------------------------------------------- */
 class CE_Catalog
@@ -50,14 +50,14 @@ protected:
 
     std::string   mFilename;             ///< Celestia DAT filename (usually stars.dat)
     std::ifstream mStarFile;             ///< Celestia DAT file
-    int           mStarsInFile;          ///< Nombre d'étoiles dans le fichier
+    int           mStarsInFile;          ///< Number of stars in the file
     std::map<const long, CE_Star*> mCatalog; ///< Catalog of the stars found in the .dat file
 
 
-	int      mNormalStarCount;   ///< Compteur pour statistiques
-	int      mWhiteDwarfCount;   ///< Compteur pour statistiques
-	int      mNeutronStarCount;  ///< Compteur pour statistiques
-	int      mBlackHoleCount;    ///< Compteur pour statistiques
+	int      mNormalStarCount;   ///< statistics counter
+	int      mWhiteDwarfCount;   ///< statistics counter
+	int      mNeutronStarCount;  ///< statistics counter
+	int      mBlackHoleCount;    ///< statistics counter
 };
 
 #endif 

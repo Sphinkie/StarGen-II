@@ -32,19 +32,19 @@ class SG_File
 		void writePlanetDescription(SG_Planet* planet);
 
     protected:
-        std::ofstream    mOutputFile;
+        std::ofstream    mOutputFile;  ///< The output file
 
 		// This functions must be implemented in the derived classes
-        virtual void addValue     (std::string  name, bool value) =0;
-        virtual void addValue     (std::string  name, char* value,        std::string  comment="") =0;
-        virtual void addValue     (std::string  name, std::string  value, std::string  comment="") =0;
-        virtual void addValue     (std::string  name, long double value,  std::string  comment="") =0;
-        virtual void addIntValue  (std::string  name, long double value,  std::string  comment="") =0;
-        virtual void addPercentage(std::string  name, long double value) =0;
-        virtual void addSection   (std::string  name) =0;
-        virtual void closeSection (std::string  name="") =0;
-		virtual void subSection   () =0;
-		virtual void addLine      () =0;
+        virtual void addValue     (std::string  name, bool value) =0;  ///< This function must be implemented in the derived classes
+        virtual void addValue     (std::string  name, char* value,        std::string  comment="") =0; ///< This function must be implemented in the derived classes
+        virtual void addValue     (std::string  name, std::string  value, std::string  comment="") =0; ///< This function must be implemented in the derived classes
+        virtual void addValue     (std::string  name, long double value,  std::string  comment="") =0; ///< This function must be implemented in the derived classes
+        virtual void addIntValue  (std::string  name, long double value,  std::string  comment="") =0; ///< This function must be implemented in the derived classes
+        virtual void addPercentage(std::string  name, long double value) =0;   ///< This function must be implemented in the derived classes
+        virtual void addSection   (std::string  name) =0;      ///< This function must be implemented in the derived classes
+        virtual void closeSection (std::string  name="") =0;   ///< This function must be implemented in the derived classes
+		virtual void subSection   () =0;   ///< This function must be implemented in the derived classes
+		virtual void addLine      () =0;   ///< This function must be implemented in the derived classes
 
     private:
         void writeStar(SG_Star* star);

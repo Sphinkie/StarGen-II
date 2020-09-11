@@ -14,10 +14,10 @@ using namespace std;
 /** 
 @param index        Index of the star in the Celestia catalog
 @param magnitude    Absolute magnitude of the star
-@param Pos          Cartesian position of the star (unit = al)
-@param spectrum     Spectrum of the star (@sa SpectralClass)
+@param x,y,z        Cartesian positions of the star (unit = al)
+@param spectrum     Spectrum of the star (#SpectralClass)
 @param SubSpectrum  Sub Spectrum of the star (0..9)
-@param YerkesType   Luminosity type of the star (@sa LuminosityClass)
+@param YerkesType   Luminosity type of the star (#LuminosityClass)
 */
 /* ------------------------------------------------------------------------- */
 CE_Star::CE_Star(long index, double magnitude, short spectrum, short SubSpectrum, short YerkesType, float x, float y, float z)
@@ -59,13 +59,13 @@ double CE_Star::getAbsoluteMagnitude()
 (infra-rouges). On l'obtient en ajoutant un coefficient correcteur à la magnitude 
 absolue. 
 De façon simplifiée, les coefficients correcteurs sont (suivant le spectre) :
-- O		-4.3
-- B		-3.0
-- A		-0.2
-- F		+0.0
-- G		-0.1
-- K		-0.3
-- M		-1.2
+- O	:	-4.3
+- B	:	-3.0
+- A	:	-0.2
+- F	:	+0.0
+- G	:	-0.1
+- K	:	-0.3
+- M	:	-1.2
 */
 /* ------------------------------------------------------------------------- */
 double CE_Star::getBolometricMagnitude()
@@ -129,7 +129,7 @@ void CE_Star::setAbsoluteMagnitude(float Magnitude)
 
 /* ------------------------------------------------------------------------- */
 /// Définit la classe spectrale de l'étoile.
-/** @param spectralType Variable de type SpectralClass. */
+/** @param spectralType Variable de type #SpectralClass. */
 /* ------------------------------------------------------------------------- */
 void CE_Star::setSpectralType(short spectralType)
 {
@@ -323,7 +323,7 @@ std::string CE_Star::readNameFromFile(long index)
     {
         // Example "1067:Algenib:GAM Peg:88 Peg"
         string catIndex = line.substr(0, line.find(delimiter));
-        if ((!catIndex.empty()) && (stol(catIndex) == index))   // stol = string to long
+        if ((!catIndex.empty()) && (stol(catIndex) == index))   // stol = convert string to long
         {
             // Found !
             string part2 = line.substr(line.find(delimiter)+1);

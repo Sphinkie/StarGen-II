@@ -15,6 +15,9 @@
 
 /* ------------------------------------------------------------------------- */
 /// Constructor. 
+/** 
+@param seed Seed for generation of the random data.
+*/
 /* ------------------------------------------------------------------------- */
 SG_SolarSystem::SG_SolarSystem(long seed)
 {
@@ -45,6 +48,9 @@ SG_SolarSystem::~SG_SolarSystem()
 
 /* ------------------------------------------------------------------------- */
 /// Specify the Seed for the random numbers used for this generation.
+/** 
+@param seed Seed for generation of the random data.
+*/
 /* ------------------------------------------------------------------------- */
 void SG_SolarSystem::setSeed(long seed)
 {
@@ -58,7 +64,7 @@ void SG_SolarSystem::setSeed(long seed)
 /// Set some data about the primary star: Mass
 /** 
 @param mass the mass of the star (unit = Solar Mass). The value RANDOM can also be used.
-If the data is not defined, the defalut value is the Sun mass (=1)
+If the data is not defined, the default value is the Sun mass (=1)
 */
 /* ------------------------------------------------------------------------- */
 void SG_SolarSystem::setStarMass(double mass)
@@ -98,7 +104,7 @@ void SG_SolarSystem::setStarAge(long double age)
 /* ------------------------------------------------------------------------- */
 /// Set some data about the primary star: Name
 /**
-@param mane The name of the star. If empty a default name is generated.
+@param name The name of the star. If empty a default name is generated.
 */
 /* ------------------------------------------------------------------------- */
 void SG_SolarSystem::setStarName(std::string name)
@@ -110,7 +116,7 @@ void SG_SolarSystem::setStarName(std::string name)
 /* ------------------------------------------------------------------------- */
 /// Set some data about the primary star: Bolometric Magnitude
 /**
-@param luminosity The Bolometric Magnitude of the star
+@param magnitude The Bolometric Magnitude of the star
 */
 /* ------------------------------------------------------------------------- */
 void SG_SolarSystem::setStarBoloMagnitude(long double magnitude)
@@ -120,6 +126,9 @@ void SG_SolarSystem::setStarBoloMagnitude(long double magnitude)
 
 /* ------------------------------------------------------------------------- */
 /// This function return a pointer on the primary star of the solar system.
+/**
+@return A pointer on the star of the system
+*/
 /* ------------------------------------------------------------------------- */
 SG_Star* SG_SolarSystem::getStar()
 {
@@ -238,6 +247,9 @@ void SG_SolarSystem::writePlanets()
 
 /* ------------------------------------------------------------------------- */
 /// This function generate the planets of our solar System around the given star.
+/** 
+@param filename The output file name.
+*/
 /* ------------------------------------------------------------------------- */
 void SG_SolarSystem::generateSolarSystem(std::string filename)
 {

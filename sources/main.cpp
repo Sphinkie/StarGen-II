@@ -11,7 +11,6 @@
  *
  * **************************************************************************************** */
 
-
 #include <iostream>
 #include <string>
 #include <ctime>
@@ -32,8 +31,9 @@ int main(int argv, char **args)
     bool catalog_system = false;
     bool random_system = false;
     bool sol_system = false;
+    bool help = false;
 
-    cout << "Starting StarGen-II " << endl;
+    cout << "StarGen-II v2.1" << endl;
     cout << "by David de Lorenzo - 2020" << endl;
     cout << endl;
 
@@ -41,6 +41,18 @@ int main(int argv, char **args)
     else if (strcmp(args[1],"0")==0) sol_system = true;
     else catalog_system = true;
 
+    // --------------------------------------------------------
+    // SHOW HELP
+    // --------------------------------------------------------
+    if (help)
+    {
+    cout << "run:" << endl;
+    cout << " stargen .......... to generate a datasheet for a random solar-system" << endl;
+    cout << " stargen 0 ........ to generate the datasheet of our Solar System" << endl;
+    cout << " stargen 97649 .... (or any number <120000) to generate a solar-system based on the Celestia database" << endl;
+    cout << " stargen /? ....... to show this help message" << endl;
+	pause;
+	}
     // --------------------------------------------------------
     // SOLAR SYSTEM
     // --------------------------------------------------------
