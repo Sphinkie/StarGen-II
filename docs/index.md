@@ -1,8 +1,14 @@
+![StarGen II banner](images/SG-banner.jpg)
+
 # StarGen-II
 
-*StarGen* creates datasheets for realistic solar systems. It is used for developing space simulation games.
+*StarGen* creates datasheets for realistic solar systems. 
 
-## StarGen 2
+Starting with a small amount of information about a star (mass, luminosity and age), Stargen extrapolates the solar system from its initial dust sphere, to its accretion into planets, asteroid fields and atoms. Then it calculates the composition of the planets ground, oceans, atmosphere and climate.
+
+It is used for developing space simulation games.
+
+## C++ Library
 
 Rewritten in C++, *StarGen-II* offers a set of classes that can be used to define the characteristics of a solar system, during the runtime of your application, or before with the *command line* program.
 
