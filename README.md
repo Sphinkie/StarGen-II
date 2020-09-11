@@ -1,12 +1,23 @@
 # StarGen II
 
-**StarGen** creates datasheets for realistic solar systems. 
+**StarGen** creates datasheets for realistic solar systems.
+It is C++ solar system generator, based on a random seed, or on real astronomical data from the Celestia database.
 
-It is used for developing space simulation games. It is a a random solar system generator, derived from the work of a great number of people over the past three dozen years. It can be use for [Celestia](https://celestia.fr), space games, etc.
+Starting with a small amount of information about a star (mass,luminosity and age), Stargen models the solar system from its initial dust sphere, its accretion into planets and asteroid fields, and atoms. It calculates the composition of the planets ground, oceans, atmosphere and climate.
+
+It is used for developing space simulation games. 
+You can use the exectuable binary, or include eth C++ files into your own programs.
+
+StarGen II is a 2006 fork of Jim Burrows's Stargen (see below).
+
 
 ## Original StarGen
 
-The original *StarGen* code is developed by *Jim Burrows* in *Visual C* and can be found at [eldacur.com](https://eldacur.com/~brons/NerdCorner/StarGen/StarGen.hmtl). A GitHub repository is available [here](https://github.com/grahamreeds/StarGen).
+The original *StarGen* code is developed by *Jim Burrows* in *Visual C* and can be found at [eldacur.com](https://eldacur.com/~brons/NerdCorner/StarGen/StarGen.hmtl). 
+Stargen is derived from the work of a great number of people over the [past three dozen years](https://github.com/zakski/accrete-starform-stargen). 
+It can be use for [Celestia](https://celestia.fr), space games, etc.
+A GitHub repository is available [here](https://github.com/grahamreeds/StarGen).
+
 
 ## StarGen 2
 

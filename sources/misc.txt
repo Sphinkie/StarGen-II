@@ -1,12 +1,9 @@
 /* ------------------------------------------------------------------------- */
-// File       : misc_data.txt
-// Project    : Star Gen
-// Author C   : Jim Burrows (see Credits.txt)
+// File       : misc.txt
+// Author C   : Jim Burrows
+// Miscelaneous data.
+// Note DLL: Not used anymore, but I keep them for reference. (David)
 /* ------------------------------------------------------------------------- */
-
-// Miscelaneous data. 
-// Not used anymore, but I keep them for reference. (DDL)
-
 
 
 //				 No Orbit Eccen. Tilt   Mass    Gas Giant? Dust Mass   Gas 
@@ -69,10 +66,8 @@ star	perdole[] = {{0, 1.00,	0,		0,		0,				 &mercury,	"Sol",		 1, "The Solar Syst
 					 {0, 0.725,0,		0,		1100.,			 NULL,		"HD 16160",	 1, "HR753 A"}
 					};
 
-
 //	The following values were taken from: http://www.solstation.com/stars.htm
  
-
 star	web[] = 
 // L			Mass			Mass2			Eccen.	SMAxis	 Planets	Designation	Name
 {{1.00,			1.00,			0,				0,		0,		 &mercury,	"Sol",		 1, "The Solar System"},		// 0
@@ -126,14 +121,12 @@ star	web[] =
  {1.14,			1.05,			2.0,			0.55,	48.5,	 NULL,		"44 Boo",	 1, "44 Bootis A"},				// 41.6
  {1.7,			1.03,			0,				0,		0,		 &UMa47I,	"47 UMa",	 1, "47 Ursae Majoris"},		// 45.9
  {1.8,			1.03,			0,				0,		0,		 &horIotI,	"IOT Hor",	 1, "Iota Horologii"},			// 56.2
-
-
  {AVE(.13,.15),	AVE(.59,.71),	0,				0,		0,		 NULL,		"EPS Ind",	 1, "Epsilon Indi"},			// 11.8  
  {AVE(.083,.09),0.701,			0.924,			0.495,	23.3,	 NULL,		"70 Oph",	 1, "70 Ophiuchi B"},			// 16.6
  {0.28,			0.85,			0.85,			0.922,	88.,	 NULL,		"36 Oph",	 1, "36 Ophiuchi A"},			// 19.5
  {0.27,			0.85,			0.85,			0.922,	88.,	 NULL,		"36 Oph B",	 0, "36 Ophiuchi B"},			// 19.5
  {0.12,			0.75,			0.65,			0.58,	12.6,	 NULL,		"HR 6426",	 0, "MLO 4 (HR 6426) A"},		// 22.7
- {0.146,		0.80,			0.50,			0.5,	500.,	 NULL,		"BD-05 1844 A",0,"BD-05 1844 A"}				// 28.3 
+ {0.146,		0.80,			0.50,			0.5,	500.,	 NULL,		"BD-05 1844 A",0,"BD-05 1844 A"}			// 28.3 
 };
 
 // BD-05 1123 A:	 HR 1614, Gl 183 A, Hip 23311, HD 32147, SAO 131688, LHS 200, LTT 2412, LFT 382, and LPM 200. 
@@ -151,15 +144,13 @@ star	web[] =
 // {0,			0.4,			1.05,			0.53,	0.6,	 NULL,		"",	"Xi Ursae Majoris Ab"},	// 27.3
 // {0.064,		0.76,			0.90,			0.51,	33.0,	 NULL,		"",	"Xi Bootis B"},			// 21.8
 
-
 star	helio[] =
 // L			Mass			Mass2			Eccen.	SMAxis	 Planets	Designation	Name
-{{1.00,			1.00,			0,				0,		0,		 &mercury,	"Sol",		 1, "The Solar System"},		// 0
+{{1.00,			1.00,			0,				0,		0,		 &mercury,	"Sol",  		 1, "The Solar System"},		// 0
  {1.24,			1.047,			1.0,			0.45,	11.85,	 NULL,		"Manticore A",	 1, "Manticore A"},
  {1.0,			1.00,			1.047,			0.45,	11.85,	 NULL,		"Manticore B",	 1, "Manticore B"},
 };
 
 // {1.08,		1.0,			0.87,			0.45,	8.85,	 NULL,		"Helio A",	 1, "Helio A"},
 // {0.83,		0.87,			1.0,			0.45,	8.85,	 NULL,		"Helio B",	 1, "Helio B"},
-
 
