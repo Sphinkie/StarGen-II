@@ -1,10 +1,10 @@
 /* ------------------------------------------------------------------------- */
-// File       : CatalogStar.cpp
-// Project    : StarGen 2
+// File       : CE_Star.cpp
+// Project    : Celestia interface for Stargen 2
 // Author     : David de Lorenzo
 /* ------------------------------------------------------------------------- */
 
-#include "CatalogStar.h"
+#include "CE_Star.h"
 #include <fstream>
 
 using namespace std;
@@ -20,7 +20,7 @@ using namespace std;
 @param YerkesType   Luminosity type of the star (@sa LuminosityClass)
 */
 /* ------------------------------------------------------------------------- */
-CatalogStar::CatalogStar(long index, double magnitude, short spectrum, short SubSpectrum, short YerkesType)
+CE_Star::CE_Star(long index, double magnitude, short spectrum, short SubSpectrum, short YerkesType, float x, float y, float z);
 {
     this->mCatalogNumber = index;
     this->mAbsMag        = magnitude;
@@ -29,13 +29,16 @@ CatalogStar::CatalogStar(long index, double magnitude, short spectrum, short Sub
     this->mType          = static_cast<LuminosityClass>(YerkesType);
     this->mAge           = this->calculateAge();
     this->mName          = "";
-
+    this->mX             = x;
+    this->mY             = y;
+    this->mZ             = z;
+	
 };
 
 /* ------------------------------------------------------------------------- */
 /// Destructeur
 /* ------------------------------------------------------------------------- */
-CatalogStar::~CatalogStar()
+CE_Star::~CE_Star()
 {}
 
 /* ------------------------------------------------------------------------- */
@@ -45,7 +48,7 @@ La magnitude absolue est la magnitude qu'aurait cette étoile a une distance de 
 @return La magnitude absolue de l'étoile 
 */
 /* ------------------------------------------------------------------------- */
-double CatalogStar::getAbsoluteMagnitude()
+double CE_Star::getAbsoluteMagnitude()
 {
 	return mAbsMag;
 }
@@ -65,7 +68,7 @@ De façon simplifiée, les coefficients correcteurs sont (suivant le spectre) :
 - M		-1.2
 */
 /* ------------------------------------------------------------------------- */
-double CatalogStar::getBolometricMagnitude()
+double CE_Star::getBolometricMagnitude()
 {
 	switch(mSpectrum) 
 	{
@@ -88,7 +91,7 @@ L'interpolation sur le No de catalogue est fantaisiste (génération d'une valeu
 @return unit = solar mass 
 */
 /* ------------------------------------------------------------------------- */
-double CatalogStar::getMass()
+double CE_Star::getMass()
 {
     double Mass = 1;
 	short interpol = (int)(abs(cos(mCatalogNumber+20)*100)) % 10;
@@ -118,7 +121,7 @@ double CatalogStar::getMass()
 /* ------------------------------------------------------------------------- */
 /// Définit la magnitude absolue de l'étoile.
 /* ------------------------------------------------------------------------- */
-void CatalogStar::setAbsoluteMagnitude(float Magnitude)
+void CE_Star::setAbsoluteMagnitude(float Magnitude)
 {
 	mAbsMag = Magnitude;
 }
@@ -128,7 +131,7 @@ void CatalogStar::setAbsoluteMagnitude(float Magnitude)
 /// Définit la classe spectrale de l'étoile.
 /** @param spectralType Variable de type SpectralClass. */
 /* ------------------------------------------------------------------------- */
-void CatalogStar::setSpectralType(short spectralType)
+void CE_Star::setSpectralType(short spectralType)
 {
 	mSpectrum      = static_cast<SpectralClass>(spectralType);
 }
@@ -136,7 +139,7 @@ void CatalogStar::setSpectralType(short spectralType)
 /* ------------------------------------------------------------------------- */
 /// Définit le No de l'étoile.
 /* ------------------------------------------------------------------------- */
-void CatalogStar::setCatalogNumber(int value)
+void CE_Star::setCatalogNumber(int value)
 {
     this->mCatalogNumber = value;
 }
@@ -144,7 +147,7 @@ void CatalogStar::setCatalogNumber(int value)
 /* ------------------------------------------------------------------------- */
 /// Renvoie le No de l'étoile dans le catalogue.
 /* ------------------------------------------------------------------------- */
-int CatalogStar::getCatalogNumber()
+int CE_Star::getCatalogNumber()
 {
     return this->mCatalogNumber;
 }
@@ -163,7 +166,7 @@ int CatalogStar::getCatalogNumber()
 @sa http://outreach.atnf.csiro.au/education/senior/astrophysics/spectral_class.html
 */
 /* ------------------------------------------------------------------------- */
-double CatalogStar::getTemperature()
+double CE_Star::getTemperature()
 {
     switch (mSpectrum)
     {
@@ -203,7 +206,7 @@ double CatalogStar::getTemperature()
 /* ------------------------------------------------------------------------- */
 /// Renvoie la lettre correspondant au spectre de l'étoile.
 /* ------------------------------------------------------------------------- */
-std::string CatalogStar::getSpectralType()
+std::string CE_Star::getSpectralType()
 {
     switch (mSpectrum)
     {
@@ -260,7 +263,7 @@ constatée dans l'univers. Il n'existe pas de loi pour calculer l'age d'une éto
 5%		= 10e9 - 11e9
 */
 /* ------------------------------------------------------------------------- */
-double CatalogStar::calculateAge()
+double CE_Star::calculateAge()
 {
 	short interpol = (int)(abs(cos(mCatalogNumber+28)*1000)) % 100; // Ajusté pour Sol.
 
@@ -287,7 +290,7 @@ double CatalogStar::calculateAge()
 /* ------------------------------------------------------------------------- */
 /// Returns the age of the star (years).
 /* ------------------------------------------------------------------------- */
-double CatalogStar::getAge()
+double CE_Star::getAge()
 {
     return this->mAge;
 }
@@ -295,7 +298,7 @@ double CatalogStar::getAge()
 /* ------------------------------------------------------------------------- */
 /// Returns the name of the star.
 /* ------------------------------------------------------------------------- */
-std::string CatalogStar::getName()
+std::string CE_Star::getName()
 {
     if (this->mName.empty())
         this->mName = this->readNameFromFile(mCatalogNumber);
@@ -306,7 +309,7 @@ std::string CatalogStar::getName()
 /* ------------------------------------------------------------------------- */
 /// Returns the name of the star from the starnames.dat file.
 /* ------------------------------------------------------------------------- */
-std::string CatalogStar::readNameFromFile(long index)
+std::string CE_Star::readNameFromFile(long index)
 {
     ifstream inFile;
     string   line;

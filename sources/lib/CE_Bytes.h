@@ -1,11 +1,11 @@
-// bytes.h
-// 
-// Copyright (C) 2001, Colin Walters <walters@verbum.org>
-//
+/* ------------------------------------------------------------------------- */
+// File       : CE_bytes.h
 // This program is free software; you can redistribute it and/or
 // modify it under the terms of the GNU General Public License
 // as published by the Free Software Foundation; either version 2
 // of the License, or (at your option) any later version.
+// Copyright (C) 2001, Colin Walters <walters@verbum.org>
+/* ------------------------------------------------------------------------- */
 
 #ifndef _BYTES_H_
 #define _BYTES_H_

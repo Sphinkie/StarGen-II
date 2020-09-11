@@ -1,6 +1,6 @@
 /* ------------------------------------------------------------------------- */
-// File       : CatalogStar.h
-// Project    : StarGen 2
+// File       : CE_Star.h
+// Project    : Celestia interface for Stargen 2
 // Author     : David de Lorenzo
 /* ------------------------------------------------------------------------- */
 
@@ -25,11 +25,11 @@ on déduit les autres données par calcul.
 @sa http://en.wikipedia.org/wiki/White_dwarf
 */
 /* ------------------------------------------------------------------------- */
-class CatalogStar
+class CE_Star
 {
 public:
-    CatalogStar(long Number, double Magn, short spectrum, short SubSpectrum, short YerkesType);
-	~CatalogStar();
+    CE_Star(long Number, double Magn, short spectrum, short SubSpectrum, short YerkesType, float x=0, float y=0, float z=0);
+	~CE_Star();
     void    setAbsoluteMagnitude(float Magnitude);
 	void    setCatalogNumber(int Number);
 	void    setSpectralType(short spectralType);
@@ -41,6 +41,7 @@ public:
     double  getAge();
     std::string  getSpectralType();
     std::string  getName();
+    double  getAge();
 
 
     enum SpectralClass
@@ -104,6 +105,7 @@ private:
 	LuminosityClass mType;          ///< Type de l'étoile (classification Yerkes)
     double          mAge;           ///< Age of the star (random, but following the rules)
     std::string     mName;          ///< Name of the star (from the starnames.dat file)
+	float			mX,mY,mZ;       ///< Coordinates of the star
 
 };
 

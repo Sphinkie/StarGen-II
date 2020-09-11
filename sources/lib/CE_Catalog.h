@@ -1,6 +1,6 @@
 /* ------------------------------------------------------------------------- */
-// File       : Catalog.h
-// Project    : StarGen 2
+// File       : CE_Catalog.h
+// Project    : Celestia interface for Stargen 2
 // Author     : David de Lorenzo
 // Author     : Chris Laurel (Celestia Project)
 /* ------------------------------------------------------------------------- */
@@ -14,7 +14,7 @@
 
 #include <fstream>
 #include <map>
-#include "CatalogStar.h"
+#include "CE_Star.h"
 
 /* ------------------------------------------------------------------------- */
 /// Interface avec les fichiers Celestia.
@@ -36,12 +36,12 @@ soit           = tttt ssss cccc llll
 - llll est la luminosité de l'étoile (classification Yerkes)
 */
 /* ------------------------------------------------------------------------- */
-class Catalog
+class CE_Catalog
 {
 public:
-    Catalog(std::string filename);
-    int          readStars(int starNumber = 0);
-    CatalogStar* getStar(unsigned int index);
+    CE_Catalog(std::string filename);
+    long       readStars(long limit = 0);
+    CE_Star*   getStar(unsigned int index);
 
 protected:
 
@@ -51,7 +51,7 @@ protected:
     std::string   mFilename;             ///< Celestia DAT filename (usually stars.dat)
     std::ifstream mStarFile;             ///< Celestia DAT file
     int           mStarsInFile;          ///< Nombre d'étoiles dans le fichier
-    std::map<const long, CatalogStar*> mCatalog; ///< Catalog of the stars found in the .dat file
+    std::map<const long, CE_Star*> mCatalog; ///< Catalog of the stars found in the .dat file
 
 
 	int      mNormalStarCount;   ///< Compteur pour statistiques
