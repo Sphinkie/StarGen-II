@@ -54,26 +54,11 @@ composition:
   rock = yes
 
 molecule:
-  symbol = Ni (solid)
-
-molecule:
-  symbol = Cu (solid)
-
-molecule:
-  symbol = Fe (solid)
-
-molecule:
   symbol = SO2 (solid)
-
-molecule:
-  symbol = S (solid)
-
 molecule:
   symbol = Cl (solid)
-
 molecule:
   symbol = CO2 (solid)
-
 molecule:
   symbol = Xe (solid)
 
