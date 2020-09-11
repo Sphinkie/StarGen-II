@@ -20,7 +20,7 @@ using namespace std;
 @param YerkesType   Luminosity type of the star (@sa LuminosityClass)
 */
 /* ------------------------------------------------------------------------- */
-CE_Star::CE_Star(long index, double magnitude, short spectrum, short SubSpectrum, short YerkesType, float x, float y, float z);
+CE_Star::CE_Star(long index, double magnitude, short spectrum, short SubSpectrum, short YerkesType, float x, float y, float z)
 {
     this->mCatalogNumber = index;
     this->mAbsMag        = magnitude;

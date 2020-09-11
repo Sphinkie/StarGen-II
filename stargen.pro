@@ -4,7 +4,7 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        sources/lib/Catalog.cpp \
+        sources/lib/CE_Catalog.cpp \
         sources/main.cpp \
         sources/lib/SG_Atmosphere.cpp \
         sources/lib/SG_File.cpp \
@@ -17,12 +17,12 @@ SOURCES += \
         sources/lib/SG_Star.cpp \
         sources/lib/SG_Stardust.cpp \
         sources/lib/SG_utils.cpp \
-        sources/lib/CatalogStar.cpp
+        sources/lib/CE_Star.cpp
 
 
 HEADERS += \
-    sources/lib/Bytes.h \
-    sources/lib/Catalog.h \
+    sources/lib/CE_Bytes.h \
+    sources/lib/CE_Catalog.h \
     sources/lib/SG_Atmosphere.h \
     sources/lib/SG_File.h \
     sources/lib/SG_FileWriter.h \
@@ -35,4 +35,4 @@ HEADERS += \
     sources/lib/SG_Stardust.h \
     sources/lib/SG_const.h \
     sources/lib/SG_utils.h \
-    sources/lib/CatalogStar.h
+    sources/lib/CE_Star.h

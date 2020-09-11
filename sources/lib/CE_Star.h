@@ -41,8 +41,6 @@ public:
     double  getAge();
     std::string  getSpectralType();
     std::string  getName();
-    double  getAge();
-
 
     enum SpectralClass
     {
@@ -105,7 +103,7 @@ private:
 	LuminosityClass mType;          ///< Type de l'étoile (classification Yerkes)
     double          mAge;           ///< Age of the star (random, but following the rules)
     std::string     mName;          ///< Name of the star (from the starnames.dat file)
-	float			mX,mY,mZ;       ///< Coordinates of the star
+    float			mX,mY,mZ;       ///< Coordinates of the star (unit=al / Origin=Sun)
 
 };
 

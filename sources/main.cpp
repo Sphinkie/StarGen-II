@@ -16,8 +16,8 @@
 #include <string>
 #include <ctime>
 #include "lib/SG_SolarSystem.h"
-#include "lib/CatalogStar.h"
-#include "lib/Catalog.h"
+#include "lib/CE_Star.h"
+#include "lib/CE_Catalog.h"
 
 using namespace std;
 
@@ -61,9 +61,9 @@ int main(int argv, char **args)
         cout << "Generating solar system from Catalog index " << CatNo << endl;
 
         SG_SolarSystem* SG = new SG_SolarSystem(CatNo);  // we use the Catalog Number as a seed
-        Catalog* celestiaCatalog = new Catalog("stars.dat");
+        CE_Catalog* celestiaCatalog = new CE_Catalog("stars.dat");
         celestiaCatalog->readStars();  // you can set a limit. ex: 2000
-        CatalogStar* primaryStar = celestiaCatalog->getStar(CatNo);
+        CE_Star* primaryStar = celestiaCatalog->getStar(CatNo);
 
         if (primaryStar==nullptr)
         {
