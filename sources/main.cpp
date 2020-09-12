@@ -27,95 +27,113 @@ int main(int argv, char **args)
     long double age;      // unit = years
     long double boloMagn; // Optional
     long seed;
-
-    bool catalog_system = false;
-    bool random_system = false;
-    bool sol_system = false;
-    bool help = false;
+    enum {help, sol_system, random_system, catalog_system} action;
 
     cout << "StarGen-II v2.1" << endl;
     cout << "by David de Lorenzo - 2020" << endl;
-    cout << endl;
 
-    if (argv == 1) random_system = true;
-    else if (strcmp(args[1],"0")==0) sol_system = true;
-    else catalog_system = true;
+    if (argv == 2)
+    {
 
+        if (strcmp(args[1],"0")==0) action = sol_system ;
+        else if (strcmp(args[1],"/?")==0) action = help;
+        else if (strcmp(args[1],"-?")==0) action = help;
+        else if (strcmp(args[1],"/h")==0) action = help;
+        else if (strcmp(args[1],"-h")==0) action = help;
+        else action = catalog_system;
+        cout << endl;
+    }
+    else
+    {
+        action = random_system;
+        cout << "run stargen /? for help" << endl;
+        cout << endl;
+    }
+
+    switch (action)
+    {
     // --------------------------------------------------------
     // SHOW HELP
     // --------------------------------------------------------
-    if (help)
-    {
-    cout << "run:" << endl;
-    cout << " stargen .......... to generate a datasheet for a random solar-system" << endl;
-    cout << " stargen 0 ........ to generate the datasheet of our Solar System" << endl;
-    cout << " stargen 97649 .... (or any number <120000) to generate a solar-system based on the Celestia database" << endl;
-    cout << " stargen /? ....... to show this help message" << endl;
-	pause;
-	}
+    case help:
+        {
+            cout << "help:" << endl;
+            cout << " stargen .......... generates a datasheet for a random solar-system" << endl;
+            cout << " stargen 0 ........ generates the datasheet of our Solar System" << endl;
+            cout << " stargen 97649 .... (or any number <120000) generates a solar-system based on the Celestia database" << endl;
+            cout << " stargen /? ....... shows this help message" << endl;
+            cout<<"Press ENTER to continue....."<<endl;
+            cin.ignore(1);
+            break;
+        }
     // --------------------------------------------------------
     // SOLAR SYSTEM
     // --------------------------------------------------------
-    if (sol_system)
-    {
-        cout << "Generating SOL system (StarGen model)" << endl;
-        SG_SolarSystem* SG = new SG_SolarSystem(0);
-        SG->setStarName("Sol");
-        // This will generate a better "Sol" system 
-		// (force 10 planets: solid-solid-solid-solid-astero-gaz-gaz-gaz-gaz-solid)
-        SG->generateSolarSystem("system_0.xml");
-        SG->generateSolarSystem("system_0.txt");
-        delete(SG);
-    }
+    case sol_system:
+        {
+            cout << "Generating SOL system (StarGen model)" << endl;
+            SG_SolarSystem* SG = new SG_SolarSystem(0);
+            SG->setStarName("Sol");
+            // This will generate a better "Sol" system
+            // (force 10 planets: solid-solid-solid-solid-astero-gaz-gaz-gaz-gaz-solid)
+            SG->generateSolarSystem("system_0.xml");
+            SG->generateSolarSystem("system_0.txt");
+            delete(SG);
+            cout << "done." << endl;
+            break;
+        }
     // --------------------------------------------------------
     // We use the CELESTIA CATALOG
     // --------------------------------------------------------
-    else if (catalog_system)
-    {
-        long CatNo = atol(args[1]);
-        cout << "Generating solar-system from CELESTIA Catalog Index " << CatNo << endl;
-
-        SG_SolarSystem* SG = new SG_SolarSystem(CatNo);  // we use the Catalog Number as a seed
-        CE_Catalog* celestiaCatalog = new CE_Catalog("stars.dat");
-        celestiaCatalog->readStars();  // you can set a limit. ex: 2000
-        CE_Star* primaryStar = celestiaCatalog->getStar(CatNo);
-
-        if (primaryStar==nullptr)
+    case catalog_system:
         {
-            cout << "Index " << CatNo << " not in catalog" << endl;
-            return 1;
+            long CatNo = atol(args[1]);
+            cout << "Generating solar-system from CELESTIA Catalog Index " << CatNo << endl;
+
+            SG_SolarSystem* SG = new SG_SolarSystem(CatNo);  // we use the Catalog Number as a seed
+            CE_Catalog* celestiaCatalog = new CE_Catalog("stars.dat");
+            celestiaCatalog->readStars();  // you can set a limit. ex: 2000
+            CE_Star* primaryStar = celestiaCatalog->getStar(CatNo);
+
+            if (primaryStar==nullptr)
+            {
+                cout << "Index " << CatNo << " not in catalog" << endl;
+                return 1;
+            }
+            mass     = primaryStar->getMass();
+            boloMagn = primaryStar->getBolometricMagnitude();
+            age      = primaryStar->getAge();
+            string starName = primaryStar->getName();
+            if (!starName.empty())
+                cout << "star name is " << starName << endl;
+
+            SG->setStarName(starName);
+            SG->setStarMass(mass);  // Mass defines: Luminosity + Ecosphere + Life time of the star
+            SG->setStarAge(age);
+
+            /* Luminosity:
+             * Luminosity is normally calculated from Mass.
+             * But if you known the exact value, you can set it like this: */
+            // SG->setStarLuminosity(3.5);    // (unit = Solar Luminosity)
+            /* If you prefer, you can calculate the Luminosity, based on Bolometric Magnitude (all radiations) */
+            // SG->setStarBoloMagnitude(-5);
+
+            delete(celestiaCatalog);
+
+            SG->generateSystem("system_" + to_string(CatNo) + ".xml");
+            SG->generateSystem("system_" + to_string(CatNo) + ".txt");
+            delete(SG);
+            cout << "done." << endl;
+            break;
         }
-        mass     = primaryStar->getMass();
-        boloMagn = primaryStar->getBolometricMagnitude();
-        age      = primaryStar->getAge();
-        string starName = primaryStar->getName();
-        cout << "star name is" << (starName.empty()? "unknown":starName) << endl;
-
-        SG->setStarName(starName);
-        SG->setStarMass(mass);  // Mass defines: Luminosity + Ecosphere + Life time of the star
-        SG->setStarAge(age);
-
-        /* Luminosity:
-         * Luminosity is normally calculated from Mass.
-         * But if you known the exact value, you can set it like this: */
-        // SG->setStarLuminosity(3.5);    // (unit = Solar Luminosity)
-        /* If you prefer, you can calculate the Luminosity, based on Bolometric Magnitude (all radiations) */
-        // SG->setStarBoloMagnitude(-5);
-
-        delete(celestiaCatalog);
-
-        SG->generateSystem("system_" + to_string(CatNo) + ".xml");
-        SG->generateSystem("system_" + to_string(CatNo) + ".txt");
-        delete(SG);
-    }
     // --------------------------------------------------------
     // Empty parameter or other cases: we use RANDOM values.
     // --------------------------------------------------------
-    else
-    {
+    case random_system:
+        {
         srand((int)time(0));           // initiate the random generator
         seed = (rand() % 100000) + 1;  // between 1 and 100.000
-        cout << "Generating random solar-system from seed " << seed << endl;
+        cout << "Generating random solar-system from random seed " << seed << endl;
         SG_SolarSystem* SG = new SG_SolarSystem(seed);
         SG->setStarName("");              // will be autogenerated
         SG->setStarMass(RANDOM);
@@ -124,6 +142,11 @@ int main(int argv, char **args)
         SG->generateSystem("system_" + to_string(seed) + ".xml");
         SG->generateSystem("system_" + to_string(seed) + ".txt");
         delete(SG);
+        cout << "done." << endl;
+        cout<<"Press ENTER to continue....."<<endl;
+        cin.ignore(1);
+        break;
+        }
     }
 
 
