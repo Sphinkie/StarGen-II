@@ -19,7 +19,8 @@ The program generate an XML file (or a plain TXT), describing a solar system.
 
 ### Interface with Celestia Catalog
 
-You can associate StarGen-II with the [Celestia](https://celestia.fr) catalog (files are included with Stargen-II). In that case, you can generate solar system datasheets based on real astronomical data.
+You can associate StarGen-II with the [Celestia](https://celestia.fr) catalog (files are included with Stargen-II). 
+In that case, you can generate solar system datasheets based on real astronomical data.
 
 ## Contacts
 
