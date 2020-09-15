@@ -4,7 +4,7 @@
 **StarGen** creates datasheets for realistic solar systems.
 It is a C++ Solar-System Generator, based on a random seed, or on real astronomical data from the Celestia database.
 
-Starting with a small amount of information about a star (mass, luminosity and age), Stargen extrapolates the solar system from its initial dust sphere to its accretion into planets, asteroids and atoms. Then it calculates the composition of the planets ground, oceans, atmosphere and climate.
+Starting with a small amount of information about a star (mass, luminosity and age), Stargen extrapolates the solar system from its initial dust sphere to its accretion into planets, asteroids and atoms. Then it calculates the composition of the planets ground, oceans, atmosphere and climate, using physical laws and the algorithms of the orginal *stargen* program.
 
 It is used for developing space simulation games. 
 You can use the executable binary, or include the C++ files into your own programs.
