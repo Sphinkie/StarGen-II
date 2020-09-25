@@ -31,3 +31,7 @@ The C++ classes are explained in the [Doxygen documentation, here.](doxygen/html
 ## Original StarGen
 
 The original *StarGen* code is developed by Jim Burrows in *Visual C* and can be found at [eldacur.com](https://eldacur.com/~brons/NerdCorner/StarGen/StarGen.html).
+
+## About me
+
+Find my other softwares at [GitHub](https://sphinkie.github.io).
