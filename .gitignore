@@ -1,3 +1,5 @@
 # Qt files
 stargen.pro.user
 stargen.pro.user.*
+/build/release
+/build/debug
