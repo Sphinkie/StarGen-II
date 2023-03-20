@@ -47,6 +47,14 @@ You can associate StarGen-II with the [Celestia](https://celestia.fr) catalog (f
 
 **stargen.exe** is a sample *command-line* program that shows the abilities of the *Stargen-II* library.
 
+You can get this demo program, by clicking the ["Releases"](https://github.com/Sphinkie/StarGen-II/releases) button and download the EXE and the 2 DAT files.
+
 * **stargen**		generates a random datasheet
 * **stargen 0**		generates a datasheet for the Sol system ( stargen calculation model)
 * **stargen 32349**	generates a datasheet for the star with the Catalog Number 32349 (ie: Sirius)
+
+## Compiling the files
+
+To compile the sources, I use the Windows [QT Creator](https://www.qt.io/product/development-tools) compiler. It is free and very easy to use.
+(I do not use a Linux system)
+The QT project file (stargen.pro) and the makefiles are includes in the repository.
