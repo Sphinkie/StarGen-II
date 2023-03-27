@@ -13,6 +13,7 @@
 
 #include <iostream>
 #include <string>
+#include <cstring>         // pour strcmp
 #include <ctime>
 #include "lib/SG_SolarSystem.h"
 #include "lib/CE_Star.h"

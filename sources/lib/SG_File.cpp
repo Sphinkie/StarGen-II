@@ -281,8 +281,8 @@ void SG_File::writeClimate(SG_Planet* planet)
 			{
 			case AN_S:
 				// Sulfur: it can be SO2 rain or H2SO4 rain
-				addValue("liquid", "Sulfuric acid");
-				addValue("symbol", "H2SO4");
+                addValue("liquid", string("Sulfuric acid"));
+                addValue("symbol", string("H2SO4"));
 				break;
 			default:
 				addValue("liquid", planet->mAtmosphere->getGasName(i));

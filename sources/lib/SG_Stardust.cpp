@@ -5,6 +5,7 @@
 // Author C   : Jim Burrows (see Credits.txt)
 /* ------------------------------------------------------------------------- */
 
+#include <math.h>
 #include "SG_Stardust.h"
 #include "SG_Utils.h"
 #include "SG_Const.h"

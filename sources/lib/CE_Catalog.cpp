@@ -6,6 +6,7 @@
 /* ------------------------------------------------------------------------- */
 
 #include <iostream>
+#include <cstring>
 #include "CE_Catalog.h"
 #include "CE_Bytes.h"
 using namespace std;

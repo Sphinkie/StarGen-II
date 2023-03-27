@@ -6,6 +6,7 @@
 
 #include "CE_Star.h"
 #include <fstream>
+#include <math.h>
 
 using namespace std;
 
